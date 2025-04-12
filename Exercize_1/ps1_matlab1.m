@@ -8,13 +8,13 @@ clear                               % Remove items from workspace.
 sqrt(25)                            % Square root.
 x=1:2:9;                             % A vector.
 y=x.^2;                              % Square the elements.
-A=[1,2;3,4];                         % A 2x2 matrix.
+A=[1,2; 3,4];                         % A 2x2 matrix.
 A';                            % The transpose.
 det(A)                              % The determinant.
-B=[0,3,1;.3,0,0;0,.5,0];             % A 3x3 matrix.
+B=[0,3,1; .3,0,0; 0,.5,0];             % A 3x3 matrix.
 eig(B)                              % The eigenvalues of B.
 [Vects,Vals]=eig(B)                 % Eigenvectors and eigenvalues.
-C=[100;200;300]                     % A 3x1 matrix.
+C=[100; 200; 300]                     % A 3x1 matrix.
 D=B*C                               % Matrix multiplication.
 E=B^4                               % Powers of matrices.
 z1=1+1i                              % Complex numbers.
@@ -53,7 +53,7 @@ diff(f,x)                           % Differentiation.
 syms x y
 diff(x^2+3*x*y-2*y^2,y,2)           % Partial differentiation.
 int(sin(x)*cos(x),x,0,pi/2)         % Integration.
-int(1/x,x,0,inf)                    % Improper integration.
+int(1/x,x,1,inf)                    % Improper integration.
 
 syms n s w
 s1=symsum(1/n^2,1,inf)              % Symbolic summation.
@@ -126,8 +126,8 @@ syms x(t) y(t) z(t) t
 [x,y,z]=dsolve('Dx=x','Dy=y','Dz=-z');
 [x,y,z]=dsolve(diff(x,t)==x,diff(y,t)==y,diff(z,t)==z);
 
-% Numerical solutionms to ODEs.
-% You put your commets here
+% Numerical solutions to ODEs.
+% You put your comments here
 deq1=@(t,x) x(1)*(.1-.01*x(1));
 [t,xa]=ode45(deq1,[0 100],50);
 plot(t,xa(:,1))
