@@ -6,15 +6,73 @@
 \usepackage{xcolor}
 \usepackage{fdsymbol}
 \usepackage{rotating}
+\usepackage{listings}
 
 \pgfplotsset{width=15cm,compat=1.18}
 \allowdisplaybreaks
+\setlength{\parindent}{0pt}
 
 \title{Exercize 1: Matlab Basics}
 \subtitle{Angewandte Modellierung 25}
 \author{Carl Colmant}
-
+\date{\today}
 \begin{document}
 \maketitle
+\section*{Differential Equation}
+
+\subsection*{a)}
+Gegeben ist eine Differentialgleichung:
+\begin{equation*}
+    x''+\omega^2x=0 , \omega>0
+\end{equation*}
+mit den Randbedingungen:
+\begin{equation*}
+    x(0)=0,\quad x'(0)=1
+\end{equation*}
+Eine Möglichkeit ist die Verwendung von \texttt{dsolve} in Matlab. Womit Differentialgleichungen mit gegebenen Bedingungen gelöst werden können.\\
+Somit kann die Differentialgleichung in Matlab wie folgt gelöst werden:
+\begin{lstlisting}[language=Matlab, caption=Symbolic Math]
+    %Symbolic Math:
+    syms x(t) omega positive % Symbole
+
+    eq = diff(x, t, 2) + omega^2 * x == 0; % Equation
+
+    Dx = diff(x, t); % first differential
+    % Conditions for the Equation
+    cond = [x(0) == 0, Dx(0) == 1]; 
+
+    sol = dsolve(eq, cond);
+\end{lstlisting}
+
+Eine andere Möglichkeit ist die Verwendung von \texttt{ode45} in Matlab. Womit Differentialgleichungen mit gegebenen Bedingungen numerisch gelöst werden können.\\
+Dazu muss man die symbolische Funktion in eine numerische Funktion umwandeln und einen Werte Bereich für die x Achse definieren. Außerdem muss für $\omega$ ein wert eingesetzt werden \\
+\begin{lstlisting}[language=Matlab, caption=Numeric Math]
+    % numeric Math:
+    % Parameter
+    omega_val = 1;  % Setze z.B. omega = 2
+
+    % System 1. Ordnung: x1 = x, x2 = dx/dt
+    f = @(t, y) [y(2); -omega_val^2 * y(1)];
+
+    % Anfangswerte: x(0) = 0, dx/dt(0) = 1
+    y0 = [0; 1];
+
+    % Zeitintervall
+    tspan = [0, 5];
+
+    % Numerische Lösung
+    [t_num, y_num] = ode45(f, tspan, y0);
+    \end{lstlisting}
+
+\subsection*{b)}
+Gegeben ist die Differentialgleichung:
+\begin{equation*}
+    x'=-\alpha x,  \alpha>0
+\end{equation*}
+mit den Randbedingungen:
+\begin{equation*}
+    x(0)=1
+\end{equation*}
+
 
 \end{document}
