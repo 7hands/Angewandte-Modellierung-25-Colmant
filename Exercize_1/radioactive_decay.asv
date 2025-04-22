@@ -17,11 +17,11 @@ cond = x(0) == 1; %Die Bedinungen
 
 sol = dsolve(eq,cond); % Berechnung
 
-%Plot von Chat GPT erstellt
+%Plot
 figure
 plot(t_num, y_num(:,1), 'b', 'LineWidth', 2)
 hold on
-fplot(subs(sol, a, 2), [0,10], 'r--', 'LineWidth', 2) %
+fplot(subs(sol, a, omega_val), tspan, 'r--', 'LineWidth', 2)
 legend('Numerisch (ode45)', 'Symbolisch')
 xlabel('t')
 ylabel('x(t)')

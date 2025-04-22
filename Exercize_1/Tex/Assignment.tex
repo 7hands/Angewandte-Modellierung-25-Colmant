@@ -74,5 +74,31 @@ mit den Randbedingungen:
     x(0)=1
 \end{equation*}
 
+Die Lösung der Differentialgleichung ist fast identisch zu der Lösung der ersten Differentialgleichung. Lediglich die Funktion und die Bedingungen müssen angepasst werden.\\
+Die Differentialgleichung kann in Matlab wie folgt gelöst werden:
+\begin{lstlisting}[language=Matlab, caption=Symbolic Math]
+    % Symbolic Math:
+
+    syms x(t) a positive %Symbole
+    
+    eq = diff(x, t) == -a*x(t); % Die Differential Gleichung
+    
+    cond = x(0) == 1; %Die Bedinungen
+    
+    sol = dsolve(eq,cond); % Berechnung
+\end{lstlisting}
+
+Auch die Lösung mit \texttt{ode45} ist fast identisch. Meine Fassung ist etwas gekürzt.\\
+\begin{lstlisting}[language=Matlab, caption=Numeric Math]
+    %Numeric Math:
+    a = 2; %für die numerische Berechnung muss alpha fest sein
+    f = @(t,x) -a*x; % die funktion zur numerischen berechnung
+    y0 = 1; % die bedingung
+
+    [t_num, y_num] = ode45(f,[0,10], y0); %berechnung
+\end{lstlisting}
+
+\section*{Simulink}
+
 
 \end{document}

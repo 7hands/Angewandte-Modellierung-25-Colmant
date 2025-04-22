@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  17 APR 2025 18:01
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  22 APR 2025 13:42
  system commands enabled.
  file:line:error style messages enabled.
 **"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment"
@@ -772,7 +772,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 [1
 
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.aux")
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+[2] [3] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -780,19 +785,19 @@ L3 programming layer <2020/03/25>
 )
 
 Here is how much of LuaTeX's memory you used:
- 32338 strings out of 476729
+ 32339 strings out of 476729
  100000,1977958 words of node,token memory allocated
  547 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 60 glue_spec, 11 attribute_list, 2 write nodes
-   avail lists: 1:2,2:776,3:121,4:50,5:363,6:42,7:3294,8:14,9:1160,10:4,11:146
- 53435 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:1508,3:140,4:50,5:564,6:63,7:4273,8:14,9:2013,10:4,11:146
+ 53436 multiletter control sequences out of 65536+600000
  108 fonts using 7595903 bytes
  108i,8n,101p,11027b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Assignment.pdf (2 pages, 64738 bytes).
+Output written on Assignment.pdf (3 pages, 67393 bytes).
 
-PDF statistics: 80 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
