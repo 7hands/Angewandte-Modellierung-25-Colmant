@@ -7,6 +7,7 @@
 \usepackage{fdsymbol}
 \usepackage{rotating}
 \usepackage{listings}
+\usepackage{hyperref}
 
 \pgfplotsset{width=15cm,compat=1.18}
 \allowdisplaybreaks
@@ -98,7 +99,40 @@ Auch die Lösung mit \texttt{ode45} ist fast identisch. Meine Fassung ist etwas 
     [t_num, y_num] = ode45(f,[0,10], y0); %berechnung
 \end{lstlisting}
 
-\section*{Simulink}
+\subsection*{Plotting}
+Die Plots der beiden Differentialgliechung sind fast identisch und der Code wurde von Chatgpt generiert. Hier der Code für die zweite Differentialgleichung.\\
+\begin{lstlisting}[language=Matlab, caption=Plot]
+    %Plot von Chat GPT erstellt
+    figure
+    plot(t_num, y_num(:,1), 'b', 'LineWidth', 2)
+    hold on
+    fplot(subs(sol, a, 2), [0,10], 'r--', 'LineWidth', 2) %
+    legend('Numerisch (ode45)', 'Symbolisch')
+    xlabel('t')
+    ylabel('x(t)')
+    title('Vergleich: symbolisch vs. numerisch')
+    grid on
+\end{lstlisting}
 
+Mithilfe dieses Codes erhält man die folgenden plots:\\
+\includegraphics[scale=0.6]{radoactiv.png}\\
+\includegraphics[scale=0.6]{pendel.png}\\
+
+\section*{Simulink}
+\subsection*{1.}
+Für Die Sinus Simulation ist das ganze nicht sehr kompliziert. Man setzt in die Sinus Blocks die Parameter wie in der Aufgabe und verbindet alles so wie auf dem Bild. Das einzige Was noch zu tun ist ist die Schritt weite anzupassen damit die entstehende Kurve schön glat aussieht.\\ 
+\includegraphics[scale=0.6]{Sinussim.png}
+\includegraphics[scale=0.47]{Sinusplot.png}\\
+
+\subsection*{2.}
+Auch hier ist der Aufbau nicht besonders kompliziert. Man findet aber ein paar der Einstellungen nicht die auf dem Aufgabenblatt stehen und ich musste  einen 'Rate Transition' Block hinzufügen. Zur letzt so viele der Einstellungen in den Submenü des Spectrum Analyzers suchen und anpassen. Das führt dann zu folgenden Subsystemen:\\
+\includegraphics[scale=0.6]{Spectrum_Viewer.png}\\
+\includegraphics[scale=0.6]{Sound_Source.png} \\
+und zu folgenden plots nach einer simulation:\\
+\includegraphics[scale=0.6]{Spectrumsim.png}\\
+
+Falls noch Unklarheiten bestehen oder man sich denn Code noch mal angucken will, habe ich dafür ein Github Repository erstellt.\\
+\url{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}\\
+Das Repository enthält alle Matlab und Simulink Dateien die ich für dieses Modul bearbeitet habe bzw benutzt habe. Das Repository ist natürlich öffentlich.
 
 \end{document}

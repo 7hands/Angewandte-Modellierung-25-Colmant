@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  22 APR 2025 13:42
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  22 APR 2025 14:33
  system commands enabled.
  file:line:error style messages enabled.
 **"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment"
@@ -626,51 +626,161 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip71
 \rot@float@box=\box70
 \rot@mess@toks=\toks51
+) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-10-21 v7.01c Hypertext links for LaTeX
+ (c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks52
+) (c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-10-05 v2.54 Cross-referencing by name of section
+ (c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count311
+)
+\@linkdim=\dimen275
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-10-21 v7.01c Hyperref: PDFDocEncoding definition (HO)
+) (c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count314
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-10-21 v7.01c Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4168.
+Package hyperref Info: Link nesting OFF on input line 4173.
+Package hyperref Info: Hyper index ON on input line 4176.
+Package hyperref Info: Plain pages OFF on input line 4183.
+Package hyperref Info: Backreferencing OFF on input line 4188.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4435.
+\c@Hy@tempcnt=\count315
+ (c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4773.
+\XeTeXLinkMargin=\dimen276
+ (c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count316
+\Field@Width=\dimen277
+\Fld@charsize=\dimen278
+Package hyperref Info: Hyper figures OFF on input line 6052.
+Package hyperref Info: Link nesting OFF on input line 6057.
+Package hyperref Info: Hyper index ON on input line 6060.
+Package hyperref Info: backreferencing OFF on input line 6067.
+Package hyperref Info: Link coloring OFF on input line 6072.
+Package hyperref Info: Link coloring with OCG OFF on input line 6077.
+Package hyperref Info: PDF/A mode OFF on input line 6082.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2023-10-21 v7.01c Hyperref driver for luaTeX
+ (c:/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+) (c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count320
+\c@bookmark@seq@number=\count321
+ (c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip72
 ) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.aux")
 \openout1 = Assignment.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 20.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-Package scrbase Info: activating english \abstractname on input line 19.
-Package scrbase Info: activating english \partname on input line 19.
-Package scrbase Info: activating english \figurename on input line 19.
-Package scrbase Info: activating english \tablename on input line 19.
-Package scrbase Info: activating english \contentsname on input line 19.
-Package scrbase Info: activating english \listfigurename on input line 19.
-Package scrbase Info: activating english \listtablename on input line 19.
-Package scrbase Info: activating english \refname on input line 19.
-Package scrbase Info: activating english \indexname on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+Package scrbase Info: activating english \abstractname on input line 20.
+Package scrbase Info: activating english \partname on input line 20.
+Package scrbase Info: activating english \figurename on input line 20.
+Package scrbase Info: activating english \tablename on input line 20.
+Package scrbase Info: activating english \contentsname on input line 20.
+Package scrbase Info: activating english \listfigurename on input line 20.
+Package scrbase Info: activating english \listtablename on input line 20.
+Package scrbase Info: activating english \refname on input line 20.
+Package scrbase Info: activating english \indexname on input line 20.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen275
+\scratchcounter=\count322
+\scratchdimen=\dimen279
 \scratchbox=\box71
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen276
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks53
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen280
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks54
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -679,93 +789,114 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\c@lstlisting=\count317
+\c@lstlisting=\count328
+Package hyperref Info: Link coloring OFF on input line 20.
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.out")
+\@outlinefile=\write4
+
+\openout4 = Assignment.out
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 20.
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+ (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count329
+))
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
+(Font)              scaled to size 14.4pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
+(Font)              scaled to size 14.4pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              scaled to size 7.0pt on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 21.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 22.
  (c:/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
+(Font)              scaled to size 14.4pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
+(Font)              scaled to size 14.4pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
+(Font)              scaled to size 14.4pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 21.
+(Font)              scaled to size 14.4pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 22.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 8.0pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 8.0pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 8.0pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 8.0pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 8.0pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
+(Font)              scaled to size 6.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 25.
+(Font)              scaled to size 8.0pt on input line 26.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 25.
+(Font)              scaled to size 6.0pt on input line 26.
  (c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 35.
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
@@ -773,31 +904,95 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[2] [3] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.aux")
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+<radoactiv.png, id=70, 421.575pt x 316.18124pt>
+File: radoactiv.png Graphic file (type png)
+<use radoactiv.png>
+Package luatex.def Info: radoactiv.png  used on input line 118.
+(luatex.def)             Requested size: 252.94695pt x 189.7102pt.
+<pendel.png, id=71, 421.575pt x 316.18124pt>
+File: pendel.png Graphic file (type png)
+<use pendel.png>
+Package luatex.def Info: pendel.png  used on input line 119.
+(luatex.def)             Requested size: 252.94695pt x 189.7102pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
+
+ []
+
+[3<./radoactiv.png>]
+<Sinussim.png, id=94, 705.38531pt x 331.2375pt>
+File: Sinussim.png Graphic file (type png)
+<use Sinussim.png>
+Package luatex.def Info: Sinussim.png  used on input line 124.
+(luatex.def)             Requested size: 423.23445pt x 198.74402pt.
+<Sinusplot.png, id=95, 860.46469pt x 450.18187pt>
+File: Sinusplot.png Graphic file (type png)
+<use Sinusplot.png>
+Package luatex.def Info: Sinusplot.png  used on input line 125.
+(luatex.def)             Requested size: 404.41847pt x 211.58551pt.
+
+Overfull \hbox (4.9789pt too wide) in paragraph at lines 123--126
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
+
+ []
+
+[4<./pendel.png><./Sinussim.png>]
+<Spectrum_Viewer.png, id=103, 576.65437pt x 187.45032pt>
+File: Spectrum_Viewer.png Graphic file (type png)
+<use Spectrum_Viewer.png>
+Package luatex.def Info: Spectrum_Viewer.png  used on input line 129.
+(luatex.def)             Requested size: 345.99529pt x 112.47104pt.
+<Sound_Source.png, id=104, 639.89063pt x 158.84344pt>
+File: Sound_Source.png Graphic file (type png)
+<use Sound_Source.png>
+Package luatex.def Info: Sound_Source.png  used on input line 130.
+(luatex.def)             Requested size: 383.93733pt x 95.3068pt.
+<Spectrumsim.png, id=105, 596.98032pt x 328.97906pt>
+File: Spectrumsim.png Graphic file (type png)
+<use Spectrumsim.png>
+Package luatex.def Info: Spectrumsim.png  used on input line 132.
+(luatex.def)             Requested size: 358.19095pt x 197.38895pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
+
+ []
+
+[5<./Sinusplot.png><./Spectrum_Viewer.png><./Sound_Source.png>] [6<./Spectrumsim.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Exercize_1/Tex/Assignment.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+Package rerunfilecheck Info: File `Assignment.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32339 strings out of 476729
+ 39571 strings out of 476729
  100000,1977958 words of node,token memory allocated
- 547 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 60 glue_spec, 11 attribute_list, 2 write nodes
-   avail lists: 1:2,2:1508,3:140,4:50,5:564,6:63,7:4273,8:14,9:2013,10:4,11:146
- 53436 multiletter control sequences out of 65536+600000
- 108 fonts using 7595903 bytes
- 108i,8n,101p,11027b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Assignment.pdf (3 pages, 67393 bytes).
+ 557 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 62 glue_spec, 11 attribute_list, 2 write nodes
+   avail lists: 1:1,2:1688,3:258,4:73,5:600,6:63,7:4916,8:60,9:2191,10:4,11:218
+ 60424 multiletter control sequences out of 65536+600000
+ 109 fonts using 7657983 bytes
+ 108i,8n,101p,11027b,1147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Assignment.pdf (6 pages, 233862 bytes).
 
-PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 131072)
+PDF statistics: 185 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
+ 69 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
