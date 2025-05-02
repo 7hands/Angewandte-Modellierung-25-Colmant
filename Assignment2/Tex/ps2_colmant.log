@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  2 MAY 2025 12:21
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  2 MAY 2025 15:22
  system commands enabled.
  file:line:error style messages enabled.
-**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant"
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.tex"
+**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment2/Tex/ps2_colmant"
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment2/Tex/ps2_colmant.tex"
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -732,8 +732,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip72
-) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.aux")
-\openout1 = ps3_Colmant.aux
+) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment2/Tex/ps2_colmant.aux")
+\openout1 = ps2_colmant.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -791,10 +791,10 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 \c@lstlisting=\count328
 Package hyperref Info: Link coloring OFF on input line 20.
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.out")
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment2/Tex/ps2_colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment2/Tex/ps2_colmant.out")
 \@outlinefile=\write4
 
-\openout4 = ps3_Colmant.out
+\openout4 = ps2_colmant.out
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
@@ -859,131 +859,163 @@ LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
 
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<spectrum.png, id=15, 593.96906pt x 466.74374pt>
-File: spectrum.png Graphic file (type png)
-<use spectrum.png>
-Package luatex.def Info: spectrum.png  used on input line 26.
-(luatex.def)             Requested size: 296.9838pt x 233.37129pt.
-<spectrum1.png, id=16, 593.21625pt x 400.49625pt>
-File: spectrum1.png Graphic file (type png)
-<use spectrum1.png>
-Package luatex.def Info: spectrum1.png  used on input line 27.
-(luatex.def)             Requested size: 296.60739pt x 200.24763pt.
-<spectrumAdd.png, id=17, 590.95781pt x 395.97937pt>
-File: spectrumAdd.png Graphic file (type png)
-<use spectrumAdd.png>
-Package luatex.def Info: spectrumAdd.png  used on input line 29.
-(luatex.def)             Requested size: 295.47818pt x 197.9892pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
-
- []
-
-[2<./spectrum.png><./spectrum1.png>]
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 24.
+<Matlab_adventure.png, id=15, 2467.2175pt x 505.89pt>
+File: Matlab_adventure.png Graphic file (type png)
+<use Matlab_adventure.png>
+Package luatex.def Info: Matlab_adventure.png  used on input line 25.
+(luatex.def)             Requested size: 444.07999pt x 91.05626pt.
+<Matlab_adventure2.png, id=16, 2467.2175pt x 554.07pt>
+File: Matlab_adventure2.png Graphic file (type png)
+<use Matlab_adventure2.png>
+Package luatex.def Info: Matlab_adventure2.png  used on input line 27.
+(luatex.def)             Requested size: 444.07999pt x 99.72829pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-
+Overfull \hbox (25.82443pt too wide) in paragraph at lines 24--28
+[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
+Overfull \hbox (25.82443pt too wide) in paragraph at lines 24--28
+[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
 
  []
 
-<spectrumAdd2.png, id=25, 597.73312pt x 396.7322pt>
-File: spectrumAdd2.png Graphic file (type png)
-<use spectrumAdd2.png>
-Package luatex.def Info: spectrumAdd2.png  used on input line 39.
-(luatex.def)             Requested size: 298.86583pt x 198.3656pt.
+<RIC_out.png, id=17, 977.15062pt x 579.66562pt>
+File: RIC_out.png Graphic file (type png)
+<use RIC_out.png>
+Package luatex.def Info: RIC_out.png  used on input line 32.
+(luatex.def)             Requested size: 390.85332pt x 231.86214pt.
+[2<./Matlab_adventure.png><./Matlab_adventure2.png>]
+<RLC_model.png, id=31, 776.14969pt x 412.54124pt>
+File: RLC_model.png Graphic file (type png)
+<use RLC_model.png>
+Package luatex.def Info: RLC_model.png  used on input line 36.
+(luatex.def)             Requested size: 310.45438pt x 165.01357pt.
+<RLC_out.png, id=32, 638.385pt x 424.58624pt>
+File: RLC_out.png Graphic file (type png)
+<use RLC_out.png>
+Package luatex.def Info: RLC_out.png  used on input line 38.
+(luatex.def)             Requested size: 255.34947pt x 169.83148pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
  []
 
-[3<./spectrumAdd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+[3<./RIC_out.png><./RLC_model.png>]
+<Fourier_modelpng.png, id=40, 834.86906pt x 290.58563pt>
+File: Fourier_modelpng.png Graphic file (type png)
+<use Fourier_modelpng.png>
+Package luatex.def Info: Fourier_modelpng.png  used on input line 44.
+(luatex.def)             Requested size: 333.94171pt x 116.23218pt.
+<Fourier_out2.png, id=41, 698.61pt x 545.03625pt>
+File: Fourier_out2.png Graphic file (type png)
+<use Fourier_out2.png>
+Package luatex.def Info: Fourier_out2.png  used on input line 45.
+(luatex.def)             Requested size: 209.58461pt x 163.51213pt.
+<Fourier_out.png, id=42, 700.11563pt x 545.03625pt>
+File: Fourier_out.png Graphic file (type png)
+<use Fourier_out.png>
+Package luatex.def Info: Fourier_out.png  used on input line 46.
+(luatex.def)             Requested size: 210.0363pt x 163.51213pt.
+
+Overfull \hbox (3.79625pt too wide) in paragraph at lines 43--47
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
  []
 
-<PulseScope.png, id=39, 457.71pt x 377.91188pt>
-File: PulseScope.png Graphic file (type png)
-<use PulseScope.png>
-Package luatex.def Info: PulseScope.png  used on input line 46.
-(luatex.def)             Requested size: 228.85445pt x 188.95547pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[4<./spectrumAdd2.png><./PulseScope.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+[4<./RLC_out.png><./Fourier_modelpng.png><./Fourier_out2.png><./Fourier_out.png>]
+<lowpass_filter_code.png, id=54, 2467.2175pt x 1132.23pt>
+File: lowpass_filter_code.png Graphic file (type png)
+<use lowpass_filter_code.png>
+Package luatex.def Info: lowpass_filter_code.png  used on input line 52.
+(luatex.def)             Requested size: 444.07999pt x 203.7926pt.
+<lowpass_filter_out.png, id=55, 450.18187pt x 298.11375pt>
+File: lowpass_filter_out.png Graphic file (type png)
+<use lowpass_filter_out.png>
+Package luatex.def Info: lowpass_filter_out.png  used on input line 54.
+(luatex.def)             Requested size: 360.14598pt x 238.49132pt.
+<lowpass_filter_out2.png, id=56, 450.18187pt x 292.09125pt>
+File: lowpass_filter_out2.png Graphic file (type png)
+<use lowpass_filter_out2.png>
+Package luatex.def Info: lowpass_filter_out2.png  used on input line 56.
+(luatex.def)             Requested size: 360.14598pt x 233.6733pt.
 
+Overfull \hbox (25.82443pt too wide) in paragraph at lines 51--57
+[] 
  []
 
-[5] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.aux")
+[5<./lowpass_filter_code.png><./lowpass_filter_out.png>] [6<./lowpass_filter_out2.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment2/Tex/ps2_colmant.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `ps3_Colmant.out' has not changed.
+Package rerunfilecheck Info: File `ps2_colmant.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38871 strings out of 476729
+ 38917 strings out of 476729
  100000,1977958 words of node,token memory allocated
  536 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 61 glue_spec, 7 attribute_list, 2 write nodes
-   avail lists: 1:2,2:142,3:72,4:39,5:161,6:12,7:1893,8:35,9:145,10:11,11:104
- 59792 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:159,3:76,4:39,5:151,6:12,7:1681,8:32,9:152,10:6,11:120
+ 59824 multiletter control sequences out of 65536+600000
  105 fonts using 7206439 bytes
- 108i,7n,101p,11029b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,7n,101p,11029b,341s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on ps3_Colmant.pdf (5 pages, 142614 bytes).
+Output written on ps2_colmant.pdf (6 pages, 412401 bytes).
 
-PDF statistics: 95 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 131072)
+PDF statistics: 112 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

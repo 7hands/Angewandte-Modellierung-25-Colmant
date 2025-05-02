@@ -12,3 +12,5 @@ figure
 fplot(sol, [0,10], 'LineWidth', 2) %
 xlabel('t')
 ylabel('I(t)')
+
+

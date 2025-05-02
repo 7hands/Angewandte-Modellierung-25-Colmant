@@ -1,5 +1,0 @@
-syms omega
-
-H(omega) = 1/ (1+ 1j*omega*0.5*(1492e-6));
-
-fplot3(H, [-120,120])

@@ -13,41 +13,51 @@
 \allowdisplaybreaks
 \setlength{\parindent}{0pt}
 
-\title{Assignment 3: Fourier Transformation in Matlab}
+\title{Assignment 2: Modellierung und Differentialgleichungen}
 \subtitle{Angewandte Modellierung 25}
 \author{Carl Colmant}
 \date{\today}
 \begin{document}
 \maketitle
 \newpage
-\section*{Exercize 1. Modellierung von Sinussignalen}
-Zu erst habe ich die Blöcke wie in der Aufgabe beschrieben erstellt (meine letzte Ziffer der matrikelnr. ist 2).\\
-Dabei entstehen folgende Spektren:\\
-\includegraphics[scale=0.5]{spectrum.png} \\
-\includegraphics[scale=0.5]{spectrum1.png} \\
-Und das Spectrum der Summe der Signale:\\
-\includegraphics[scale=0.5]{spectrumAdd.png} \\
+\section*{Exercise 1. Matlab Adventure}
+Zuerst soll die Differentialgleichung $30\cos(t) = LI'(t)+ RI(t) = I'(t) + 5I(t)$ gelöst werden mit den Bedingungen $I(0) = 0$. Dazu benutze ich folgenden Matlab Code:\\
+\includegraphics[scale=0.18]{Matlab_adventure.png}\\
+Dann soll die Gleichungslösung in punkt $0.5$ ausgewertet werden. Und zu guter letzt die Gleichungslösung über den Zeitbereich $[0, 10]$ dargestellt werden. Dazu benutzte ich folgenden Code:\\
+\includegraphics[scale=0.18]{Matlab_adventure2.png}\\
 
-Die beiden Sinus funktionen haben die Frequenz 22000Hz die erste wird um $\frac{\pi}{2}$ verschoben heißt also $sin(22000 \cdot t + \frac{\pi}{2})$ und die zweite ist $sin(22000 \cdot t)$. Weil die beiden Signale die gleiche Frequenz haben, bekommen wir im Spectrum Analyzer den selben Peak bei 22000Hz und -22000Hz.\\ 
-Die zweite Sinus Funktion wird vor dem Addieren noch mit j multipliziert. Das heißt wir addieren $cos(22000t) + j*sin(22000t) = e^{j*22000t}$ und das ist die Darstellung der komplexen Exponentialfunktion. Die nur eine Spectrallinie hat bei 22000Hz.\\
 
-Das kann auch in der Simulation gesehen werden.\\
+\section*{Exercise 2. Resistor--inductor circuit in Simulink}
+Hier sollte ein etwas complexes System aufgebaut werden. Ich hab die Blöcke genau wie in der Aufgabe beschrieben angeordnet den Summenblock mit dem Minuszeichen unten und den Pluszeichen oben ausgestattet. Da kommt dann folgender Graph über 10 sekunden simulationszeit raus:\\
+\includegraphics[scale=0.4]{RIC_out.png} 
 
-\subsection*{Frequenz Veränderung}
-Die Frequenz der Sinus Signale wird in Block Sine Wave 1 auf $2\pi * 3000$ verringert. Nun haben wir keine gleichen Frequenzen der beiden Signale das heißt es entsteht ein überlagertes komplexes Signal, mit 2 SPectral linien.\\
+\section*{Exercise 3. RLC model in Simulink}
+Hier ist die Simulation fast identisch aufgebaut, diesmal habe ich aber die Minuszeichen in den Gain-block getan:\\
+\includegraphics[scale=0.4]{RLC_model.png} \\
+Ich habe die Simulation 30 sekunden laufen lassen und das Ergebnis sieht so aus:\\
+\includegraphics[scale=0.4]{RLC_out.png} \\
 
-\includegraphics[scale=0.5]{spectrumAdd2.png} \\
 
-\subsection*{Phasen Verschiebung}
-Wenn man die Phase im zweiten Sine wave Block auf $4$ setzt ergibt sich kein Unterschied im Spectrum. Das liegt daran das sich die Phase nicht auf die Frequenz auswirkt.\\
+\section*{Exercise 4. Fourier series of periodic signals}
 
-\section*{Exercize 2: Analyse von puls Generator Spektren}
+Ich habe das Modell so wie in der Aufgabe gezeigt aufgebaut. Man soll die Phase in den Sinus Blöcken auf $\frac{\pi}{2}$ das liegt daran dass die Funktion die approximiert werden soll aus cosinus funktionen besteht. Wenn wir alle Sinus Blöcke korrekt eingestellt haben, lassen wir die Simulation für 920 zeiteinheiten laufen. Es entsteht folgendes Signal:\\
+\includegraphics[scale=0.4]{Fourier_modelpng.png} \\
+\includegraphics[scale=0.3]{Fourier_out2.png}
+\includegraphics[scale=0.3]{Fourier_out.png} \\
 
-\includegraphics[scale=0.5]{PulseScope.png}
+So mehr summen man einbaut desto eckiger und grader wird das Signal. Das heißt die Simulation approximiert die Funktion korrekt.\\
 
-Wenn man sich den Scope ansieht sieht man das der dritte und vierte Puls Block die doppelte Frequenz hat wie der erste und zweite. Nun ist die Pulse width im ersten block 5\% und im zweiten 10\%. Der dritte block hat die doppelte Pulse width wie der erste Block also auch 10\% und damit die selbe width. Der vierte Block hat die doppelte width wie der zweite Block (20\%) und damit die selbe width. Das liegt daran dass die breite des Puls mit der Periode wächst und der Dritte und vierte Block die hälfte der Periodenzeit haben wie der erste und zweite Block. Die Frequenz unterschiede sind auch auf die unterschiedlichen Periodenzeiten zurückzuführen($freq = \frac1{periode}$) \\ 
+\section*{Exercise 5. Low pass filter}
+Wenn man die Funktion die in der Aufgabe aufgeführt ist in Matlab umsetzt erhält man:\\
+\includegraphics[scale=0.18]{lowpass_filter_code.png}\\
+Die Funktion sieht dann so aus:\\
+\includegraphics[scale=0.8]{lowpass_filter_out.png}\\
+Die Funktion sieht deshalb so aus weil sie die niedrigen Frequenzen unverändert lassen soll (mit 1 multipliziert) und die hohen Frequenzen gedämpft werden sollen(mit <1 multipliziert). Man sieht dass aber noch nicht so gut bei einem so kleinen omega. Hier noch die Phase über omega:\\
+\includegraphics[scale=0.8]{lowpass_filter_out2.png}
 
-Der Intervall zwischen zwei Spektrallinien sollte nach der Formel 2kHz sein, das lässt sich so ungefähr auch im Spectrum Analyzer ablesen mithilfe von dem Data cursor.\\ %Das ist noch nicht ganz richtig abhängig von der Frequenz(?) verändert sich die INtervall größe.\\
-Der erste Nullpunkt des Pulses ist abhängig von der Pulse width und der Periodenzeit. So kleiner die Perioden Zeit desto größer die Puls Größe(also desto größer der Nullpunkt), genauso beeinflusst auch die Pulse width die Pulse Größe so kleiner sie ist desto später kommt der Nullpunkt.\\
+ 
+
+
+
 
 \end{document}
