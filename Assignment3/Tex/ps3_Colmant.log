@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  1 MAY 2025 15:48
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  2 MAY 2025 12:18
  system commands enabled.
  file:line:error style messages enabled.
 **"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant"
@@ -980,7 +980,7 @@ Here is how much of LuaTeX's memory you used:
  105 fonts using 7206439 bytes
  108i,7n,101p,11029b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on ps3_Colmant.pdf (5 pages, 142687 bytes).
+Output written on ps3_Colmant.pdf (5 pages, 142614 bytes).
 
 PDF statistics: 95 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
