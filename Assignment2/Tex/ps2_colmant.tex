@@ -55,8 +55,26 @@ Die Funktion sieht dann so aus:\\
 Die Funktion sieht deshalb so aus weil sie die niedrigen Frequenzen unverändert lassen soll (mit 1 multipliziert) und die hohen Frequenzen gedämpft werden sollen(mit <1 multipliziert). Man sieht dass aber noch nicht so gut bei einem so kleinen omega. Hier noch die Phase über omega:\\
 \includegraphics[scale=0.8]{lowpass_filter_out2.png}
 
- 
+\section*{Exercise 6. Low pass filter in Simulink}
+\subsection*{a)}
+Die Frequenz der Sinusfunktion soll in der Aufgabe nun auf $\omega^*t$ gesetzt werden.
+Hier nun die Ausgaben der Simulation für Frequenzen $-120,-40,-10,10,40,120$:\\
+\includegraphics[scale=0.4]{lowpass_sim_out1.png}
+\includegraphics[scale=0.4]{lowpass_sim_out11.png}\\
+\includegraphics[scale=0.4]{lowpass_sim_out2.png}
+\includegraphics[scale=0.4]{lowpass_sim_out22.png}\\
+\includegraphics[scale=0.4]{lowpass_sim_out3.png}
+\includegraphics[scale=0.4]{lowpass_sim_out33.png}\\
 
+Wir sehen das die entstehende Welle nicht gans symetrisch zur x-Achse ist also ein höherer teil ist unter 0 oder über null abhängig davon ob $\omega$ positiv oder negativ ist. Ausßerdem ist die Dämpfung etwas stärker als bei der Matlab Berechnung.
+
+\subsection*{b)}
+Ich habe die Simulation mit dem Signal-Generator erweitert. Für die Theoretische berechnung muss man wissen dass $\omega = 2\pi f$ ist. Das heißt bei einer Frequenz von $\frac{1}{2}$Hz ist $\omega = \pi$. Daraus ergibt sich ein Wert von $0.3925$ für die Amplitude.\\
+Das können wir aber in der simulation weil diese keine Sinuswelle sondern eine Squarewave ist nicht so sehen.\\
+\includegraphics[scale=0.4]{lowpass_sim_out4.png}\\
+Diese Gedämpfte Welle hat eher einen Amplitude von $0.6$. Das kann natürlich an einem Fehler meinerseits liegen.\\
+
+\section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
 
 
 
