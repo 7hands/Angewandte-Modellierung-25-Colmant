@@ -1,0 +1,6 @@
+%the first null in the Envelope is at 80kHz
+% f_0 = 2kHz
+% T = 1/f_0
+
+T = 1/2000;
+

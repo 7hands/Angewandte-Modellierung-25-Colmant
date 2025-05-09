@@ -50,4 +50,17 @@ Wenn man sich den Scope ansieht sieht man das der dritte und vierte Puls Block d
 Der Intervall zwischen zwei Spektrallinien sollte nach der Formel 2kHz sein, das lässt sich so ungefähr auch im Spectrum Analyzer ablesen mithilfe von dem Data cursor.\\ %Das ist noch nicht ganz richtig abhängig von der Frequenz(?) verändert sich die INtervall größe.\\
 Der erste Nullpunkt des Pulses ist abhängig von der Pulse width und der Periodenzeit. So kleiner die Perioden Zeit desto größer die Puls Größe(also desto größer der Nullpunkt), genauso beeinflusst auch die Pulse width die Pulse Größe so kleiner sie ist desto später kommt der Nullpunkt.\\
 
+
+
+\subsection*{Exercize 3: Period signal generation}
+
+Um ein bestimmtes Signal mit einem bestimmten Spectrum zhu erzeugen, brauchen wir die Grund Frequenz den ersten Nullpunkt des Spectrums und müssen dann die Periode und die Pulse width berechnen. AUf dem Bild kann man erkennen das die Grund Frequenz 10 kHz beträgt.\\
+Dazu Habe ich folgendes Matlab Script geschrieben:\\
+\includegraphics[scale=0.3]{codem3.png}\\
+Das Scrip berechnet die Periode als $1e-4$ und die Puls width als $1.25e-5$ damit die prozentuale Pulse width mit $12,5$.\\
+Am ende muss man noch die Amplitude anpassen, so dass man das richtige Spectrum bekommt. Mit der Amplitude von $0,5$ bekommt man ein sehr ähnliches Spectrum:\\
+\includegraphics[scale=0.6]{PulseScopeE3.png}
+
+
+
 \end{document}
