@@ -52,7 +52,7 @@ Der erste Nullpunkt des Pulses ist abhängig von der Pulse width und der Periode
 
 
 
-\subsection*{Exercize 3: Period signal generation}
+\section*{Exercize 3: Period signal generation}
 
 Um ein bestimmtes Signal mit einem bestimmten Spectrum zhu erzeugen, brauchen wir die Grund Frequenz den ersten Nullpunkt des Spectrums und müssen dann die Periode und die Pulse width berechnen. AUf dem Bild kann man erkennen das die Grund Frequenz 10 kHz beträgt.\\
 Dazu Habe ich folgendes Matlab Script geschrieben:\\
@@ -61,6 +61,25 @@ Das Scrip berechnet die Periode als $1e-4$ und die Puls width als $1.25e-5$ dami
 Am ende muss man noch die Amplitude anpassen, so dass man das richtige Spectrum bekommt. Mit der Amplitude von $0,5$ bekommt man ein sehr ähnliches Spectrum:\\
 \includegraphics[scale=0.6]{PulseScopeE3.png}
 
+\section*{Exercize 4: Fourier Transformation}
 
+
+\includegraphics[scale=0.26]{codem4.png}\\
+Dann Erhält man folgendes Spectrum:\\
+
+\includegraphics[scale=0.7]{spectrumM4.png}\\
+
+Das menschliche Ohr kann Frequenzen von 20Hz bis 20kHz hören. Normlaerweise sind in Aufnahmen deshalb Frequenzen von bis zu 40 kHz zu sehen weil die Digitalisierung mit doppelter Samplerate erfolgt. Da wir Frequenzen von bis zu 2.5 kHz sehen kann davon ausgegangen werden, dass die Daten zumindest hörbare Signale sind.\\
+Wenn man diese nun mit den in der Aufgabe genannten Funktionen abspielt, hört man tatsächlich etwas, es klingt wie eine Aufnahme von einem Konzert. Die Funktion soundsc resultiert in einer eher schlechten Audioqualität da es mehrfach übersteuert und die Lautstärke stark erhöht ist. Die sound Funktion hingegen klingt sehr viel besser und eher wie eine Moderne Aufnahme. 
+
+\section*{Exercize 5: High pass filter with differentiation} 
+\includegraphics[scale=0.24]{codem5.png}\\
+Mit dem resultierenden Spectrum:\\
+\includegraphics[scale=0.5]{spectrumM5.png}
+
+Wenn man sich den ft\_Vector anhört hört man relativ klar den Bass im hintergrund. Wenn man nun aber die Ableitung des Signals berechnet wie oben und sich den resultierenden Vector anhört hört man den Bass fast nicht mehr. Die Ableitung fungiert also tatsächlich wie ein Hochpassfilter. Das kann man auch am Spectrum erahnen hier wurden vor allem die hohen Frequenzen stark verstärkt während die niedrigen Frequenzen gerade die um Null rum stark gedämpft werden.
+
+\section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
+Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden.
 
 \end{document}
