@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  17 MAY 2025 14:42
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  19 MAY 2025 11:03
  system commands enabled.
  file:line:error style messages enabled.
-**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant"
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.tex"
+**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment4/Tex/ps4_colmant"
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment4/Tex/ps4_colmant.tex"
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -732,8 +732,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip72
-) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.aux")
-\openout1 = ps3_Colmant.aux
+) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment4/Tex/ps4_colmant.aux")
+\openout1 = ps4_colmant.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -791,10 +791,10 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 \c@lstlisting=\count328
 Package hyperref Info: Link coloring OFF on input line 20.
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.out")
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment4/Tex/ps4_colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment4/Tex/ps4_colmant.out")
 \@outlinefile=\write4
 
-\openout4 = ps3_Colmant.out
+\openout4 = ps4_colmant.out
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
@@ -859,184 +859,236 @@ LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
 
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<spectrum.png, id=15, 593.96906pt x 466.74374pt>
-File: spectrum.png Graphic file (type png)
-<use spectrum.png>
-Package luatex.def Info: spectrum.png  used on input line 26.
-(luatex.def)             Requested size: 296.9838pt x 233.37129pt.
-<spectrum1.png, id=16, 593.21625pt x 400.49625pt>
-File: spectrum1.png Graphic file (type png)
-<use spectrum1.png>
-Package luatex.def Info: spectrum1.png  used on input line 27.
-(luatex.def)             Requested size: 296.60739pt x 200.24763pt.
-<spectrumAdd.png, id=17, 590.95781pt x 395.97937pt>
-File: spectrumAdd.png Graphic file (type png)
-<use spectrumAdd.png>
-Package luatex.def Info: spectrumAdd.png  used on input line 29.
-(luatex.def)             Requested size: 295.47818pt x 197.9892pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
-
- []
-
-[2<./spectrum.png><./spectrum1.png>]
+<PhasePortraitcode.png, id=15, 1300.86pt x 1084.05pt>
+File: PhasePortraitcode.png Graphic file (type png)
+<use PhasePortraitcode.png>
+Package luatex.def Info: PhasePortraitcode.png  used on input line 25.
+(luatex.def)             Requested size: 390.26102pt x 325.21751pt.
+<aPhasefieldinit.png, id=16, 1334.9875pt x 505.89pt>
+File: aPhasefieldinit.png Graphic file (type png)
+<use aPhasefieldinit.png>
+Package luatex.def Info: aPhasefieldinit.png  used on input line 28.
+(luatex.def)             Requested size: 400.49934pt x 151.76816pt.
+<aPhasefieldout.png, id=17, 1550.04094pt x 895.09406pt>
+File: aPhasefieldout.png Graphic file (type png)
+<use aPhasefieldout.png>
+Package luatex.def Info: aPhasefieldout.png  used on input line 30.
+(luatex.def)             Requested size: 310.00269pt x 179.01563pt.
+ [2<./PhasePortraitcode.png><./aPhasefieldinit.png>]
+<bPhasefieldinit.png, id=26, 1334.9875pt x 457.71pt>
+File: bPhasefieldinit.png Graphic file (type png)
+<use bPhasefieldinit.png>
+Package luatex.def Info: bPhasefieldinit.png  used on input line 32.
+(luatex.def)             Requested size: 400.49934pt x 137.31406pt.
+<bPhasefieldout.png, id=27, 1620.80531pt x 892.08281pt>
+File: bPhasefieldout.png Graphic file (type png)
+<use bPhasefieldout.png>
+Package luatex.def Info: bPhasefieldout.png  used on input line 34.
+(luatex.def)             Requested size: 324.15532pt x 178.41339pt.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
+(Font)              scaled to size 6.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 31.
+(Font)              scaled to size 10.95pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 36.
 LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 31.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-<spectrumAdd2.png, id=25, 597.73312pt x 396.7322pt>
-File: spectrumAdd2.png Graphic file (type png)
-<use spectrumAdd2.png>
-Package luatex.def Info: spectrumAdd2.png  used on input line 39.
-(luatex.def)             Requested size: 298.86583pt x 198.3656pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-[3<./spectrumAdd.png>]
+(Font)              scaled to size 6.0pt on input line 36.
+<muPhasefieldinit.png, id=28, 1334.9875pt x 505.89pt>
+File: muPhasefieldinit.png Graphic file (type png)
+<use muPhasefieldinit.png>
+Package luatex.def Info: muPhasefieldinit.png  used on input line 37.
+(luatex.def)             Requested size: 400.49934pt x 151.76816pt.
+<muPhasefieldout.png, id=29, 1648.65938pt x 933.4875pt>
+File: muPhasefieldout.png Graphic file (type png)
+<use muPhasefieldout.png>
+Package luatex.def Info: muPhasefieldout.png  used on input line 39.
+(luatex.def)             Requested size: 329.72603pt x 186.69418pt.
+ [3<./aPhasefieldout.png><./bPhasefieldinit.png><./bPhasefieldout.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-<PulseScope.png, id=39, 457.71pt x 377.91188pt>
-File: PulseScope.png Graphic file (type png)
-<use PulseScope.png>
-Package luatex.def Info: PulseScope.png  used on input line 46.
-(luatex.def)             Requested size: 228.85445pt x 188.95547pt.
+<PhasenportraitC1.png, id=38, 1543.26563pt x 652.68843pt>
+File: PhasenportraitC1.png Graphic file (type png)
+<use PhasenportraitC1.png>
+Package luatex.def Info: PhasenportraitC1.png  used on input line 46.
+(luatex.def)             Requested size: 462.98326pt x 195.80804pt.
+<PhasenportraitC04.png, id=39, 1547.0297pt x 680.5425pt>
+File: PhasenportraitC04.png Graphic file (type png)
+<use PhasenportraitC04.png>
+Package luatex.def Info: PhasenportraitC04.png  used on input line 48.
+(luatex.def)             Requested size: 464.11249pt x 204.16432pt.
+<PhasenportraitC2.png, id=40, 1546.27687pt x 670.75594pt>
+File: PhasenportraitC2.png Graphic file (type png)
+<use PhasenportraitC2.png>
+Package luatex.def Info: PhasenportraitC2.png  used on input line 50.
+(luatex.def)             Requested size: 463.88664pt x 201.22833pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-[4<./spectrumAdd2.png><./PulseScope.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-<codem3.png, id=48, 983.675pt x 843.15pt>
-File: codem3.png Graphic file (type png)
-<use codem3.png>
-Package luatex.def Info: codem3.png  used on input line 59.
-(luatex.def)             Requested size: 295.10478pt x 252.94695pt.
-<PulseScopeE3.png, id=49, 590.205pt x 469.00218pt>
-File: PulseScopeE3.png Graphic file (type png)
-<use PulseScopeE3.png>
-Package luatex.def Info: PulseScopeE3.png  used on input line 62.
-(luatex.def)             Requested size: 354.12573pt x 281.40347pt.
-[5<./codem3.png>]
-<codem4.png, id=56, 1941.2525pt x 1084.05pt>
-File: codem4.png Graphic file (type png)
-<use codem4.png>
-Package luatex.def Info: codem4.png  used on input line 67.
-(luatex.def)             Requested size: 504.71376pt x 281.84636pt.
-
-Overfull \hbox (86.4582pt too wide) in paragraph at lines 67--69
+Overfull \hbox (44.7277pt too wide) in paragraph at lines 44--51
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
-
- []
-
-[6<./PulseScopeE3.png>]
-<spectrumM4.png, id=62, 552.56438pt x 437.38406pt>
-File: spectrumM4.png Graphic file (type png)
-<use spectrumM4.png>
-Package luatex.def Info: spectrumM4.png  used on input line 70.
-(luatex.def)             Requested size: 386.79242pt x 306.16675pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-[7<./codem4.png>]
-<codem5.png, id=69, 1941.2525pt x 1951.29pt>
-File: codem5.png Graphic file (type png)
-<use codem5.png>
-Package luatex.def Info: codem5.png  used on input line 76.
-(luatex.def)             Requested size: 465.91013pt x 468.31917pt.
-<spectrumM5.png, id=70, 715.17188pt x 523.20468pt>
-File: spectrumM5.png Graphic file (type png)
-<use spectrumM5.png>
-Package luatex.def Info: spectrumM5.png  used on input line 78.
-(luatex.def)             Requested size: 357.58505pt x 261.6017pt.
-
-Overfull \hbox (47.65457pt too wide) in paragraph at lines 76--79
+Overfull \hbox (45.85693pt too wide) in paragraph at lines 44--51
 [] 
  []
 
-[8<./spectrumM4.png>] [9<./codem5.png>] [10<./spectrumM5.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment3/Tex/ps3_Colmant.aux")
+
+Overfull \hbox (45.63109pt too wide) in paragraph at lines 44--51
+[] 
+ []
+
+[4<./muPhasefieldinit.png><./muPhasefieldout.png>] [5<./PhasenportraitC1.png><./PhasenportraitC04.png>]
+<code.png, id=61, 1883.035pt x 2095.83pt>
+File: code.png Graphic file (type png)
+<use code.png>
+Package luatex.def Info: code.png  used on input line 54.
+(luatex.def)             Requested size: 376.60033pt x 419.15858pt.
+ [6<./PhasenportraitC2.png>]
+<sirModell.png, id=67, 752.8125pt x 606.76688pt>
+File: sirModell.png Graphic file (type png)
+<use sirModell.png>
+Package luatex.def Info: sirModell.png  used on input line 57.
+(luatex.def)             Requested size: 225.84549pt x 182.03146pt.
+<sirout.png, id=68, 1170.62344pt x 744.53156pt>
+File: sirout.png Graphic file (type png)
+<use sirout.png>
+Package luatex.def Info: sirout.png  used on input line 59.
+(luatex.def)             Requested size: 351.18974pt x 223.36119pt.
+ [7<./code.png>]
+<E4.png, id=75, 552.56438pt x 437.38406pt>
+File: E4.png Graphic file (type png)
+<use E4.png>
+Package luatex.def Info: E4.png  used on input line 64.
+(luatex.def)             Requested size: 165.77058pt x 131.21622pt.
+<E4mu01.png, id=76, 630.10406pt x 715.17188pt>
+File: E4mu01.png Graphic file (type png)
+<use E4mu01.png>
+Package luatex.def Info: E4mu01.png  used on input line 66.
+(luatex.def)             Requested size: 189.03267pt x 214.5532pt.
+<E4mu1.png, id=77, 630.85687pt x 710.655pt>
+File: E4mu1.png Graphic file (type png)
+<use E4mu1.png>
+Package luatex.def Info: E4mu1.png  used on input line 67.
+(luatex.def)             Requested size: 189.25851pt x 213.19814pt.
+<E4mu5.png, id=78, 626.34pt x 712.91344pt>
+File: E4mu5.png Graphic file (type png)
+<use E4mu5.png>
+Package luatex.def Info: E4mu5.png  used on input line 68.
+(luatex.def)             Requested size: 187.90344pt x 213.87567pt.
+<E4mu20.png, id=79, 627.09282pt x 712.16063pt>
+File: E4mu20.png Graphic file (type png)
+<use E4mu20.png>
+Package luatex.def Info: E4mu20.png  used on input line 69.
+(luatex.def)             Requested size: 188.12929pt x 213.64983pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--70
+
+ []
+
+[8<./sirModell.png><./sirout.png>] [9<./E4.png><./E4mu01.png><./E4mu1.png>]
+<E4mu01v2.png, id=94, 625.58719pt x 710.655pt>
+File: E4mu01v2.png Graphic file (type png)
+<use E4mu01v2.png>
+Package luatex.def Info: E4mu01v2.png  used on input line 72.
+(luatex.def)             Requested size: 187.6776pt x 213.19814pt.
+<E4mu1v2.png, id=95, 618.81187pt x 712.16063pt>
+File: E4mu1v2.png Graphic file (type png)
+<use E4mu1v2.png>
+Package luatex.def Info: E4mu1v2.png  used on input line 73.
+(luatex.def)             Requested size: 185.64499pt x 213.64983pt.
+<E4mu5v2.png, id=96, 620.3175pt x 710.655pt>
+File: E4mu5v2.png Graphic file (type png)
+<use E4mu5v2.png>
+Package luatex.def Info: E4mu5v2.png  used on input line 74.
+(luatex.def)             Requested size: 186.09668pt x 213.19814pt.
+<E4mu20v2.png, id=97, 623.32875pt x 710.655pt>
+File: E4mu20v2.png Graphic file (type png)
+<use E4mu20v2.png>
+Package luatex.def Info: E4mu20v2.png  used on input line 75.
+(luatex.def)             Requested size: 187.00006pt x 213.19814pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--77
+
+ []
+
+[10<./E4mu5.png><./E4mu20.png><./E4mu01v2.png><./E4mu1v2.png>]
+<nonlinv1.png, id=107, 1342.2647pt x 487.8225pt>
+File: nonlinv1.png Graphic file (type png)
+<use nonlinv1.png>
+Package luatex.def Info: nonlinv1.png  used on input line 80.
+(luatex.def)             Requested size: 402.68251pt x 146.34787pt.
+<nonlinv2.png, id=108, 1342.2647pt x 488.57532pt>
+File: nonlinv2.png Graphic file (type png)
+<use nonlinv2.png>
+Package luatex.def Info: nonlinv2.png  used on input line 81.
+(luatex.def)             Requested size: 402.68251pt x 146.57372pt.
+<nonlinv3.png, id=109, 1339.25343pt x 487.06969pt>
+File: nonlinv3.png Graphic file (type png)
+<use nonlinv3.png>
+Package luatex.def Info: nonlinv3.png  used on input line 82.
+(luatex.def)             Requested size: 401.77913pt x 146.12202pt.
+<nonlinv4.png, id=110, 1345.27594pt x 487.06969pt>
+File: nonlinv4.png Graphic file (type png)
+<use nonlinv4.png>
+Package luatex.def Info: nonlinv4.png  used on input line 83.
+(luatex.def)             Requested size: 403.5859pt x 146.12202pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
+
+ []
+
+[11<./E4mu5v2.png><./E4mu20v2.png><./nonlinv1.png>] [12<./nonlinv2.png><./nonlinv3.png><./nonlinv4.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment4/Tex/ps4_colmant.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `ps3_Colmant.out' has not changed.
+Package rerunfilecheck Info: File `ps4_colmant.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38934 strings out of 476729
+ 39073 strings out of 476729
  100000,1977958 words of node,token memory allocated
  536 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 61 glue_spec, 7 attribute_list, 2 write nodes
-   avail lists: 1:2,2:142,3:74,4:39,5:219,6:12,7:2969,8:35,9:145,10:11,11:148
- 59834 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:216,3:117,4:39,5:124,6:12,7:1454,8:18,9:161,10:8,11:97
+ 59939 multiletter control sequences out of 65536+600000
  105 fonts using 7206439 bytes
  108i,8n,101p,11029b,341s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on ps3_Colmant.pdf (10 pages, 629034 bytes).
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolA-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolB-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/fdsymbol/FdSymbolF-Book.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on ps4_colmant.pdf (12 pages, 2736569 bytes).
 
-PDF statistics: 133 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 131072)
+PDF statistics: 171 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
