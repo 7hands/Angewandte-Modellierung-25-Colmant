@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  1 JUN 2025 16:25
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  1 JUN 2025 17:15
  system commands enabled.
  file:line:error style messages enabled.
-**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment5/ps5_colmant"
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment5/ps5_colmant.tex"
+**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment6/ps6_colmant"
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment6/ps6_colmant.tex"
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -648,8 +648,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip72
-) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment5/ps5_colmant.aux")
-\openout1 = ps5_colmant.aux
+) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment6/ps6_colmant.aux")
+\openout1 = ps6_colmant.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -707,10 +707,10 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 \c@lstlisting=\count327
 Package hyperref Info: Link coloring OFF on input line 19.
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment5/ps5_colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment5/ps5_colmant.out")
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment6/ps6_colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment6/ps6_colmant.out")
 \@outlinefile=\write4
 
-\openout4 = ps5_colmant.out
+\openout4 = ps6_colmant.out
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
@@ -742,175 +742,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-<Poisson1a.png, id=15, 2188.175pt x 1276.77pt>
-File: Poisson1a.png Graphic file (type png)
-<use Poisson1a.png>
-Package luatex.def Info: Poisson1a.png  used on input line 26.
-(luatex.def)             Requested size: 437.62726pt x 255.34947pt.
-<Poisson1aplot.png, id=16, 843.90282pt x 744.53156pt>
-File: Poisson1aplot.png Graphic file (type png)
-<use Poisson1aplot.png>
-Package luatex.def Info: Poisson1aplot.png  used on input line 27.
-(luatex.def)             Requested size: 337.55515pt x 297.80734pt.
-<Poisson1aplot2mesh.png, id=17, 552.56438pt x 437.38406pt>
-File: Poisson1aplot2mesh.png Graphic file (type png)
-<use Poisson1aplot2mesh.png>
-Package luatex.def Info: Poisson1aplot2mesh.png  used on input line 29.
-(luatex.def)             Requested size: 276.28151pt x 218.69148pt.
-<Poisson1aplot2.png, id=18, 552.56438pt x 499.8675pt>
-File: Poisson1aplot2.png Graphic file (type png)
-<use Poisson1aplot2.png>
-Package luatex.def Info: Poisson1aplot2.png  used on input line 30.
-(luatex.def)             Requested size: 221.02182pt x 199.94345pt.
-<Poisson1aplot2error.png, id=19, 552.56438pt x 437.38406pt>
-File: Poisson1aplot2error.png Graphic file (type png)
-<use Poisson1aplot2error.png>
-Package luatex.def Info: Poisson1aplot2error.png  used on input line 31.
-(luatex.def)             Requested size: 386.79242pt x 306.16675pt.
+<code.png, id=17, 2270.4825pt x 1180.41pt>
+File: code.png Graphic file (type png)
+<use code.png>
+Package luatex.def Info: code.png  used on input line 28.
+(luatex.def)             Requested size: 454.08846pt x 236.07782pt.
+<wordcloud.png, id=18, 882.29625pt x 569.87906pt>
+File: wordcloud.png Graphic file (type png)
+<use wordcloud.png>
+Package luatex.def Info: wordcloud.png  used on input line 30.
+(luatex.def)             Requested size: 264.69092pt x 170.96503pt.
 
-Overfull \hbox (19.3717pt too wide) in paragraph at lines 25--32
+Overfull \hbox (35.8329pt too wide) in paragraph at lines 26--32
 [] 
  []
 
 
-Overfull \hbox (81.47867pt too wide) in paragraph at lines 25--32
-[] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--32
+Underfull \hbox (badness 10000) in paragraph at lines 26--32
 
  []
 
-[2<./Poisson1a.png>] [3<./Poisson1aplot.png><./Poisson1aplot2mesh.png><./Poisson1aplot2.png>]
-<Poisson1bplot.png, id=37, 778.40813pt x 520.19344pt>
-File: Poisson1bplot.png Graphic file (type png)
-<use Poisson1bplot.png>
-Package luatex.def Info: Poisson1bplot.png  used on input line 36.
-(luatex.def)             Requested size: 389.20311pt x 260.09607pt.
-<Poisson1aplotERROR.png, id=38, 786.68906pt x 517.18219pt>
-File: Poisson1aplotERROR.png Graphic file (type png)
-<use Poisson1aplotERROR.png>
-Package luatex.def Info: Poisson1aplotERROR.png  used on input line 37.
-(luatex.def)             Requested size: 236.00853pt x 155.15585pt.
-File: Poisson1aplot2error.png Graphic file (type png)
-<use Poisson1aplot2error.png>
-Package luatex.def Info: Poisson1aplot2error.png  used on input line 38.
-(luatex.def)             Requested size: 221.02182pt x 174.95052pt.
-
-Overfull \hbox (41.20569pt too wide) in paragraph at lines 35--39
-[] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--39
-
- []
-
-[4<./Poisson1aplot2error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-[5<./Poisson1bplot.png><./Poisson1aplotERROR.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-<Helmholzplot.png, id=51, 852.93657pt x 750.55406pt>
-File: Helmholzplot.png Graphic file (type png)
-<use Helmholzplot.png>
-Package luatex.def Info: Helmholzplot.png  used on input line 61.
-(luatex.def)             Requested size: 426.46724pt x 375.27611pt.
-
-Overfull \hbox (8.21169pt too wide) in paragraph at lines 60--62
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-
- []
-
-[6]
-<Helmholzplotmodeler.png, id=62, 790.45313pt x 532.99126pt>
-File: Helmholzplotmodeler.png Graphic file (type png)
-<use Helmholzplotmodeler.png>
-Package luatex.def Info: Helmholzplotmodeler.png  used on input line 64.
-(luatex.def)             Requested size: 474.27553pt x 319.79723pt.
-
-Overfull \hbox (56.01997pt too wide) in paragraph at lines 63--66
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--66
-
- []
-
-[7<./Helmholzplot.png>] [8<./Helmholzplotmodeler.png>]
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 95.
- [9]
-<HeatCode.png, id=89, 2154.0475pt x 3300.33pt>
-File: HeatCode.png Graphic file (type png)
-<use HeatCode.png>
-Package luatex.def Info: HeatCode.png  used on input line 174.
-(luatex.def)             Requested size: 344.65465pt x 528.0636pt.
- [10] [11<./HeatCode.png>]
-<WaveCode1.png, id=103, 2154.0475pt x 1662.21pt>
-File: WaveCode1.png Graphic file (type png)
-<use WaveCode1.png>
-Package luatex.def Info: WaveCode1.png  used on input line 240.
-(luatex.def)             Requested size: 430.80186pt x 332.43611pt.
-<WaveCode2.png, id=104, 2154.0475pt x 1806.75pt>
-File: WaveCode2.png Graphic file (type png)
-<use WaveCode2.png>
-Package luatex.def Info: WaveCode2.png  used on input line 241.
-(luatex.def)             Requested size: 430.80186pt x 361.3436pt.
-
-Overfull \hbox (12.54631pt too wide) in paragraph at lines 237--242
-[] 
- []
-
-
-Overfull \hbox (12.54631pt too wide) in paragraph at lines 237--242
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 237--242
-
- []
-
-[12] [13<./WaveCode1.png>] [14<./WaveCode2.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment5/ps5_colmant.aux")
+[2<./code.png>] [3<./wordcloud.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment6/ps6_colmant.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `ps5_colmant.out' has not changed.
+Package rerunfilecheck Info: File `ps6_colmant.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35904 strings out of 476729
+ 35702 strings out of 476729
  100000,1977958 words of node,token memory allocated
- 669 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 39 attribute, 62 glue_spec, 39 attribute_list, 2 write nodes
-   avail lists: 1:1,2:450,3:198,4:58,5:208,6:32,7:2258,8:71,9:464,10:13,11:92
- 56805 multiletter control sequences out of 65536+600000
- 86 fonts using 5885807 bytes
- 108i,9n,101p,11025b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ps5_colmant.pdf (14 pages, 2001183 bytes).
+ 550 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 61 glue_spec, 9 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 1:1,2:130,3:65,4:39,5:192,6:11,7:2117,8:1,9:121,10:7,11:103
+ 56655 multiletter control sequences out of 65536+600000
+ 51 fonts using 3375903 bytes
+ 108i,7n,101p,11025b,341s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on ps6_colmant.pdf (3 pages, 340824 bytes).
 
-PDF statistics: 214 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 131072)
- 32 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 58 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

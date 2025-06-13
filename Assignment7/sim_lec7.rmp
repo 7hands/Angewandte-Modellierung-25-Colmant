@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.4.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.4.000" expanded="true" name="Process" origin="GENERATED_TUTORIAL">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="text:read_document" compatibility="10.0.000" expanded="true" height="68" name="Read Document" width="90" x="112" y="34">
+        <parameter key="file" value="C:/Users/SvetlanaMeissner/Documents/ddoc/07_Enterprice/DLEARN/Simulation-KL/PSs/PS6/JaneEyre.txt"/>
+        <parameter key="extract_text_only" value="true"/>
+        <parameter key="use_file_extension_as_type" value="true"/>
+        <parameter key="content_type" value="txt"/>
+        <parameter key="encoding" value="SYSTEM"/>
+      </operator>
+      <operator activated="true" class="text:documents_to_data" compatibility="10.0.000" expanded="true" height="82" name="Documents to Data" width="90" x="313" y="34">
+        <parameter key="text_attribute" value="CHAPTER I"/>
+        <parameter key="add_meta_information" value="true"/>
+        <parameter key="datamanagement" value="double_sparse_array"/>
+        <parameter key="data_management" value="auto"/>
+        <parameter key="use_processed_text" value="true"/>
+      </operator>
+      <operator activated="true" class="operator_toolbox:extract_sentiment" compatibility="2.17.000" expanded="true" height="103" name="Extract Sentiment" origin="GENERATED_TUTORIAL" width="90" x="514" y="34">
+        <parameter key="model" value="vader"/>
+        <parameter key="text_attribute" value="CHAPTER I"/>
+        <parameter key="show_advanced_output" value="true"/>
+        <parameter key="use_default_tokenization_regex" value="true"/>
+        <list key="additional_words"/>
+      </operator>
+      <connect from_op="Read Document" from_port="output" to_op="Documents to Data" to_port="documents 1"/>
+      <connect from_op="Documents to Data" from_port="example set" to_op="Extract Sentiment" to_port="exa"/>
+      <connect from_op="Extract Sentiment" from_port="exa" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
