@@ -132,9 +132,6 @@ face_off(selected_words)
 # 4. Erweiterte Untersuchung
 # ===================================================================
 
-# 4a. Sentiment Analysis mit TextBlobDE (zuverlässige Methode)
-print("\n--- Erweiterte Analysen ---")
-
 # 4b. POS Tagging & NER mit spaCy
 try:
     import spacy
@@ -149,27 +146,84 @@ try:
     if nlp:
         print("\nFühre POS-Tagging und NER durch (kann einen Moment dauern)...")
         
-        def pos_ner_analysis(text, label):
+        def pos_analysis(text, label):
             # Wir analysieren auch hier nur einen Teil des Textes zur Performance-Steigerung
             doc = nlp(text[:200000]) 
             
             # Zähle die Part-of-Speech Tags
             pos_counts = doc.count_by(spacy.attrs.POS)
             pos_top = sorted([(nlp.vocab[pos].text, count) for pos, count in pos_counts.items()], key=lambda x: -x[1])[:5]
-            
-            # Zähle die Named Entities
-            ents = [ent.label_ for ent in doc.ents]
-            ent_counts = Counter(ents).most_common(5)
 
             print(f"\nAnalyse für: {label}")
             print(f"Top 5 POS-Tags: {pos_top}")
-            print(f"Top 5 Entitäten: {ent_counts}")
 
-        pos_ner_analysis(t1, 'Schatzinsel')
-        pos_ner_analysis(t2, 'Also sprach Zarathustra')
+        pos_analysis(t1, 'Schatzinsel')
+        pos_analysis(t2, 'Also sprach Zarathustra')
     else:
         print("\nPOS-Tagging und NER übersprungen, da das spaCy-Modell fehlt.")
         
 except ImportError:
     print("\nWARNUNG: spaCy ist nicht installiert. POS-Tagging und NER werden übersprungen.")
     print("Bitte führen Sie aus: pip install spacy")
+
+
+import os
+from collections import defaultdict
+from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+
+# -------------------------------------------------------
+# 4c. NER mit HuggingFace XLM‑RoBERTa‑Large für German CoNLL‑03
+# -------------------------------------------------------
+
+# 1. Modell-Name anpassen:
+MODEL_NAME = "FacebookAI/xlm-roberta-large-finetuned-conll03-german"
+
+# 2. Tokenizer und Modell laden
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+model     = AutoModelForTokenClassification.from_pretrained(MODEL_NAME)
+
+# 3. NER‑Pipeline mit Aggregation
+ner_pipeline = pipeline(
+    "ner",
+    model=model,
+    tokenizer=tokenizer,
+    aggregation_strategy="simple"  # kombiniert Token-Chunks zu vollständigen Entities
+)
+
+def ner_hf(text, label, max_len=5000):
+    """
+    Extrahiere Named Entities mit dem XLM‑RoBERTa‑Modell.
+    Gibt ein Dict: {ENTITY_LABEL: set(Vorkommen)}
+    """
+    snippet = text[:max_len]  # auf den Anfang kürzen, um RAM & Zeit zu sparen
+    raw_results = ner_pipeline(snippet)
+
+    ents = defaultdict(set)
+    for ent in raw_results:
+        ents[ent["entity_group"]].add(ent["word"])
+
+    # Ausgabe der Top-Entitäten je Typ
+    print(f"\n--- HuggingFace NER ({label}) ---")
+    for etype, words in ents.items():
+        sample = sorted(words)[:20]
+        print(f"{etype} ({len(words)}): {sample}")
+    return ents
+
+# 4. Aufruf für deine Texte
+ents_xlm_1 = ner_hf(t1, "Schatzinsel")
+ents_xlm_2 = ner_hf(t2, "Zarathustra")
+
+# 5. (Optional) CSV-Export
+import csv
+
+def save_entities_csv(ents_by_label, filename):
+    with open(os.path.join(BASE_DIR, filename), "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["Type", "Entity"])
+        for etype, words in ents_by_label.items():
+            for w in sorted(words):
+                writer.writerow([etype, w])
+
+save_entities_csv(ents_xlm_1, "entities_xlm_schatzinsel.csv")
+save_entities_csv(ents_xlm_2, "entities_xlm_zarathustra.csv")
+

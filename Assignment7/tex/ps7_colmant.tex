@@ -42,8 +42,64 @@ Man sieht das sich die Stimmung der Texte kaum unterscheidet und kaum ausschläg
 
 
 \section*{Exercise 2. }
+\subsection*{1.}
+Ich habe die Texte von davor wiederverwendet und also ein 'Genre Mashup' gemacht. Dazu habe ich in python folgende Bibliotheken benutzt:\\
+\includegraphics*[scale=0.25]{libs.png}\\
+\subsection*{2.}
+Nun müssen die texte für die nächsten Aufgabe vorbereitet werden. Dazu werden stoppwords entfernt.\\
+\includegraphics*[scale=0.25]{cleanup.png}\\
+\subsection*{3.}
+Nun soll die Vocabular der beiden Texte verglichen werden das habe ich mit folgendem Code gemacht.\\
+\includegraphics*[scale=0.25]{freq.png}\\
+\includegraphics*[scale=0.25]{freq2.png}\\
+Hieraus entsteht dann die Ausgabe:\\
+--- Shared Vocabulary (3104 Wörter) ---
+a, ab, abend, abenteuer, aberglauben, abermals, abhang, abide, abkunft, abnehmen, about, abscheuliches, abschied, abwärts, abzeichnete, accept, accepted, accepting, access, accessed, accessible, accordance, ach, achseln, acht, achten, achtete, active, actual, addition, additional, additions, address, addresses, adern, adler, affe, affen, against, aged, agent, agree, agreed, agreement, ah, ahnt, all, alledem, allein, allow, almost, alone, already, alt, alte, altem, alten, alter, alteration, alternate, altes, amen, anbeginn, anblick, and, anfang, angenehm, angenehme, angenehmen, angenehmer, angst, anhöhe, anker, annehmen, antwort, antworten, antwortete, antworteten, any, anyone, anything, anywhere, anzuhören, apfel, appear, appearing, appears, applicable, apply, approach, arbeit, arbeiten, archive, are, arg, arise, arm, arme, armen, armer
 
+--- Unique to Schatzinsel (6063 Wörter) ---
+aal, aalglatt, abbrechend, abdrücke, abe, abendbrot, abenden, abendwind, abenteuerlichen, abenteuern, abergläubischen, abfahrenden, abfallen, abfallenden, abfeuern, abflauen, abfuhr, abgebrochen, abgebrochenen, abgebröckelten, abgefangen, abgefeuert, abgehalten, abgehauenen, abgehärmten, abgekühlt, abgelegt, abgelenkt, abgemacht, abgeplattet, abgesandte, abgeschnitten, abgeschrägte, abgeschwindelt, abgesetzt, abgesperrten, abgesplitterter, abgestattet, abgetragenen, abgetrieben, abgezapft, abgezogen, abhalten, abhanges, abhing, abhänge, abklang, ablaufen, ablehnt, ablehnte, ablud, abmurksen, abnahm, abnahmen, abprallen, abraham, abrechnen, abrechnungsbuch, abrede, abreisen, abrutschte, absatz, abscheuliche, abscheulichen, abscheulicher, abschießen, abschließend, abschloß, abschluß, abschneiden, absetzen, absicht, absichtlich, absitzen, absolut, abspringen, abstehen, absteigen, abstimmen, abstoßendere, abständen, abtrift, abtrocknete, abwarten, abwechselnd, abwechslung, abwechslungsreichsten, abweisungen, abwenden, abwesenheit, abzufangen, abzufeuern, abzuhalten, abzukühlen, abzuschießen, abzuschneiden, abzuwenden, achse, achsel, achselhöhle
 
+--- Unique to Zarathustra (6677 Wörter) ---
+aas, aasvögel, abbild, abende, abendliche, abendmahl, abendroth, abendröthen, abends, abendwärts, aberwitzige, abführen, abgeflossen, abgegangen, abgegeben, abgehellter, abgekehrt, abgeknabbert, abgelaufnen, abgemerkt, abgenagt, abgeneidet, abgeraubt, abgerichtet, abgesagt, abgeschirrt, abgeschirrtem, abgethan, abgetödtet, abgewandten, abgezeichnete, abglanz, abgrund, abgrunde, abgrundwärts, abgründe, abgründen, abgründlich, abgründlichen, abgründlicher, abgründliches, abgründlichsten, abgünstig, abhelfen, abhold, abkehr, abkehrte, ablaufe, ableiten, ablerne, ablernen, ablernst, ablernte, abraum, absagen, absagte, abschaffen, abschaum, abschiede, abschieds, abschätzen, abseits, abspeisen, absterbende, absterbenden, abthun, abthätet, abtrennst, abtrünnigen, abwendet, abwägen, abzubitten, abzubrechen, abzählte, abzöge, achtbarkeiten, achtet, achtsam, adel, adelt, adlerhaft, adlern, adlers, afrikanisch, after, ahnungsvollen, allda, alleingehens, alleinsein, alleinseins, allerhöchsten, allerlei, allerliebsten, allermeisten, allerzierlichsten, allesammt, allezeit, allgemach, allgenügsame, allgenügsamen\\
+\includegraphics*[scale=0.6]{schatztop20.png}\\
+\includegraphics*[scale=0.6]{zaraop20.png}\\
+\includegraphics*[scale=0.5]{SchatzinselWordcloudpy.png}\\
+\includegraphics*[scale=0.5]{zarathustraWordcloudpy.png}\\
+\includegraphics*[scale=0.5]{Ffo.png}\\
+\subsection*{4.}
+In diesem Teil sollten die Texte genauer auf stimmung, brnutzte Wortarten und Objekte wie z.B. Personen. Die Sentiment analysis hat leider nicht funktioniert weil einerseits der text auf Deutsch ist und sich conda geweigert hat bibliotheken zu finden die das ermöglicht hätten wie z.B. textblob\_de. Dennoch habe ich keine mühen gescheut die POS und NER möglichst gut durchzuführen für die NER habe ich sogar ein transformer modell von huggingface benutzt. Hier zuerst mein Code:\\
+\includegraphics*[scale=0.25]{POS.png}\\
+\includegraphics*[scale=0.25]{NER.png}\\
+Das Problem selbst mit nem Transformer Modell ist das ergebnis eher unterdurchschnittlich:\\
+POS Ausgabe: 
+
+Analyse für: Also sprach Zarathustra
+
+Top 5 POS-Tags: [('NOUN', 6860), ('PUNCT', 6005), ('PRON', 4537), ('DET', 4479), ('VERB', 3783)]
+
+Analyse für: Schatzinsel
+
+Top 5 POS-Tags: [('PUNCT', 6998), ('NOUN', 5710), ('PRON', 4459), ('VERB', 4207), ('DET', 4178)]
+
+Die NER kann nur wenig identifiezieren:\\
+--- HuggingFace NER (Schatzinsel) ---
+
+PER (7): ['Ballantyne', 'Cooper', 'Kingston', 'Livesay', 'R. L. St.', 'S. L. O.', 'Trelawney']
+
+MISC (1): ['amerikanische']
+
+LOC (2): ['Admiral Benbow', 'Zum Admiral Benbow']`
+
+--- HuggingFace NER (Zarathustra) ---
+
+PER (2): ['Friedrich Wilhelm Nietzsche', 'Zarathustra']
+
+MISC (3): ['Amen-Lied', 'Ja-', 'Lied']
+
+Man kann aber erkennen, dass Die Schatzinsel als Roman mehr wert auf das klare vorstellen der Charaktären legt während Also Sprach Zarathustra nicht so direkt die wichtigkeit der Charaktären festlegt. Beispiels weise wird ganz am anfang eine Figur vorgestellt Der Heilige der wharscheinlich Religiöse führer darstellen soll, dieser ist aber ausser für die vorbereitung der Massage des Buches kommplett unwichtig. Im gegensatz ist der Seiltänzer der etwas später getötet wird ein sehr wichtiger Teil der Argumentation für die übermenschen. Diese beiden Charaktäre kann man aber nur sehr schwer überhaupt automatisch finden da sie weder Namen haben noch besonders häufig vorkommen. 
+
+\section*{Exercise 3.}
+Ich hatte leider weder Zeit noch besonders viel erfollg mit Altair AI studio gerade mit Deutschen Texten hab ich das nicht hingekriegt.
 
 \section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
 Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden. 
