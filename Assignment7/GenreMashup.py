@@ -64,6 +64,18 @@ shared = set(fd1) & set(fd2)
 unique1 = set(fd1) - set(fd2)
 unique2 = set(fd2) - set(fd1)
 
+# -------------------------------------------------------
+# Shared Vocabulary und Unique Lexicons ausgeben
+# -------------------------------------------------------
+print(f"\n--- Shared Vocabulary ({len(shared)} Wörter) ---")
+print(', '.join(sorted(shared)[:100]))  # limitiert auf die ersten 100 Wörter
+
+print(f"\n--- Unique to Schatzinsel ({len(unique1)} Wörter) ---")
+print(', '.join(sorted(unique1)[:100]))
+
+print(f"\n--- Unique to Zarathustra ({len(unique2)} Wörter) ---")
+print(', '.join(sorted(unique2)[:100]))
+
 # Anzeige der Top-20 Begriffe
 def show_top(fd, label, N=20):
     print(f"\nTop {N} Wörter in {label}:")
@@ -122,32 +134,6 @@ face_off(selected_words)
 
 # 4a. Sentiment Analysis mit TextBlobDE (zuverlässige Methode)
 print("\n--- Erweiterte Analysen ---")
-try:
-    # Import der notwendigen Klasse aus textblob_de
-    from textblob_de import TextBlobDE
-
-    def analyze_sentiment(text, label):
-        # Erstelle ein TextBlob-Objekt
-        blob = TextBlobDE(text)
-        
-        # Greife auf die Sentiment-Eigenschaften zu
-        # .sentiment gibt ein Tupel (Polarität, Subjektivität) zurück
-        pol = blob.sentiment.polarity
-        subj = blob.sentiment.subjectivity
-        
-        print(f"Sentiment {label}: Polarität={pol:.3f}, Subjektivität={subj:.3f}")
-
-    print("\nFühre Sentiment-Analyse durch (für die ersten 200.000 Zeichen)...")
-    # Wir analysieren nur einen Teil des Textes, da die Analyse sonst sehr lange dauert.
-    analyze_sentiment(t1[:200000], 'Schatzinsel')
-    analyze_sentiment(t2[:200000], 'Zarathustra')
-
-except ImportError:
-    print("\nWARNUNG: textblob-de ist nicht installiert. Sentiment-Analyse wird übersprungen.")
-    print("Bitte führen Sie im Terminal aus: pip install -U textblob-de")
-except Exception as e:
-    print(f"Ein Fehler bei der Sentiment-Analyse ist aufgetreten: {e}")
-
 
 # 4b. POS Tagging & NER mit spaCy
 try:

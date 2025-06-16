@@ -12,27 +12,41 @@
 \allowdisplaybreaks
 \setlength{\parindent}{0pt}
 
-\title{Assignment 6}
+\title{Assignment 7}
 \subtitle{Angewandte Modellierung 25}
 \author{Carl Colmant}
 \date{\today}
 \begin{document}
 \maketitle
 \newpage
-\section*{Exercise 1. Data sets}
-Ich habe mir ein Data set von Kaggle angeschaut welches schlaf betrachtet.(\href{https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-datasethttps://www.kaggle.com/datasets/mlomuscio/sleepstudypilot}{dataset}). Das Data set will heraus finden ob die Test Personen richtig einschätzen ob sie genug geschlafen haben. Hinzu wird noch die Existenz eines Smartphones in der nähe des Schalafplatzes getrackt und ob die Personen in den 30 Minuten vor dem Schlafengehen noch auf dem Smartphone waren.\\ 
+\section*{Exercise 1. }
+Ich habe mich für die Bücher "Also Sprach Zarathustra" und "Die Schatzinsel" entschieden in Deutscher original Sprache (ein großer Fehler). Ich habe direkt zwei gewählt weil ich später an probleme gestoßen bin und ich so die Möglichkeit habe zu vergleichen ob es an der Sprache liegt oder an den Texten.
 
-\section*{Exercise 2. Word clouds}
-Ich habe das Buch also sprach zarathhustra von Friedrich Nietzsche genommen und eine Wordcloud erstellt. Ich habe das Buch auf Project Gutenberg gefunden (\href{https://www.gutenberg.org/ebooks/7205https://www.gutenberg.org/ebooks/1998}{Project Gutenberg}). In diesem Buch legt Nietzsche seine theorie des Übermenschen und den alten Menschen dar. Ich habe so viele Füll wörter und Wörter die keine moralische bedeutung haben entfert und dann eine Wordcloud erstellt.\\
-Dazu habe ich diesen Code benutzt:\\
-\includegraphics[scale=0.2]{code.png}\\
-Das ist das Ergebnis:
-\includegraphics[scale=0.3]{wordcloud.png}\\
-Man kann erkennen mit welchen Themen sich Nietzsche in diesem Buch beschäftigt hat. For allem der Seele und dem Geist also über natürlichen Dingen, aber auch über den Menschen und der Moral.\\
+\subsection*{2. }
+Zu erst habe ich die text dateien in R studio geladen. Zun Dann habe ich die Stoppwords raus genommen heir für kann man die sprache der erkannten stopp wörter angeben. Da zu kommt aber noch dass die Texte beide sehr alt sind (Die Schatzinsel ist von 1883 und Also Sprach Zarathustra auch von 1883) das führt dazu dass stopp wörter vor kommen die heute nicht mehr gebräuchlich sind und somit auch nicht in der Stoppwörter liste sind. ("dass", "diess", "’s", "wer", "—", "the", "konnt", "ganz", "mehr", "sagt","gutenberg™","project"). Nun entferne ich befor ich die Stoppwords aus dem Text entferne alle kommata, punkte, gänsefüße usw. und änder den Text in Kleinbuchstaben.
+
+\subsection*{3. }
+Nun werden noch die Frequenzen der Wörter gezählt und dann kann auhc schon die Wordcloud erstellt werden. Daraus ergeben sich dann folgende Frequency Histogramme und Wordclouds:\\
+\includegraphics*[scale=0.3]{freqHistSchatzinsel.png}
+\includegraphics*[scale=0.3]{freqHistZarathustra.png}\\
+Wie man sieht ist bei der Schatzinsel immer noch ein hochkomma im Text enthalten, das passiert weil das ein extra sonderzeichen ist welches ich nicht gefunden habe. In zarathustra gibt es das gleiche Problem mit dem Wort "--" welches ich nicht gefunden habe.\\
+\includegraphics*[scale=0.6]{SchatzinselWordcloud.png}\\
+\includegraphics*[scale=0.6]{zarathustraWordcloud.png}\\
+Wie man sieht beschäftigt sich die Schatzinsel als Roman vor allem mit seinen Charaktären und every day life so zu sagen. Zarathustra hingegen ist ein philosophisches Buch mit philosophischen Themen z.B. Leben und Tod und dem Geist und der Seele.
+
+\subsection*{4.}
+Nun kommen wir aber an Probleme die sich ab hier durch die Aufgaben ziehen, Sentiment analysis ist sehr komplex und die modelle die es gibt sind oft für die englische Sprache trainiert. daher bekommt man hier:\\
+\includegraphics*[scale=0.5]{SentimentSchatzinsel.png}\\
+\includegraphics*[scale=0.5]{sentimentZarathustra.png}\\
+Man sieht das sich die Stimmung der Texte kaum unterscheidet und kaum ausschlägt das ist besonders deswegen komisch weil Zarathustra ein mitreißendes Buch was mit vielen Emotionen geschrieben ist.
+
+
+\section*{Exercise 2. }
+
 
 
 \section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
-Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden.
+Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden. 
 
 
 

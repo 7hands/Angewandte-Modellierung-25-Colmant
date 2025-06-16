@@ -2,11 +2,12 @@
 
 # Install and load required packages
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(pacman, tm, SnowballC, dplyr, magrittr, ggplot2, wordcloud)
+pacman::p_load(pacman, tm, SnowballC, dplyr, magrittr, ggplot2, wordcloud, tidytext, syuzhet)
 
 # Read text files
 schatzinsellines <- readLines('pg49424.txt')
 zarathustralines <- readLines('thus-spoke-zarathustra-data.txt')
+
 
 # Define old and custom stopwords and goosefeet removal
 german_stop <- stopwords("german")
@@ -101,3 +102,45 @@ ggplot(df2[1:top_n, ], aes(x = reorder(term, -freq), y = freq)) +
 # Word Cloud for Schatzinsel
 set.seed(123)
 wordcloud(words = df2$term, freq = df2$freq, min.freq = 1, max.words = 100, random.order = FALSE, rot.per = 0.1, scale = c(4, 0.5))
+
+# --- Sentiment Analysis ---
+
+# 1) Sentiment per line using 'syuzhet' (German)
+sent_schatz <- get_sentiment(schatzinsellines, method = "bing", language = "german")
+sent_zara   <- get_sentiment(zarathustralines, method = "bing", language = "german")
+
+# Summary statistics
+cat("Schatzinsel - Sentiment summary:\n")
+print(summary(sent_schatz))
+cat("\nZarathustra - Sentiment summary:\n")
+print(summary(sent_zara))
+
+# Plot sentiment distribution
+plot(sent_schatz, type = "h", main = "Sentiment-Verlauf: Schatzinsel", ylab = "Sentiment Score", xlab = "Zeilennummer")
+plot(sent_zara,   type = "h", main = "Sentiment-Verlauf: Zarathustra", ylab = "Sentiment Score", xlab = "Zeilennummer")
+
+# 2) Token-level sentiment using 'tidytext' and Bing lexicon
+tidy_tdm1 <- tidy(tdm1)
+tidy_tdm2 <- tidy(tdm2)
+
+bing <- get_sentiments("bing")
+
+sent_by_term1 <- tidy_tdm1 %>%
+  inner_join(bing, by = c(term = "word")) %>%
+  count(sentiment, sort = TRUE)
+
+sent_by_term2 <- tidy_tdm2 %>%
+  inner_join(bing, by = c(term = "word")) %>%
+  count(sentiment, sort = TRUE)
+
+# Display sentiment counts
+echo("Schatzinsel sentiment counts:")
+print(sent_by_term1)
+echo("Zarathustra sentiment counts:")
+print(sent_by_term2)
+
+# Bar chart of positive vs. negative terms for each text
+par(mfrow = c(1,2))
+barplot(sent_by_term1$n, names.arg = sent_by_term1$sentiment, main = "Schatzinsel: Bing Sentiment", ylab = "Anzahl Terme")
+barplot(sent_by_term2$n, names.arg = sent_by_term2$sentiment, main = "Zarathustra: Bing Sentiment", ylab = "Anzahl Terme")
+
