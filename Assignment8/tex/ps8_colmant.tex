@@ -1,0 +1,58 @@
+\documentclass{scrartcl}
+\usepackage{amsmath,amsfonts,amsthm,bm,graphicx}
+\usepackage{tikz,pgfplots}
+\usepackage{listings}
+\usepackage{stmaryrd}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\pgfplotsset{width=15cm,compat=1.18}
+\allowdisplaybreaks
+\setlength{\parindent}{0pt}
+
+\title{Assignment 8}
+\subtitle{Angewandte Modellierung 25}
+\author{Carl Colmant}
+\date{\today}
+\begin{document}
+\maketitle
+\newpage
+\section*{Exercise 1. }
+In Aufgabe eins soll das SIR Modell in python und R simuliert werden. Dazu nutze ich in python diesen code:\\
+\includegraphics*[scale= 0.24]{SIR_py_code.png}
+mit dem entstehenden plot:\\
+\includegraphics*[scale=0.7]{Sir_modell_py.png}\\
+In R sieht das ganze dann so aus:\\
+\includegraphics*[scale = 0.25]{SIR_R_code.png}\\
+mit dem plot:\\
+\includegraphics*[scale=0.5]{Sir_modell_R.png}\\
+Ich persöhnlich finde die python plots meistens etwas schöner aber in diesem beispiel liefern sie das exact gleiche.
+
+\section*{Exercise 2.}
+In dieser Aufgabe soll das Lanchester Combat Modell simuliert werden, welches Flugzeugkämpfe im ersten Weltkrieg simulieren sollte. Ich habe hier zwei mögliche Kämpfe simuliert deshalb sind die ausgaben aus den beiden scripts natürlich nicht gleich. Python code:\\
+\includegraphics*[scale=0.24]{Lanchester_py_code.png}\\
+daraus entsteht dann dieser Plot:\\
+\includegraphics*[scale=0.7]{Lanchester_Combat_py.png}\\
+In diesem Kampfbeispiel habe ich eine Armee A und eine Armee B gegeneinander kämpfen lassen. A startet mit einer größeren Armee aber B hat etwas bessere Flugzeuge und kann diese etwas schneller produzieren. wenn der Kampf lang genug geht wird B gewinnen aber wenn der kampf nur kurz anhält z.B. weil eine wichitge Stadt eingenommen wird oder weil aus einem anderen Grund A den Krieg gewinnt haben sie sogar immer noch mehr Flugzeuge.\\
+R code:\\
+\includegraphics*[scale=0.24]{Lanchester_R_code.png}\\
+Plot:\\
+\includegraphics*[scale=0.4]{Lanchester_Comabt_R.png}\\
+In diesem Krieg habe ich den beiden Armeen gleich viele start Flugzeuge gegeben aber A hat sehr viel bessere Piloten und deshalb eine sehr viel kleinere verschleißrate dafür hat B eine schnellere Producktion als A. Das führt dazu das B zwar früh viele Fleugzeuge in der simulation verliert aber ab einer bestimmten rate an Flugzeugen self replacing ist und so einfach durch brute force den Krieg gewinnt.
+\section*{Exercise 3.}
+In dieser Aufgabe soll eine Lotto zeihung simuliert werden dafür soll numpy benutzt werden:\\
+\includegraphics*[scale=0.24]{lottery_py_code.png}\\
+Ich habe das ganze für 100 verschidene Ziehungen auf geplottet:\\
+\includegraphics*[scale=0.6]{lotery.png}
+
+
+
+\section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
+Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden. 
+
+
+
+
+\end{document}

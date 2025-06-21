@@ -14,7 +14,7 @@ def lanchester(y, t, kA, kB, r1, r2, b1, b2):
     dB = -kA * A + r2 - b2 * B
     return [dA, dB]
 
-t = np.linspace(0, 50, 500)
+t = np.linspace(0, 190, 500)
 sol = odeint(lanchester, [A0, B0], t, args=(kA, kB, r1, r2, b1, b2))
 
 plt.plot(t, sol[:,0], label='A(t)')
