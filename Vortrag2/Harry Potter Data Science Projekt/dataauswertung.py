@@ -73,7 +73,7 @@ def add_matchers(nlp, names, fuzzy_threshold: int = 85):
         nlp.add_pipe("fuzzy_matcher", after="ner")
 
 # Extract entities over 3-sentence segments
-def extract_segments_entities(doc, seg_size: int = 5):
+def extract_segments_entities(doc, seg_size: int = 3):
     rows = []
     sents = list(doc.sents)
     for i in range(len(sents)):

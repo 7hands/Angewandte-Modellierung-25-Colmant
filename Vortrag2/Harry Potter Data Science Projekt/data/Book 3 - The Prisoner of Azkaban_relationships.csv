@@ -1,2538 +1,2510 @@
 source,target,value
 Albus,Dumbledore,3
-Albus,Harry,14
-Albus,Voldemort,3
-Albus Dumbledore,Cornelius Fudge,6
-Albus Dumbledore,Hagrid,3
-Albus Dumbledore,Harry,12
-Albus Dumbledore,Peter,3
-Albus Dumbledore,Voldemort,3
-Alicia,Angelina,3
-Alicia,Cedric Diggory,6
+Albus,Harry,3
+Albus,the,16
+Albus Dumbledore,Cornelius Fudge,4
+Albus Dumbledore,Harry,10
+Albus Dumbledore,Voldemort,8
+Albus Dumbledore,the,12
+Alicia,Angelina,15
 Alicia,Cho,3
-Alicia,Fred,25
-Alicia,George Weasley,12
-Alicia,Harry,34
-Alicia,Harry Potter,3
-Alicia,Hermione,3
-Alicia,Katie,6
-Alicia,Lee,7
+Alicia,Fred,3
+Alicia,George,9
+Alicia,Hermione,9
+Alicia,Katie,9
 Alicia,Malfoy,15
-Alicia,Oliver,6
-Alicia,broom,5
-Alicia,day,3
-Alicia Spinnet,Alicia,11
-Alicia Spinnet,George Weasley,3
-Alicia Spinnet,Katie Bell,3
-Ancient,Hermione,14
-Ancient,Ron,3
-Angelina,Alicia,3
+Alicia,Oliver,3
+Alicia,Oliver Wood,3
+Alicia,The,6
+Alicia,broom,3
+Alicia,the,46
+Alicia Spinnet,Montague,4
+Alicia Spinnet,the,20
+Ancient,Harry,7
+Ancient,Hermione,5
+Ancient,The,8
 Angelina,Alicia Spinnet,4
-Angelina,Fred,6
-Angelina,Fred Weasley,3
-Angelina,George,8
-Angelina,Harry,12
-Angelina,Harry Potter,4
-Angelina,Hermione,4
-Angelina,Katie,11
-Angelina,Malfoy,4
-Angelina,McGonagall,3
-Angelina,Montague,3
-Angelina,Oliver,4
-Angelina,Oliver Wood,8
-Angelina,ball,4
-Angelina,broom,3
-Angelina,scarlet,7
-Angelina,tall,11
-Angelina Johnson,Alicia Spinnet,1
-Angelina Johnson,Angelina,3
-Angelina Johnson,Fred,3
-Angelina Johnson,Harry,6
-Angelina Johnson,Hermione,3
-Angelina Johnson,Oliver,5
-Angelina Johnson,pumpkin,3
-Apothecary,Harry,6
-Apothecary,Malkin,3
-Arthur,Albus Dumbledore,9
-Arthur,Harry,6
-Arthur,Harry Potter,6
-Arthur,Molly,3
-Arthur,Mr. Weasley,16
-Arthur,Ron,3
-Arthur Weasley,Bill,6
-Arthur Weasley,black,3
-BLACK,Cornelius Fudge,8
+Angelina,Cedric Diggory,6
+Angelina,Fred,8
+Angelina,George,4
+Angelina,George Weasley,4
+Angelina,Harry,4
+Angelina,Hermione,8
+Angelina,Katie,3
+Angelina,Malfoy,8
+Angelina,Montague,4
+Angelina,broom,16
+Angelina,tall,4
+Angelina,the,60
+Angelina Johnson,Alicia Spinnet,8
+Angelina Johnson,Angelina,12
+Angelina Johnson,George,12
+Angelina Johnson,Oliver,4
+Apothecary,Harry,4
+Apothecary,Harry Potter,4
+Apothecary,the,4
+Arthur,Albus Dumbledore,4
+Arthur,Harry,8
+Arthur,Ron,4
+Arthur,Sirius Black,4
+Arthur,the,32
+Arthur Weasley,Mr. Weasley,8
+Arthur Weasley,black,4
 BLACK,Harry,4
-BROOM,Cho,11
-Bathilda,Harry,6
-Bathilda,Magic,2
-Bilius,Hermione,12
-Bill,Fred,9
-Bill,Ginny,9
-Bill,MAGIC,8
-Bill,Ron,10
-Bill,face,4
-Binky,Harry Potter,12
-Binky,Hermione,10
-Binky,Lavender,6
-Binky,Parvati,3
-Binky,Ron,7
-Black,Albus,3
-Black,Buckbeak,15
-Black,Crookshanks,93
-Black,Dumbledore,23
-Black,FACE,3
-Black,Fred,3
-Black,HALL,6
-Black,Hagrid,39
-Black,Hall,3
-Black,Harry,295
-Black,Harry Potter,122
-Black,Hermione,119
-Black,JAMES,6
-Black,James,37
-Black,James Potter,6
-Black,LILY,9
-Black,LORD,4
-Black,Lady,7
-Black,Lily,19
-Black,Lord,3
-Black,Lupin,335
-Black,MAGIC,6
-Black,Magic,15
-Black,Malfoy,28
-Black,McGonagall,61
-Black,Merlin,8
-Black,Minerva,1
-Black,Molly,20
-Black,Mr. Weasley,29
-Black,Neville,3
-Black,Peter,74
-Black,Peter Pettigrew,6
-Black,Remus,12
-Black,Ron,97
-Black,Rosmerta,83
-Black,SIRIUS BLACK,4
+BLACK,Magic,4
+BLACK,Neville,4
+BROOM,Cho,7
+BROOM,The,3
+Bathilda,Magic,7
+Bathilda,the,4
+Bilius,Harry Potter,8
+Bilius,uncle,4
+Bill,George,4
+Bill,Ginny,8
+Bill,Harry,24
+Bill,Mr. Weasley,4
+Bill,black,4
+Bill,the,4
+Binky,Hermione,9
+Binky,Lavender,9
+Binky,The,4
+Binky,the,20
+Black,Buckbeak,3
+Black,Cornelius,1
+Black,Crookshanks,164
+Black,Flitwick,4
+Black,George,3
+Black,HALL,8
+Black,HARRY,8
+Black,Hagrid,20
+Black,Harry,388
+Black,Harry Potter,14
+Black,Hermione,46
+Black,James,20
+Black,James Potter,16
+Black,LILY,6
+Black,Lupin,117
+Black,Magic,8
+Black,Malfoy,5
+Black,McGonagall,51
+Black,Merlin,7
+Black,Minerva,3
+Black,Mr. Weasley,21
+Black,Neville,20
+Black,Percy,4
+Black,Peter,88
+Black,Remus,19
+Black,Ron,40
+Black,Rosmerta,14
 Black,SNAPE,4
-Black,Severus,9
-Black,Sirius,58
-Black,Sirius Black,27
-Black,Snape,153
-Black,Vernon,6
-Black,Voldemort,35
-Black,bald,4
-Black,brothers,8
-Black,day,9
-Black,evil,14
-Black,face,78
-Black,fallen,9
-Black,forest,4
-Black,hall,6
-Black,hope,12
-Black,magic,10
-Black,newspaper,9
-Black,rose,12
-Black,scarlet,4
-Black,uncle,17
-Brutus,Harry,8
-Brutus,Uncle,13
-Brutus,Vernon,3
-Brutus,face,16
-Buckbeak,Black,12
+Black,Severus,15
+Black,Sirius,38
+Black,Sirius Black,91
+Black,Snape,19
+Black,The,123
+Black,Uncle,4
+Black,Voldemort,69
+Black,able,11
+Black,brothers,3
+Black,butterbeer,8
+Black,count,6
+Black,evil,15
+Black,face,169
+Black,fallen,12
+Black,hope,6
+Black,magic,6
+Black,newspaper,3
+Black,the,827
+Black,uncle,18
+Brutus,Harry,12
+Brutus,Vernon,5
+Brutus,face,12
+Brutus,the,12
+Buckbeak,Black,4
+Buckbeak,Crabbe,12
 Buckbeak,Dumbledore,16
-Buckbeak,Fang,8
-Buckbeak,Flitwick,8
-Buckbeak,Hagrid,43
-Buckbeak,Harry,400
-Buckbeak,Harry Potter,16
-Buckbeak,Hermione,126
-Buckbeak,Lucius Malfoy,4
-Buckbeak,Malfoy,25
-Buckbeak,Percy Weasley,4
-Buckbeak,Ron,158
-Buckbeak,Sirius,23
+Buckbeak,Flitwick,24
+Buckbeak,Hagrid,274
+Buckbeak,Harry,56
+Buckbeak,Harry Potter,24
+Buckbeak,Hermione,132
+Buckbeak,Lucius,8
+Buckbeak,Malfoy,3
+Buckbeak,Ron,20
+Buckbeak,Sirius,28
 Buckbeak,Snape,4
-Buckbeak,day,4
-Buckbeak,don,8
-Buckbeak,face,15
-Buckbeak,hope,3
-Buckbeak,pumpkin,27
-Butterbeer,Harry,12
-CROOKSHANKS,Harry,3
-CROOKSHANKS,Ron,6
-Cadogan,Black,8
-Cadogan,Flitwick,4
-Cadogan,Harry,44
-Cadogan,Harry Potter,12
+Buckbeak,THE,8
+Buckbeak,The,5
+Buckbeak,clever,2
+Buckbeak,don,28
+Buckbeak,face,4
+Buckbeak,forest,4
+Buckbeak,hope,4
+Buckbeak,rose,28
+Buckbeak,the,253
+Butterbeer,Harry,3
+Butterbeer,Hermione,3
+Butterbeer,the,4
+CROOKSHANKS,Ron,8
+CROOKSHANKS,the,4
+Cadogan,Harry,36
 Cadogan,Hermione,8
-Cadogan,Lady,3
-Cadogan,McGonagall,9
-Cadogan,Neville,8
-Cadogan,Neville Longbottom,8
-Cadogan,Percy,12
-Cadogan,Ron,15
-Cadogan,Seamus Finnigan,3
-Cadogan,Trelawney,3
-Cadogan,dawn,4
+Cadogan,Lady,8
+Cadogan,McGonagall,8
+Cadogan,Neville Longbottom,12
+Cadogan,Percy Weasley,4
+Cadogan,Ron,16
+Cadogan,day,20
+Cadogan,hall,8
 Cadogan,lady,8
-Cassandra Vablatsky,Harry,6
-Cedric Diggory,Angelina,6
-Cedric Diggory,Harry,24
-Cedric Diggory,Katie,3
-Cedric Diggory,Penelope,12
-Charlie,Harry,3
-Charlie,Malfoy,3
-Charlie,Ron,3
-Cho,BROOM,4
-Cho,Fred,8
-Cho,Harry,77
-Cho,Harry Potter,1
-Cho,black,4
+Cadogan,stunned,8
+Cadogan,the,32
+Cassandra Vablatsky,the,12
+Cedric Diggory,Alicia,9
+Cedric Diggory,Harry,3
+Cedric Diggory,Percy,12
+Cedric Diggory,face,3
+Cedric Diggory,the,16
+Charlie,The,12
+Cho,George Weasley,3
+Cho,Harry,63
+Cho,Harry Potter,4
+Cho,The,8
 Cho,mark,4
-Cho Chang,Harry,9
-Cho Chang,broom,7
-Chris,Ron,3
-Clever,Crookshanks,9
-Colin,Harry,16
-Colin Creevey,Harry,12
-Cornelius,Dumbledore,3
-Cornelius,Hermione,3
-Cornelius,McGonagall,3
-Cornelius,Severus,3
-Cornelius,Snape,3
+Cho,the,14
+Cho Chang,Harry,17
+Cho Chang,the,11
+Chris,the,4
+Clever,Hermione,8
+Colin,Harry,3
+Colin,the,12
+Colin Creevey,Harry,3
+Colin Creevey,the,8
+Cornelius,McGonagall,7
+Cornelius,Severus,4
+Cornelius,Snape,8
 Cornelius Fudge,Albus Dumbledore,4
-Cornelius Fudge,Black,8
+Cornelius Fudge,Dumbledore,4
 Cornelius Fudge,Hagrid,3
-Cornelius Fudge,Harry,60
-Cornelius Fudge,Ron,23
+Cornelius Fudge,Harry,15
+Cornelius Fudge,Hermione,32
+Cornelius Fudge,Magic,4
+Cornelius Fudge,Snape,8
 Cornelius Fudge,group,4
-Crabbe,Crookshanks,3
-Crabbe,Goyle,92
-Crabbe,Hagrid,3
-Crabbe,Harry,9
-Crabbe,Hermione,6
-Crabbe,Lady,3
-Crabbe,Lupin,12
-Crabbe,Malfoy,155
-Crabbe,McGonagall,4
-Crabbe,Pansy,3
-Crabbe,Ron,15
-Crabbe,Snape,3
-Crabbe,able,3
-Crabbe,black,3
-Crabbe,face,9
-Crabbe,foul-smelling,3
-Crabbe,group,12
-Crabbe,scarlet,8
-Crookshanks,Black,28
-Crookshanks,George,4
-Crookshanks,Gringotts,8
-Crookshanks,Harry,168
-Crookshanks,Harry Potter,11
-Crookshanks,Hedwig,16
-Crookshanks,Hermione,266
-Crookshanks,Lupin,12
-Crookshanks,Peter,4
-Crookshanks,Ron,272
-Crookshanks,Seamus,12
-Crookshanks,Sirius Black,4
-Crookshanks,Snape,24
-Crookshanks,Vernon,4
-Crookshanks,broom,4
-Crookshanks,dawn,12
-Crookshanks,day,8
-Crookshanks,face,73
-Crookshanks,fluffy,12
-Crookshanks,group,4
-Davey Gudgeon,Lupin,3
-Davey Gudgeon,forbidden,6
-Davies,Harry,3
-Davies,Lee Jordan,4
-Davies,broom,3
-Day,Dumbledore,4
-Day,Lupin,4
-Day,Trelawney,4
-Dean,Harry,3
-Dean,Harry Potter,11
-Dean,Lupin,4
-Dean,Ron,3
-Dean,Seamus,3
-Dean,Snape,8
-Dean Thomas,Black,4
-Dean Thomas,Dean,4
-Dean Thomas,Harry,72
-Dean Thomas,Harry Potter,11
-Dean Thomas,Lavender Brown,3
-Dean Thomas,Lupin,3
-Dean Thomas,Malfoy,8
+Cornelius Fudge,the,32
+Crabbe,Draco Malfoy,8
+Crabbe,Goyle,163
+Crabbe,Hagrid,56
+Crabbe,Harry,3
+Crabbe,Hermione,31
+Crabbe,Malfoy,12
+Crabbe,Marcus Flint,12
+Crabbe,black,4
+Crabbe,broom,4
+Crabbe,hall,12
+Crabbe,stunned,4
+Crabbe,the,84
+Crookshanks,Black,9
+Crookshanks,Clever,4
+Crookshanks,Harry,303
+Crookshanks,Harry Potter,9
+Crookshanks,Hermione,93
+Crookshanks,Lupin,26
+Crookshanks,Malfoy,3
+Crookshanks,McGonagall,4
+Crookshanks,Mr. Weasley,3
+Crookshanks,Neville,4
+Crookshanks,Peter,11
+Crookshanks,Ron,72
+Crookshanks,Sirius,3
+Crookshanks,The,66
+Crookshanks,bald,3
+Crookshanks,day,3
+Crookshanks,face,4
+Crookshanks,fluffy,6
+Crookshanks,the,281
+Davey Gudgeon,Harry,4
+Davey Gudgeon,the,8
+Davies,Harry,8
+Davies,the,4
+Day,Dumbledore,3
+Day,McGonagall,6
+Dean,Harry Potter,12
+Dean,Lupin,12
+Dean,Ron,4
+Dean,Seamus,8
+Dean,Snape,4
+Dean,The,3
+Dean,the,16
+Dean Thomas,Crabbe,7
+Dean Thomas,Dean,6
+Dean Thomas,Harry,4
+Dean Thomas,Hermione,3
+Dean Thomas,Lavender,3
+Dean Thomas,Lavender Brown,6
+Dean Thomas,Lupin,4
+Dean Thomas,Magic,3
+Dean Thomas,Parkinson,4
 Dean Thomas,Peeves,4
-Dean Thomas,Seamus Finnigan,3
-Dean Thomas,Snape,8
-Dean Thomas,Trelawney,1
-Derek,Dumbledore,7
-Derek,Trelawney,3
-Don,Hagrid,12
-Don,Harry,3
+Dean Thomas,Ron,40
+Dean Thomas,Snape,4
+Dean Thomas,Vernon,3
+Dean Thomas,the,22
+Derek,The,3
+Derek,the,4
+Don,Hagrid,24
+Don,Hermione,4
 Don,Marsh,4
-Don,Ron,4
-Don,day,12
+Don,day,4
 Don,don,4
-Draco,Buckbeak,6
-Draco,Goyle,3
-Draco,Lupin,10
-Draco,Malfoy,8
-Draco,Pansy Parkinson,7
-Draco,broom,6
-Draco Malfoy,Crabbe,16
-Draco Malfoy,Gregory,4
-Draco Malfoy,Hagrid,6
-Draco Malfoy,Harry,8
+Don,the,7
+Draco,Harry,16
+Draco,Harry Potter,4
+Draco,Malfoy,20
+Draco,Pansy Parkinson,4
+Draco,face,4
+Draco Malfoy,Goyle,16
+Draco Malfoy,Gregory,12
+Draco Malfoy,Hagrid,8
+Draco Malfoy,Harry,4
 Draco Malfoy,Harry Potter,4
-Draco Malfoy,Lupin,11
-Draco Malfoy,group,12
-Dudley,Harry,116
-Dudley,Harry Potter,8
-Dudley,Petunia,12
-Dudley,Ripper,8
-Dudley,Ron,4
-Dudley,Vernon,44
-Dudley,hall,4
-Dumbledore,Albus,19
+Draco Malfoy,day,12
+Draco Malfoy,the,8
+Dudley,Harry,20
+Dudley,Petunia,8
+Dudley,Ripper,4
+Dudley,The,12
+Dudley,Uncle,80
+Dudley,Vernon,3
+Dudley,angry,4
+Dudley,face,4
+Dudley,the,60
+Dudley,uncle,4
+Dumbledore,Albus,16
+Dumbledore,Albus Dumbledore,4
 Dumbledore,Arthur,4
-Dumbledore,Black,66
-Dumbledore,Buckbeak,27
-Dumbledore,Cornelius,4
-Dumbledore,Derek,7
-Dumbledore,Flitwick,12
-Dumbledore,Fred,6
-Dumbledore,GRIM,3
-Dumbledore,Goyle,3
-Dumbledore,Hagrid,72
-Dumbledore,Harry,153
-Dumbledore,Harry Potter,162
-Dumbledore,Hermione,55
+Dumbledore,Black,29
+Dumbledore,Buckbeak,4
+Dumbledore,Derek,8
+Dumbledore,Flitwick,8
+Dumbledore,Ginny,8
+Dumbledore,Hagrid,55
+Dumbledore,Harry,30
+Dumbledore,Harry Potter,17
+Dumbledore,Hermione,18
 Dumbledore,James,16
-Dumbledore,Lucius,3
-Dumbledore,Lupin,47
-Dumbledore,Magic,6
-Dumbledore,Malfoy,18
-Dumbledore,McGonagall,25
-Dumbledore,Merlin,3
-Dumbledore,Miss Granger,27
-Dumbledore,Mr. Weasley,8
+Dumbledore,Lady,4
+Dumbledore,Lupin,54
+Dumbledore,Magic,8
+Dumbledore,Malfoy,3
+Dumbledore,Miss Granger,7
 Dumbledore,Parvati,4
-Dumbledore,Peeves,25
-Dumbledore,Percy,20
-Dumbledore,Peter Pettigrew,1
-Dumbledore,Poppy,4
-Dumbledore,Remus,6
-Dumbledore,Ron,53
-Dumbledore,Rosmerta,8
-Dumbledore,Severus,16
-Dumbledore,Sirius,32
-Dumbledore,Sirius Black,29
-Dumbledore,Snape,114
-Dumbledore,Trelawney,30
-Dumbledore,Voldemort,13
-Dumbledore,able,16
-Dumbledore,angry,17
-Dumbledore,black,11
-Dumbledore,day,3
-Dumbledore,face,15
-Dumbledore,fallen,3
-Dumbledore,forbidden,6
-Dumbledore,forest,20
-Dumbledore,hall,14
-Dumbledore,hope,26
-Dumbledore,pumpkin,3
-Dumbledore,stunned,6
-Dumbledore,uncle,3
-Errol,Harry,40
-Errol,Hedwig,29
-Errol,Hermione,8
+Dumbledore,Peeves,48
+Dumbledore,Percy,36
+Dumbledore,Remus,16
+Dumbledore,Ron,28
+Dumbledore,Rosmerta,4
+Dumbledore,Severus,7
+Dumbledore,Sirius,58
+Dumbledore,Sirius Black,8
+Dumbledore,Snape,72
+Dumbledore,The,6
+Dumbledore,Trelawney,28
+Dumbledore,Voldemort,6
+Dumbledore,able,4
+Dumbledore,angry,24
+Dumbledore,black,4
+Dumbledore,face,4
+Dumbledore,fallen,12
+Dumbledore,stunned,8
+Dumbledore,the,911
+Errol,Harry,34
+Errol,Hedwig,48
 Errol,Ron,8
-Errol,Vernon,8
+Errol,The,8
+Errol,Uncle,4
 Errol,amber,3
-Errol,handsome,12
-Errol,newspaper,4
-FACE,Black,4
-FACE,Harry,4
-FACE,James,4
-Face,Harry,8
-Face,Lupin,4
-Fang,Buckbeak,3
-Fang,Hagrid,15
-Fang,Harry,6
+Errol,the,19
+FACE,HARRY,3
+FACE,JAMES,6
+Face,Harry,7
+Face,Lupin,3
+Fang,Buckbeak,16
+Fang,Hagrid,12
+Fang,Harry,16
 Fang,Harry Potter,4
-Fang,Hermione,18
+Fang,Hermione,4
+Fang,Ron,4
 Fang,black,4
-Flitwick,Black,7
-Flitwick,Buckbeak,6
+Fang,face,4
+Fang,the,4
+Flitwick,Black,6
+Flitwick,Buckbeak,3
+Flitwick,Cadogan,8
+Flitwick,Cornelius Fudge,12
 Flitwick,Dumbledore,8
-Flitwick,George,8
-Flitwick,Hagrid,3
-Flitwick,Harry,20
-Flitwick,Hermione,41
-Flitwick,Lady,4
-Flitwick,Lily,3
-Flitwick,Lupin,4
-Flitwick,McGonagall,31
-Flitwick,Ron,30
-Flitwick,Rosmerta,4
-Flitwick,Sirius,24
-Flitwick,Trelawney,3
-Flitwick,angry,4
-Flitwick,ball,4
-Flitwick,broom,8
-Flitwick,brothers,4
-Flitwick,hall,4
-Flitwick,ice,12
-Florean,Ron,9
-Florean Fortescue,Harry,4
-Florean Fortescue,Sirius Black,8
-Florean Fortescue,Snape,8
-Florean Fortescue,face,4
-Forbidden,Crabbe,4
-Forbidden,Forest,13
-Forbidden,Goyle,3
-Forbidden,Hagrid,6
-Forbidden,Harry,10
-Forbidden,Hermione,9
-Forbidden,Mr. Weasley,8
+Flitwick,Hermione,73
+Flitwick,Malfoy,3
+Flitwick,Ron,8
+Flitwick,Rosmerta,7
+Flitwick,THE,3
+Flitwick,The,3
+Flitwick,Trelawney,4
+Flitwick,able,6
+Flitwick,ball,3
+Flitwick,brothers,8
+Flitwick,day,4
+Flitwick,hall,12
+Flitwick,the,72
+Florean,HARRY,8
+Florean,Hermione,4
+Florean Fortescue,day,12
+Florean Fortescue,handsome,4
+Florean Fortescue,the,8
+Forbidden,Forest,24
 Forbidden,Peeves,8
-Forbidden,hall,12
-Forest,Forbidden,48
-Forest,Hagrid,16
-Forest,Harry,4
-Forest,Ron,16
-Fred,Alicia,16
-Fred,Angelina,8
+Forbidden,the,52
+Forest,Forbidden,8
+Forest,Harry,20
+Forest,Mr. Weasley,8
+Forest,The,36
+Forest,the,12
+Fred,Alicia,7
 Fred,Bill,4
-Fred,Crookshanks,6
-Fred,Flitwick,4
-Fred,George,96
-Fred,George Weasley,3
-Fred,Ginny,3
-Fred,Goyle,6
-Fred,Grim,6
-Fred,Hagrid,16
-Fred,Harry,177
-Fred,Harry Potter,49
-Fred,Hedwig,4
-Fred,Hermione,26
-Fred,Katie Bell,3
-Fred,Malfoy,7
+Fred,Black,20
+Fred,Cho,4
+Fred,George,60
+Fred,George Weasley,48
+Fred,Ginny,4
+Fred,Grim,8
+Fred,Hagrid,4
+Fred,Harry,221
+Fred,Harry Potter,156
+Fred,Hermione,12
+Fred,Katie,36
+Fred,Lee,3
+Fred,Malfoy,23
+Fred,McGonagall,4
 Fred,Mr. Weasley,8
-Fred,Oliver,21
-Fred,Percy,17
-Fred,Ron,87
+Fred,Oliver,15
+Fred,Percy,12
+Fred,Ron,23
 Fred,Snape,8
-Fred,broom,6
-Fred,butterbeer,4
-Fred,day,28
-Fred,face,17
-Fred,hall,7
-Fred,hope,8
-Fred,one-eyed,6
+Fred,THE,3
+Fred,The,43
+Fred,Tom,8
+Fred,Zonko,8
+Fred,butterbeer,12
+Fred,face,12
+Fred,hall,4
+Fred,hope,4
+Fred,one-eyed,3
+Fred,the,31
 Fred Weasley,Harry Potter,4
 Fred Weasley,Percy,8
-Fred Weasley,broom,8
+Fred Weasley,the,12
 Fubster,Harry,2
-Fubster,Petunia,8
 Fubster,Ripper,3
-Fubster,Uncle,4
-Fubster,Vernon,3
-Fubster,day,3
-GRIM,Hall,4
-GRIM,hall,8
-George,Angelina Johnson,4
-George,Bill,4
-George,Black,16
+Fubster,day,12
+Fubster,the,8
+GRIM,Hall,3
+GRIM,The,8
+George,Angelina,24
+George,Cornelius Fudge,4
 George,Crabbe,4
-George,Fred,178
-George,George Weasley,11
-George,Ginny,15
-George,Goyle,3
-George,Hagrid,3
-George,Harry,115
-George,Harry Potter,16
-George,Hedwig,3
-George,Katie,24
-George,Malfoy,36
-George,McGonagall,7
-George,Mr. Weasley,12
-George,Oliver,3
-George,Oliver Wood,4
-George,Percy,20
-George,Ron,6
-George,Zonko,12
-George,blossom,3
-George,duke,4
-George,group,4
+George,Crookshanks,4
+George,Flitwick,8
+George,Fred,53
+George,Ginny,7
+George,Goyle,11
+George,Hagrid,11
+George,Harry,22
+George,Hedwig,4
+George,Hermione,40
+George,Oliver,4
+George,Percy,3
+George,broom,12
+George,day,8
+George,hall,8
 George,mark,8
-George,one-eyed,5
-George,scarlet,6
-George Weasley,Angelina,4
-George Weasley,Angelina Johnson,11
+George,one-eyed,28
+George,scarlet,3
+George,the,291
+George Weasley,Alicia,4
 George Weasley,Cho,4
-George Weasley,Crookshanks,6
-George Weasley,Fred,8
-George Weasley,George,8
-George Weasley,Harry,22
-George Weasley,Harry Potter,4
-George Weasley,Hermione,4
-George Weasley,Magic,3
-George Weasley,Malfoy,7
-George Weasley,Montague,3
+George Weasley,Crookshanks,8
+George Weasley,George,3
+George Weasley,Harry,20
+George Weasley,Harry Potter,12
+George Weasley,Katie,4
+George Weasley,Katie Bell,4
+George Weasley,Montague,4
+George Weasley,Oliver,4
 George Weasley,Percy,4
-George Weasley,face,6
-George Weasley,scarlet,8
-Ginny,Bill,8
-Ginny,George,11
-Ginny,Goyle,6
-Ginny,Hagrid,6
-Ginny,Harry,18
-Ginny,Harry Potter,19
-Ginny,Hermione,49
-Ginny,Lupin,3
-Ginny,Mr. Weasley,4
+George Weasley,Ron,4
+George Weasley,THE,3
+George Weasley,butterbeer,12
+George Weasley,face,8
+George Weasley,scarlet,3
+George Weasley,the,16
+Ginny,George,4
+Ginny,Hagrid,4
+Ginny,Hedwig,4
+Ginny,Hermione,3
+Ginny,Lupin,4
+Ginny,Neville,4
 Ginny,Penelope,4
-Ginny,Ron,20
-Ginny,brothers,9
-Ginny,tall,8
-Goyle,Buckbeak,12
-Goyle,Crabbe,13
-Goyle,Dean Thomas,8
-Goyle,Forest,4
-Goyle,Fred,8
-Goyle,Hagrid,60
-Goyle,Harry,82
-Goyle,Harry Potter,8
-Goyle,Malfoy,60
-Goyle,Pansy,4
-Goyle,Ron,72
-Goyle,Snape,17
-Goyle,Vincent Crabbe,12
-Goyle,black,16
-Goyle,broom,8
+Ginny,Percy,12
+Ginny,Ron,32
+Ginny,fallen,4
+Ginny,the,115
+Goyle,Crabbe,95
+Goyle,Forbidden,4
+Goyle,George,4
+Goyle,Harry,19
+Goyle,Ron,12
+Goyle,Snape,12
+Goyle,The,4
 Goyle,day,4
-Goyle,face,28
-Goyle,hall,4
-Goyle,stunned,4
-Gregory,Goyle,6
-Gregory,Malfoy,4
-Grim,Alicia,4
-Grim,Harry,47
-Grim,Hermione,7
-Grim,Lavender Brown,16
-Grim,Neville,1
-Grim,Ron,43
-Grim,Seamus Finnigan,3
-Grim,Trelawney,12
-Grim,face,12
-Grim,fallen fifty,8
-Grim,forest,12
-Grim,pumpkin,8
-Gringotts,Florean Fortescue,3
-Gringotts,Harry,14
-Gringotts,Harry Potter,8
-Gringotts,Mr. Weasley,12
+Goyle,evil,8
+Goyle,foul-smelling,4
+Goyle,the,264
+Gregory,Goyle,12
+Grim,Harry,58
+Grim,Hermione,3
+Grim,Lavender,6
+Grim,The,40
+Grim,face,4
+Grim,pumpkin,3
+Grim,the,72
+Gringotts,Bill,8
+Gringotts,Harry,27
+Gringotts,Harry Potter,4
+Gringotts,The,12
 Gringotts,able,8
-Gringotts,broom,3
-Gringotts,day,3
-Gringotts,handsome,8
-Gringotts,uncle,3
-HALL,Hagrid,12
-HARRY,BROOM,3
-HARRY,Black,8
+Gringotts,broom,4
+Gringotts,the,3
+Gringotts,uncle,4
+HALL,Ron,8
+HALL,THE,4
 HARRY,FACE,4
-HARRY,Hagrid,6
-HARRY,Harry Potter,9
-HARRY,Hermione,4
-HARRY,Ice,4
-HARRY,Uncle,20
+HARRY,Harry,3
+HARRY,Hermione,12
+HARRY,JAMES,4
+HARRY,RON,4
 HARRY,Vernon,3
-HARRY POTTER,Harry,4
-HARRY POTTER,Ron,4
+HARRY,the,40
+HARRY POTTER,Uncle,8
+HARRY POTTER,the,3
 HERMIONE,Harry Potter,12
-Hagrid,Black,20
-Hagrid,Buckbeak,301
-Hagrid,Cornelius Fudge,26
-Hagrid,Don,8
-Hagrid,Draco Malfoy,8
-Hagrid,Dumbledore,22
-Hagrid,Fang,20
-Hagrid,Flitwick,8
-Hagrid,Forest,16
-Hagrid,George,4
-Hagrid,Goyle,3
-Hagrid,Hall,8
-Hagrid,Harry,499
-Hagrid,Harry Potter,101
-Hagrid,Hermione,426
-Hagrid,James,4
-Hagrid,Lily,3
-Hagrid,Lucius Malfoy,16
-Hagrid,Lupin,12
-Hagrid,Magic,4
-Hagrid,Malfoy,28
-Hagrid,McGonagall,21
-Hagrid,Pansy,8
+Hagrid,Black,4
+Hagrid,Buckbeak,79
+Hagrid,Cornelius Fudge,12
+Hagrid,Crabbe,8
+Hagrid,Dumbledore,24
+Hagrid,Fang,3
+Hagrid,Flitwick,20
+Hagrid,Forbidden,12
+Hagrid,Fred,3
+Hagrid,George,12
+Hagrid,Ginny,4
+Hagrid,Goyle,48
+Hagrid,HARRY,8
+Hagrid,Harry,88
+Hagrid,Harry Potter,3
+Hagrid,Hedwig,12
+Hagrid,Hermione,499
+Hagrid,James,16
+Hagrid,Lupin,3
+Hagrid,Malfoy,24
+Hagrid,McGonagall,8
+Hagrid,Mr. Potter,4
+Hagrid,Parkinson,8
+Hagrid,Parvati,4
 Hagrid,Percy Weasley,4
-Hagrid,Ron,343
-Hagrid,Snape,4
-Hagrid,Trelawney,7
-Hagrid,able,4
-Hagrid,black,4
-Hagrid,clever,3
-Hagrid,day,26
-Hagrid,don,28
-Hagrid,face,111
-Hagrid,forest,6
-Hagrid,group,8
-Hagrid,hope,3
+Hagrid,Ron,12
+Hagrid,Rosmerta,4
+Hagrid,Snape,3
+Hagrid,The,3
+Hagrid,Walden,4
+Hagrid,able,6
+Hagrid,black,16
+Hagrid,day,20
+Hagrid,don,13
+Hagrid,face,12
+Hagrid,forest,26
+Hagrid,hall,16
 Hagrid,one-eyed,12
-Hagrid,pumpkin,15
-Hagrid,rose,4
-Hall,Cho,9
-Hall,Flitwick,4
-Hall,Hagrid,10
-Hall,Harry,6
-Hall,Harry Potter,44
-Hall,Hermione,49
-Hall,Malfoy,4
-Hall,McGonagall,3
-Hall,Neville,8
-Hall,Ron,7
-Hall,Trelawney,9
-Hall,black,4
-Hall,broom,3
-Hall,face,3
-Hall,fallen,8
+Hagrid,pumpkin,9
+Hagrid,the,1162
+Hall,Crabbe,8
+Hall,Dumbledore,4
+Hall,Flitwick,16
+Hall,Hagrid,24
+Hall,Hermione,44
+Hall,Ron,4
+Hall,Trelawney,8
+Hall,black,20
+Hall,day,12
+Hall,group,12
 Hall,hall,4
-Hall,holly,9
-Hall,scarlet,8
-Hannah Abbott,Cadogan,4
-Hannah Abbott,Lady,4
-Hannah Abbott,Ron,4
-Harry,Alicia,6
-Harry,Ancient,16
-Harry,Angelina,41
+Hall,the,60
+Hannah Abbott,Lady,9
+Harry,Albus,8
+Harry,Alicia,72
+Harry,Angelina,5
+Harry,Angelina Johnson,3
 Harry,Apothecary,4
-Harry,Arthur,44
-Harry,Bilius,4
-Harry,Bill,12
-Harry,Black,753
-Harry,Buckbeak,76
-Harry,Butterbeer,3
-Harry,Cadogan,19
-Harry,Cassandra Vablatsky,6
-Harry,Cedric Diggory,6
-Harry,Charlie,12
-Harry,Cho,13
-Harry,Cho Chang,18
-Harry,Colin,12
-Harry,Cornelius,5
-Harry,Cornelius Fudge,9
-Harry,Crabbe,126
-Harry,Crookshanks,201
-Harry,Davey Gudgeon,4
-Harry,Dean Thomas,6
-Harry,Don,5
-Harry,Draco,4
-Harry,Draco Malfoy,16
-Harry,Dudley,24
-Harry,Dumbledore,479
-Harry,Errol,32
-Harry,Face,3
-Harry,Fang,24
-Harry,Flitwick,28
-Harry,Forbidden,16
-Harry,Forest,10
-Harry,Fred,178
-Harry,Fubster,2
-Harry,George,105
-Harry,George Weasley,8
-Harry,Ginny,64
-Harry,Goyle,14
-Harry,Grim,42
-Harry,Gringotts,14
-Harry,HARRY,49
-Harry,HERMIONE,3
-Harry,Hagrid,412
-Harry,Hall,99
-Harry,Harry Potter,2586
-Harry,Hedwig,138
-Harry,Hermione,1441
+Harry,Arthur,32
+Harry,BROOM,8
+Harry,Black,383
+Harry,Buckbeak,156
+Harry,Butterbeer,8
+Harry,Cadogan,7
+Harry,Cassandra Vablatsky,12
+Harry,Cedric Diggory,36
+Harry,Cho,7
+Harry,Cho Chang,7
+Harry,Colin,16
+Harry,Colin Creevey,4
+Harry,Cornelius Fudge,10
+Harry,Crabbe,13
+Harry,Crookshanks,118
+Harry,Dean Thomas,54
+Harry,Don,3
+Harry,Draco,3
+Harry,Draco Malfoy,3
+Harry,Dudley,56
+Harry,Dumbledore,364
+Harry,Errol,68
+Harry,FACE,8
+Harry,Face,4
+Harry,Fang,12
+Harry,Flitwick,8
+Harry,Florean Fortescue,3
+Harry,Forbidden,4
+Harry,Forest,11
+Harry,Fred,41
+Harry,George,129
+Harry,George Weasley,11
+Harry,Ginny,32
+Harry,Goyle,34
+Harry,Grim,28
+Harry,Gringotts,4
+Harry,HARRY,6
+Harry,HARRY POTTER,8
+Harry,Hagrid,430
+Harry,Hall,34
+Harry,Harry Potter,1381
+Harry,Hedwig,68
+Harry,Hermione,403
 Harry,Hope,2
-Harry,Ice,4
-Harry,JAMES,4
-Harry,James,3
-Harry,James Potter,11
-Harry,Katie,11
-Harry,Katie Bell,27
-Harry,Kit,12
-Harry,Lady,12
-Harry,Lavender,23
-Harry,Lavender Brown,6
-Harry,Lee,22
-Harry,Lee Jordan,9
-Harry,Lily,21
-Harry,Lord,3
-Harry,Lucius Malfoy,3
-Harry,Lupin,659
-Harry,Magic,52
-Harry,Malfoy,609
-Harry,Malkin,8
-Harry,Marcus Flint,8
-Harry,Marjorie Dursley,6
-Harry,McGonagall,162
-Harry,Miss Granger,16
-Harry,Mr. Weasley,140
-Harry,Neville,328
-Harry,Neville Longbottom,24
-Harry,OLIVER,9
-Harry,Oliver,22
-Harry,Oliver Wood,9
-Harry,Parvati,20
-Harry,Parvati Patil,3
-Harry,Peeves,43
-Harry,Penny,4
-Harry,Percy,345
-Harry,Percy Weasley,3
-Harry,Peter,57
-Harry,Peter Pettigrew,19
-Harry,Petunia,16
-Harry,Poppy,8
-Harry,RON,4
-Harry,Remus,6
-Harry,Ripper,12
-Harry,Ron,488
-Harry,Rosmerta,11
-Harry,Seamus,9
-Harry,Seamus Finnigan,10
-Harry,Severus,13
-Harry,Severus Snape,6
-Harry,Sirius,175
-Harry,Sirius Black,51
-Harry,Snape,484
+Harry,Ice,32
+Harry,James,27
+Harry,Katie,14
+Harry,Katie Bell,8
+Harry,Lady,41
+Harry,Lavender,12
+Harry,Lavender Brown,20
+Harry,Lee,3
+Harry,Lily,15
+Harry,Lord,12
+Harry,Lucius Malfoy,4
+Harry,Lupin,1530
+Harry,Magic,211
+Harry,Malfoy,236
+Harry,Malkin,6
+Harry,Marjorie Dursley,4
+Harry,Marsh,4
+Harry,McGonagall,52
+Harry,Miss Granger,24
+Harry,Molly,28
+Harry,Montague,4
+Harry,Mr. Potter,15
+Harry,Mr. Weasley,65
+Harry,Neville,31
+Harry,Neville Longbottom,16
+Harry,OLIVER,12
+Harry,Oliver,36
+Harry,Oliver Wood,8
+Harry,Pansy,20
+Harry,Pansy Parkinson,4
+Harry,Parvati,8
+Harry,Parvati Patil,6
+Harry,Peeves,27
+Harry,Penelope,12
+Harry,Percy,292
+Harry,Percy Weasley,6
+Harry,Peter,12
+Harry,Peter Pettigrew,26
+Harry,Petunia,123
+Harry,Poppy,3
+Harry,Remus,21
+Harry,Ripper,11
+Harry,Ron,3589
+Harry,Rosmerta,12
+Harry,SIRIUS BLACK,3
+Harry,Seamus,11
+Harry,Seamus Finnigan,4
+Harry,Severus,106
+Harry,Severus Snape,12
+Harry,Sirius,128
+Harry,Sirius Black,67
+Harry,Snape,428
 Harry,Stanley,4
-Harry,TRELAWNEY,3
-Harry,Tom,87
-Harry,Trelawney,189
-Harry,Uncle,485
-Harry,Vernon,43
-Harry,Voldemort,76
-Harry,Walden,12
-Harry,Zonko,64
-Harry,able,185
-Harry,ancient,3
-Harry,angry,16
-Harry,bald,34
-Harry,ball,23
-Harry,black,201
-Harry,bloody,4
-Harry,broom,117
-Harry,butterbeer,72
-Harry,chambers,4
-Harry,clever,3
-Harry,count,24
-Harry,day,94
-Harry,don,32
-Harry,duke,8
-Harry,evil,22
-Harry,face,186
-Harry,fallen,51
-Harry,fluffy,7
-Harry,forest,63
+Harry,THE,51
+Harry,The,202
+Harry,Tom,10
+Harry,Trelawney,153
+Harry,Uncle,90
+Harry,Vernon,77
+Harry,Voldemort,104
+Harry,Wendelin the Weird,8
+Harry,Zonko,24
+Harry,able,46
+Harry,ancient,12
+Harry,angry,36
+Harry,bald,16
+Harry,ball,54
+Harry,black,136
+Harry,bloody,3
+Harry,broom,54
+Harry,butterbeer,3
+Harry,clever,7
+Harry,count,6
+Harry,dawn,8
+Harry,day,98
+Harry,don,16
+Harry,duke,4
+Harry,evil,4
+Harry,face,286
+Harry,fallen,24
+Harry,fluffy,8
+Harry,forest,18
 Harry,glossy,12
-Harry,group,3
-Harry,hall,160
-Harry,handsome,13
-Harry,hope,23
-Harry,ice,13
-Harry,lady,8
-Harry,magic,81
-Harry,mark,10
-Harry,marsh,4
-Harry,mercy,4
-Harry,newspaper,11
-Harry,one-eyed,44
-Harry,pumpkin,12
-Harry,rose,80
-Harry,scarlet,9
-Harry,stunned,32
-Harry,tall,28
-Harry,trolley,3
-Harry,uncle,33
-Harry Potter,Alicia,10
-Harry Potter,Alicia Spinnet,3
-Harry Potter,Angelina,8
-Harry Potter,Angelina Johnson,3
-Harry Potter,BROOM,3
-Harry Potter,Bilius,8
-Harry Potter,Binky,3
-Harry Potter,Black,164
-Harry Potter,Buckbeak,71
-Harry Potter,Cedric Diggory,4
-Harry Potter,Cho,6
-Harry Potter,Colin Creevey,9
-Harry Potter,Crabbe,40
-Harry Potter,Crookshanks,83
-Harry Potter,Davies,12
-Harry Potter,Dean,4
-Harry Potter,Dean Thomas,2
-Harry Potter,Don,6
-Harry Potter,Draco,8
-Harry Potter,Draco Malfoy,17
-Harry Potter,Dudley,21
-Harry Potter,Dumbledore,60
-Harry Potter,Errol,13
-Harry Potter,FACE,4
-Harry Potter,Flitwick,16
-Harry Potter,Florean Fortescue,3
-Harry Potter,Forest,3
-Harry Potter,Fred,57
+Harry,group,9
+Harry,hall,72
+Harry,handsome,12
+Harry,hope,27
+Harry,ice,4
+Harry,magic,18
+Harry,mark,4
+Harry,mercy,11
+Harry,miles,8
+Harry,one-eyed,10
+Harry,pumpkin,21
+Harry,rose,46
+Harry,scarlet,6
+Harry,stunned,16
+Harry,tall,9
+Harry,the,3174
+Harry,trolley,8
+Harry,uncle,30
+Harry Potter,Arthur,8
+Harry Potter,Bill,4
+Harry Potter,Binky,4
+Harry Potter,Black,337
+Harry Potter,Buckbeak,13
+Harry Potter,Cho,16
+Harry Potter,Colin Creevey,8
+Harry Potter,Crookshanks,116
+Harry Potter,Dean Thomas,16
+Harry Potter,Don,3
+Harry Potter,Dudley,48
+Harry Potter,Dumbledore,64
+Harry Potter,Errol,16
 Harry Potter,Fred Weasley,3
-Harry Potter,George,66
-Harry Potter,Ginny,23
-Harry Potter,Goyle,21
-Harry Potter,Grim,9
+Harry Potter,George,16
+Harry Potter,Grim,12
 Harry Potter,Gringotts,12
-Harry Potter,HARRY,3
-Harry Potter,HERMIONE,3
-Harry Potter,Hagrid,196
-Harry Potter,Hall,6
-Harry Potter,Harry,571
-Harry Potter,Hedwig,32
-Harry Potter,Hermione,802
-Harry Potter,Ice,24
-Harry Potter,James,28
-Harry Potter,James Potter,4
-Harry Potter,Katie,17
-Harry Potter,LADY,6
-Harry Potter,Lady,6
-Harry Potter,Lavender,9
-Harry Potter,Lily,9
-Harry Potter,Lord,6
-Harry Potter,Lucius Malfoy,3
-Harry Potter,Lupin,301
-Harry Potter,Magic,41
-Harry Potter,Malfoy,47
-Harry Potter,Malkin,8
-Harry Potter,Marsh,6
-Harry Potter,McGonagall,85
-Harry Potter,Miss Granger,6
-Harry Potter,Molly,3
-Harry Potter,Mr. Potter,3
-Harry Potter,Mr. Weasley,35
-Harry Potter,Neville,14
-Harry Potter,Nick,7
-Harry Potter,Oliver,10
-Harry Potter,Oliver Wood,6
-Harry Potter,PETER,8
-Harry Potter,Pansy,3
-Harry Potter,Parvati,28
-Harry Potter,Peeves,3
+Harry Potter,Hagrid,157
+Harry Potter,Harry,744
+Harry Potter,Hedwig,20
+Harry Potter,Hermione,6
+Harry Potter,James,8
+Harry Potter,Katie,16
+Harry Potter,Katie Bell,23
+Harry Potter,LADY,12
+Harry Potter,Lavender,6
+Harry Potter,Lee Jordan,12
+Harry Potter,Loony,8
+Harry Potter,Lucius Malfoy,20
+Harry Potter,Lupin,281
+Harry Potter,Magic,32
+Harry Potter,Malfoy,12
+Harry Potter,Marcus Flint,3
+Harry Potter,Marsh,4
+Harry Potter,McGonagall,102
+Harry Potter,Miss Granger,8
+Harry Potter,Molly,8
+Harry Potter,Mr. Weasley,8
+Harry Potter,Neville,23
+Harry Potter,Oliver Wood,11
+Harry Potter,Pansy,4
 Harry Potter,Penelope,4
-Harry Potter,Percy,6
-Harry Potter,Percy Weasley,8
-Harry Potter,Peter,40
-Harry Potter,Petunia,3
-Harry Potter,Poppy,3
-Harry Potter,Remus,3
-Harry Potter,Ripper,7
-Harry Potter,Ron,231
-Harry Potter,Rosmerta,42
-Harry Potter,SNAPE,3
-Harry Potter,Seamus,3
-Harry Potter,Seamus Finnigan,7
-Harry Potter,Severus,4
-Harry Potter,Sirius,22
-Harry Potter,Sirius Black,33
-Harry Potter,Snape,286
-Harry Potter,TRELAWNEY,6
-Harry Potter,Tom,18
-Harry Potter,Trelawney,73
-Harry Potter,Trevor,2
-Harry Potter,Uncle,4
-Harry Potter,Vernon,72
-Harry Potter,Vernon Dursley,4
-Harry Potter,Voldemort,51
-Harry Potter,Zonko,7
-Harry Potter,ancient,3
-Harry Potter,angry,14
-Harry Potter,bald,4
-Harry Potter,ball,18
-Harry Potter,black,47
-Harry Potter,bloody,9
+Harry Potter,Percy,47
+Harry Potter,Peter,28
+Harry Potter,Petunia,8
+Harry Potter,Ron,403
+Harry Potter,Rosmerta,36
+Harry Potter,SNAPE,4
+Harry Potter,Sirius,174
+Harry Potter,Sirius Black,80
+Harry Potter,Snape,409
+Harry Potter,THE,28
+Harry Potter,TRELAWNEY,12
+Harry Potter,The,310
+Harry Potter,Trelawney,131
+Harry Potter,Uncle,52
+Harry Potter,Vincent Crabbe,8
+Harry Potter,Voldemort,8
+Harry Potter,Zonko,12
+Harry Potter,able,20
+Harry Potter,ancient,8
+Harry Potter,angry,52
+Harry Potter,black,46
+Harry Potter,bloody,4
 Harry Potter,blossom,6
-Harry Potter,broom,41
-Harry Potter,butterbeer,20
-Harry Potter,dawn,4
-Harry Potter,day,33
+Harry Potter,butterbeer,4
+Harry Potter,day,16
 Harry Potter,evil,4
-Harry Potter,face,66
-Harry Potter,fallen,26
-Harry Potter,forest,16
-Harry Potter,foul-smelling,7
-Harry Potter,fry,4
-Harry Potter,hall,12
+Harry Potter,face,211
+Harry Potter,fallen,16
+Harry Potter,fallen fifty,4
+Harry Potter,group,3
+Harry Potter,hall,11
 Harry Potter,holly,12
-Harry Potter,hope,38
-Harry Potter,lady,19
-Harry Potter,loony,4
-Harry Potter,magic,8
-Harry Potter,one-eyed,23
+Harry Potter,hope,13
+Harry Potter,ice,4
+Harry Potter,lady,24
 Harry Potter,pumpkin,3
-Harry Potter,rose,13
-Harry Potter,ruby,3
-Harry Potter,scarlet,6
-Harry Potter,tall,24
-Harry Potter,uncle,9
-Hedwig,Crookshanks,7
-Hedwig,Dudley,4
-Hedwig,Errol,29
-Hedwig,HALL,3
-Hedwig,Hagrid,16
-Hedwig,Harry,93
-Hedwig,Harry Potter,13
-Hedwig,Hermione,6
-Hedwig,Lupin,6
-Hedwig,Penelope Clearwater,3
-Hedwig,Petunia,3
-Hedwig,Ron,89
-Hedwig,Tom,4
-Hedwig,Vernon,7
+Harry Potter,rose,4
+Harry Potter,the,1336
+Harry Potter,uncle,15
+Hedwig,Errol,13
+Hedwig,Harry,6
+Hedwig,Ron,7
+Hedwig,The,3
 Hedwig,amber,3
-Hedwig,face,22
-Hermes,Crookshanks,6
-Hermes,Hedwig,3
+Hedwig,the,346
+Hermes,Crookshanks,4
+Hermes,Harry,8
+Hermione,Albus Dumbledore,4
 Hermione,Alicia,8
-Hermione,Ancient,4
-Hermione,Binky,8
-Hermione,Black,254
-Hermione,Buckbeak,59
-Hermione,Cornelius Fudge,16
-Hermione,Crabbe,39
-Hermione,Crookshanks,61
-Hermione,Don,3
-Hermione,Draco,4
+Hermione,Bilius,4
+Hermione,Binky,16
+Hermione,Black,19
+Hermione,Buckbeak,76
+Hermione,Cadogan,4
+Hermione,Crookshanks,32
+Hermione,Don,4
 Hermione,Draco Malfoy,16
-Hermione,Dumbledore,134
-Hermione,Errol,15
-Hermione,Fang,4
-Hermione,Flitwick,42
-Hermione,Florean,12
+Hermione,Dumbledore,289
+Hermione,Flitwick,20
 Hermione,Forbidden,12
-Hermione,Forest,12
-Hermione,Fred,6
-Hermione,George,72
-Hermione,Ginny,4
-Hermione,Goyle,3
-Hermione,Grim,27
-Hermione,Gringotts,4
-Hermione,Hagrid,156
-Hermione,Hall,12
-Hermione,Harry,1444
-Hermione,Harry Potter,176
-Hermione,Hedwig,12
-Hermione,Hermes,12
-Hermione,Hermione Granger,3
-Hermione,Hope,6
-Hermione,James,4
-Hermione,Kit,20
-Hermione,Lady,30
-Hermione,Lavender,24
-Hermione,Lucius Malfoy,5
-Hermione,Lupin,161
-Hermione,Magic,31
-Hermione,Malfoy,52
-Hermione,McGonagall,170
-Hermione,Miss Granger,28
-Hermione,Mr. Potter,3
-Hermione,Mr. Weasley,32
-Hermione,Neville,30
-Hermione,Neville Longbottom,3
+Hermione,Fred,8
+Hermione,George,8
+Hermione,Ginny,44
+Hermione,Goyle,32
+Hermione,Grim,4
+Hermione,Hagrid,79
+Hermione,Hall,4
+Hermione,Harry,1673
+Hermione,Harry Potter,238
+Hermione,Hedwig,80
+Hermione,James,8
+Hermione,Kit,8
+Hermione,LORD,4
+Hermione,Lady,12
+Hermione,Lavender,32
+Hermione,Lavender Brown,12
+Hermione,Lucius Malfoy,4
+Hermione,Lupin,186
+Hermione,Magic,4
+Hermione,Malfoy,43
+Hermione,McGonagall,88
+Hermione,Mr. Weasley,4
+Hermione,Neville,35
 Hermione,Nick,4
-Hermione,Pansy,3
-Hermione,Pansy Parkinson,4
-Hermione,Parvati,4
+Hermione,Parvati,12
 Hermione,Peeves,4
-Hermione,Penelope,4
-Hermione,Percy,3
-Hermione,Peter,15
-Hermione,Remus,3
-Hermione,Ron,2054
-Hermione,Rosmerta,2
+Hermione,Peter,4
+Hermione,Peter Pettigrew,12
+Hermione,Remus,4
+Hermione,Ron,429
+Hermione,Rosmerta,4
 Hermione,SIRIUS BLACK,4
-Hermione,Seamus,19
+Hermione,Seamus,20
 Hermione,Seamus Finnigan,7
-Hermione,Severus,17
-Hermione,Sirius,101
-Hermione,Sirius Black,16
-Hermione,Snape,43
-Hermione,Trelawney,93
-Hermione,Vernon,27
-Hermione,Voldemort,11
-Hermione,Zonko,8
-Hermione,ancient,6
-Hermione,angry,35
-Hermione,ball,3
-Hermione,black,5
-Hermione,broom,15
-Hermione,butterbeer,4
-Hermione,clever,3
-Hermione,count,7
-Hermione,day,13
-Hermione,don,8
-Hermione,face,42
+Hermione,Severus Snape,4
+Hermione,Sirius,44
+Hermione,Sirius Black,8
+Hermione,Snape,60
+Hermione,THE,4
+Hermione,The,160
+Hermione,Tom,4
+Hermione,Trelawney,28
+Hermione,Uncle,4
+Hermione,Voldemort,4
+Hermione,angry,3
+Hermione,black,4
+Hermione,broom,104
+Hermione,clever,12
+Hermione,day,115
+Hermione,duke,4
+Hermione,face,32
+Hermione,fallen,4
 Hermione,fluffy,4
-Hermione,forest,15
-Hermione,group,33
-Hermione,hall,21
-Hermione,handsome,12
-Hermione,hope,28
+Hermione,hall,142
+Hermione,hope,8
 Hermione,ice,4
-Hermione,mark,4
+Hermione,mark,8
 Hermione,marsh,4
-Hermione,pumpkin,24
-Hermione,rose,3
-Hermione,ruby,9
-Hermione,scarlet,4
-Hermione,stunned,3
-Hermione,uncle,12
-Hermione Granger,Ron,11
-Hope,Hagrid,4
+Hermione,one-eyed,4
+Hermione,pumpkin,4
+Hermione,stunned,28
+Hermione,the,2263
+Hermione,the fates,4
+Hermione,uncle,4
+Hermione Granger,Harry,4
+Hermione Granger,Hermione,8
+Hope,Hagrid,6
 Hope,Harry Potter,3
-Hope,Mr. Potter,3
-Ice,Florean Fortescue,3
-Ice,Gringotts,8
-Ice,Hermione,12
-Ice,Malkin,4
-Ice,black,3
-Ice,ice,4
-JAMES,Black,8
-JAMES,Harry,8
-JAMES,Harry Potter,4
-JAMES,face,1
-James,Black,35
-James,Dumbledore,8
-James,Face,4
-James,Hagrid,7
-James,Harry,39
-James,Harry Potter,20
-James,Hermione,4
-James,Lily,48
-James,Lupin,15
+Hope,the,3
+Ice,Florean Fortescue,6
+Ice,Ron,24
+Ice,ball,3
+JAMES,Black,12
+JAMES,James,8
+JAMES,evil,1
+James,Black,5
+James,Dumbledore,3
+James,Harry,3
+James,LILY,3
+James,Lily,130
 James,Peter,16
-James,Remus,33
-James,Sirius,35
-James,Snape,4
-James,mercy,4
-James Potter,Black,12
-James Potter,Dumbledore,12
-James Potter,Harry,6
-James Potter,Hermione,1
-James Potter,Lily,6
-James Potter,McGonagall,3
-James Potter,Peter Pettigrew,3
-James Potter,Voldemort,3
-Katie,Alicia,46
-Katie,Angelina,4
-Katie,Cho,16
-Katie,Fred,4
-Katie,George Weasley,4
-Katie,Harry,10
-Katie,Malfoy,7
+James,Sirius,2
+James,Sirius Black,4
+James,face,8
+James,the,132
+James Potter,Black,3
+James Potter,Harry,8
+James Potter,Harry Potter,3
+James Potter,McGonagall,8
+James Potter,Sirius Black,24
+James Potter,The,4
+James Potter,the,8
+Katie,Alicia,4
+Katie,Angelina,2
+Katie,Cedric Diggory,3
+Katie,Harry,37
 Katie,McGonagall,4
-Katie,Montague,4
-Katie Bell,George Weasley,9
-Katie Bell,Harry,3
-Katie Bell,Harry Potter,17
-Katie Bell,Katie,7
-Kit,Harry,3
-Kit,McGonagall,8
-Kit,Ron,3
-Kit,Vernon,7
-Kit,black,12
-LADY,Harry Potter,12
+Katie,Oliver,6
+Katie,The,12
+Katie,broom,3
+Katie,tall,5
+Katie,the,28
+Katie Bell,Angelina Johnson,6
+Katie Bell,Cho,8
+Katie Bell,Fred,3
+Katie Bell,Katie,15
+Katie Bell,The,4
+Katie Bell,the,8
+Kit,Cadogan,8
+Kit,Harry,8
+Kit,Hermione,8
+Kit,black,8
+Kit,the,4
+LADY,Lupin,4
+LADY,Ron,4
+LADY,THE,4
 LILY,JAMES,12
-LORD,Harry,3
-LORD,Harry Potter,3
-LORD,Lupin,3
-Lady,Black,4
-Lady,Cadogan,20
-Lady,Dumbledore,20
-Lady,Hannah Abbott,3
-Lady,Harry,28
-Lady,Hermione,3
-Lady,Malfoy,8
+LORD,Harry Potter,8
+LORD,the,4
+Lady,Black,8
+Lady,Cadogan,12
+Lady,Dumbledore,12
+Lady,Flitwick,4
+Lady,Hermione,24
 Lady,Peeves,4
-Lady,Percy,4
-Lady,Ron,15
-Lady,Sirius,12
-Lady,able,5
-Lady,group,3
-Lady,one-eyed,3
-Lavender,Binky,13
-Lavender,Dean Thomas,3
-Lavender,Grim,3
-Lavender,Hagrid,3
-Lavender,Hall,3
-Lavender,Harry Potter,15
-Lavender,Hermione,19
-Lavender,Lupin,3
-Lavender,McGonagall,6
-Lavender,Parvati,26
-Lavender,Ron,15
-Lavender,Seamus,1
+Lady,Percy,8
+Lady,Ron,12
+Lady,face,4
+Lady,one-eyed,8
+Lady,the,59
+Lavender,Binky,20
+Lavender,Hagrid,4
+Lavender,Hall,8
+Lavender,Harry,4
+Lavender,Harry Potter,12
+Lavender,Hermione,47
+Lavender,Lupin,4
+Lavender,Parvati,20
+Lavender,Ron,12
+Lavender,Seamus,8
 Lavender,Snape,4
-Lavender,Trelawney,24
-Lavender,ball,3
-Lavender,day,21
-Lavender Brown,Dean Thomas,16
-Lavender Brown,Harry,27
-Lavender Brown,Lavender,7
-Lavender Brown,Parvati Patil,8
-Lavender Brown,Ron,12
-Lavender Brown,Seamus Finnigan,4
-Lavender Brown,Trelawney,6
-Lee,Fred,3
-Lee,Harry,22
-Lee,Harry Potter,8
-Lee,Malfoy,5
-Lee,McGonagall,6
-Lee,Montague,2
-Lee Jordan,Angelina,3
-Lee Jordan,Harry,14
+Lavender,The,3
+Lavender,Trelawney,19
+Lavender,ball,16
+Lavender,day,8
+Lavender,group,16
+Lavender,the,12
+Lavender Brown,Parvati,4
+Lavender Brown,the,78
+Lee,Alicia,7
+Lee,Harry,7
+Lee,Malfoy,7
+Lee,McGonagall,12
+Lee,Montague,11
+Lee,THE,4
+Lee,the,20
+Lee Jordan,Harry,16
 Lee Jordan,Lee,4
-Lee Jordan,Malfoy,7
-Lee Jordan,McGonagall,3
-Lee Jordan,broom,3
-Lee Jordan,grim,4
+Lee Jordan,Malfoy,4
+Lee Jordan,McGonagall,8
+Lee Jordan,Snape,4
 Lee Jordan,scarlet,4
-Lily,Black,16
-Lily,Dumbledore,9
-Lily,Hagrid,4
-Lily,Harry,50
-Lily,James,31
-Lily,Lupin,4
-Lily,Minerva,3
-Lily,Rosmerta,4
-Lily,Sirius,8
-Lily,Sirius Black,12
-Lily,Voldemort,16
-Lily,face,20
-Lily,rose,4
-Loony,Harry Potter,4
-Loony,Peeves,4
-Loony,loony,8
-Lord,Black,20
-Lord,Draco,4
-Lord,Dumbledore,4
-Lord,Harry,67
-Lord,Harry Potter,12
-Lord,James,2
-Lord,James Potter,8
-Lord,Lupin,4
-Lord,Sirius,6
-Lord,Trelawney,13
-Lord,Voldemort,9
-Lucius,Buckbeak,8
-Lucius,Malfoy,4
-Lucius Malfoy,Crabbe,4
-Lucius Malfoy,Hagrid,6
-Lucius Malfoy,Harry,4
-Lucius Malfoy,Harry Potter,12
-Lucius Malfoy,Ron,8
-Lucius Malfoy,black,2
+Lee Jordan,the,20
+Lily,Black,34
+Lily,Dumbledore,7
+Lily,Hagrid,3
+Lily,Harry,18
+Lily,James,10
+Lily,Peter,8
+Lily,Sirius,6
+Lily,The,3
+Lily,face,8
+Lily,the,76
+Loony,Lupin,16
+Lord,Black,4
+Lord,Dumbledore,16
+Lord,Harry,38
+Lord,Lily,8
+Lord,Malfoy,4
+Lord,Peter Pettigrew,4
+Lord,The,40
+Lord,Trelawney,11
+Lord,Voldemort,16
+Lord,the,36
+Lucius,the,12
+Lucius Malfoy,Hagrid,12
+Lucius Malfoy,Ron,16
+Lucius Malfoy,black,4
 Lucius Malfoy,face,4
-Lupin,Black,128
-Lupin,Buckbeak,16
-Lupin,Butterbeer,7
-Lupin,Crookshanks,19
-Lupin,Day,4
-Lupin,Dean,8
-Lupin,Dean Thomas,12
-Lupin,Dumbledore,42
+Lucius Malfoy,the,12
+Lupin,Black,205
+Lupin,Butterbeer,4
+Lupin,Crookshanks,8
+Lupin,Day,8
+Lupin,Dean,6
+Lupin,Dean Thomas,4
+Lupin,Draco,3
+Lupin,Draco Malfoy,3
+Lupin,Dumbledore,26
 Lupin,Face,4
-Lupin,Flitwick,8
-Lupin,Gregory,8
-Lupin,Hagrid,24
-Lupin,Harry,1040
-Lupin,Harry Potter,86
-Lupin,Hermione,432
-Lupin,James,15
-Lupin,Lavender,4
-Lupin,Lily,6
-Lupin,Loony,7
-Lupin,Magic,44
-Lupin,Malfoy,56
+Lupin,Flitwick,3
+Lupin,Hagrid,18
+Lupin,Hall,9
+Lupin,Harry,209
+Lupin,Harry Potter,18
+Lupin,Hedwig,8
+Lupin,Hermione,116
+Lupin,James,23
+Lupin,Lady,6
+Lupin,Lavender,3
+Lupin,Lord,3
+Lupin,Magic,14
+Lupin,Malfoy,18
 Lupin,McGonagall,21
+Lupin,Minerva,6
 Lupin,Miss Granger,4
-Lupin,Neville,168
-Lupin,Neville Longbottom,8
-Lupin,Nick,4
-Lupin,Parvati,8
-Lupin,Peeves,35
-Lupin,Peter,24
-Lupin,Peter Pettigrew,3
-Lupin,Remus,46
-Lupin,Ron,322
-Lupin,Rubeus Hagrid,4
-Lupin,SIRIUS BLACK,4
+Lupin,Neville,19
+Lupin,Nick,3
+Lupin,Parvati,7
+Lupin,Parvati Patil,3
+Lupin,Peeves,28
+Lupin,Peter,50
+Lupin,Remus,35
+Lupin,Ron,660
+Lupin,Rubeus Hagrid,3
 Lupin,Seamus,12
 Lupin,Seamus Finnigan,12
-Lupin,Severus,60
-Lupin,Severus Snape,12
-Lupin,Sirius,160
-Lupin,Sirius Black,30
-Lupin,Snape,132
-Lupin,Trelawney,10
-Lupin,Vernon,8
-Lupin,Voldemort,56
-Lupin,Zonko,4
-Lupin,able,11
+Lupin,Severus,12
+Lupin,Severus Snape,3
+Lupin,Sirius,9
+Lupin,Sirius Black,23
+Lupin,Snape,146
+Lupin,THE,9
+Lupin,The,81
+Lupin,Trelawney,4
+Lupin,Voldemort,100
+Lupin,Zonko,8
+Lupin,able,12
 Lupin,angry,12
-Lupin,black,4
-Lupin,bloody,4
-Lupin,count,8
-Lupin,day,16
-Lupin,face,256
-Lupin,forbidden,3
-Lupin,forest,4
-Lupin,group,8
-Lupin,hall,8
-Lupin,scarlet,4
-Lupin,stunned,3
-MAGIC,Harry,12
-MAGIC,Ron,8
+Lupin,black,22
+Lupin,butterbeer,3
+Lupin,count,3
+Lupin,day,8
+Lupin,face,48
+Lupin,forest,6
+Lupin,hall,3
+Lupin,hope,9
+Lupin,loony,9
+Lupin,magic,3
+Lupin,marsh,3
+Lupin,mercy,4
+Lupin,rose,11
+Lupin,the,1476
+MAGIC,Black,4
+MAGIC,Gringotts,8
 MAGIC,Sirius Black,4
-Magic,Arthur Weasley,12
-Magic,Bathilda,8
+MAGIC,THE,4
+MAGIC,The,4
+Magic,Arthur Weasley,3
+Magic,Black,4
 Magic,Cornelius Fudge,18
-Magic,Dumbledore,15
-Magic,Florean Fortescue,7
-Magic,George Weasley,4
-Magic,Hagrid,8
-Magic,Harry,122
-Magic,Harry Potter,8
-Magic,Hermione,11
-Magic,Lupin,13
-Magic,Marjorie Dursley,3
-Magic,McGonagall,18
+Magic,Dumbledore,12
+Magic,Florean Fortescue,6
+Magic,Hagrid,7
+Magic,Harry,24
+Magic,Harry Potter,3
+Magic,Hermione,23
+Magic,Lupin,10
+Magic,Marjorie Dursley,8
+Magic,McGonagall,3
+Magic,Mr. Weasley,3
 Magic,Neville,3
-Magic,Percy,8
-Magic,Peter Pettigrew,3
-Magic,Ron,32
-Magic,Rosmerta,4
-Magic,Severus,4
-Magic,Sirius,7
-Magic,Sirius Black,18
-Magic,Snape,4
-Magic,Vernon,12
-Magic,ancient,4
-Magic,day,23
-Magic,forbidden,8
-Magic,hope,4
-Magic,magic,6
-Magic,portly,10
-Magic,uncle,2
-Malfoy,Alicia Spinnet,3
-Malfoy,Angelina,8
+Magic,Ron,74
+Magic,Severus,3
+Magic,Sirius Black,8
+Magic,The,16
+Magic,Tom,6
+Magic,Trelawney,8
+Magic,Vernon,3
+Magic,able,3
+Magic,day,8
+Magic,magic,15
+Magic,marsh,3
+Magic,newspaper,3
+Magic,portly,3
+Magic,the,172
+Magic,uncle,3
+Malfoy,Alicia Spinnet,4
 Malfoy,Angelina Johnson,12
-Malfoy,Black,33
-Malfoy,Crabbe,104
-Malfoy,Crookshanks,3
-Malfoy,Draco,28
-Malfoy,Dumbledore,9
+Malfoy,Black,8
+Malfoy,Buckbeak,75
+Malfoy,Crabbe,192
+Malfoy,Dean Thomas,4
+Malfoy,Draco Malfoy,4
+Malfoy,Dumbledore,16
 Malfoy,Flitwick,4
-Malfoy,Fred,29
-Malfoy,George,3
-Malfoy,Goyle,122
-Malfoy,Hagrid,105
-Malfoy,Hall,6
-Malfoy,Harry,146
-Malfoy,Harry Potter,180
-Malfoy,Hermione,31
-Malfoy,Katie,2
-Malfoy,Lady,3
-Malfoy,Lavender Brown,6
-Malfoy,Lucius,6
-Malfoy,Lupin,34
-Malfoy,Magic,9
-Malfoy,McGonagall,12
-Malfoy,Montague,18
-Malfoy,Neville,11
-Malfoy,Pansy Parkinson,3
-Malfoy,Parkinson,8
-Malfoy,Ron,77
-Malfoy,Seamus,9
-Malfoy,Sirius,4
-Malfoy,Snape,69
-Malfoy,Trelawney,6
-Malfoy,Voldemort,3
-Malfoy,able,7
-Malfoy,angry,3
-Malfoy,ball,3
-Malfoy,black,15
-Malfoy,broom,30
-Malfoy,daisy,9
-Malfoy,day,11
+Malfoy,George,40
+Malfoy,Goyle,52
+Malfoy,Hagrid,82
+Malfoy,Hall,20
+Malfoy,Harry,318
+Malfoy,Harry Potter,28
+Malfoy,Hermione,74
+Malfoy,Lady,12
+Malfoy,Lee,19
+Malfoy,Lee Jordan,3
+Malfoy,Lucius,4
+Malfoy,Lupin,20
+Malfoy,Magic,8
+Malfoy,McGonagall,4
+Malfoy,Neville,3
+Malfoy,Nick,4
+Malfoy,Pansy,4
+Malfoy,Pansy Parkinson,4
+Malfoy,Ron,76
+Malfoy,Seamus,8
+Malfoy,Snape,20
+Malfoy,THE,12
+Malfoy,The,8
+Malfoy,Trelawney,4
+Malfoy,angry,4
+Malfoy,black,12
+Malfoy,broom,48
+Malfoy,daisy,12
+Malfoy,day,8
 Malfoy,don,4
-Malfoy,face,46
-Malfoy,fallen,4
-Malfoy,forest,6
-Malfoy,hall,9
-Malfoy,rose,2
-Malfoy,scarlet,3
+Malfoy,fallen,12
+Malfoy,foul-smelling,8
+Malfoy,group,8
+Malfoy,hall,4
+Malfoy,miles,11
+Malfoy,rose,8
+Malfoy,scarlet,8
 Malfoy,stunned,4
-Malkin,Apothecary,8
+Malfoy,the,247
+Malkin,Apothecary,4
+Malkin,Florean,4
 Malkin,Harry,4
-Malkin,Hermione,4
-Malkin,Mr. Weasley,4
-Malkin,Ron,3
-Marcus Flint,Angelina,8
-Marcus Flint,Crabbe,12
-Marcus Flint,Harry Potter,4
-Marjorie Dursley,Harry,4
-Marjorie Dursley,Magic,8
-Marsh,Harry,4
-Marsh,Harry Potter,4
-Marsh,don,8
+Malkin,day,4
+Malkin,the,8
+Marcus Flint,Angelina,12
+Marcus Flint,black,12
+Marjorie Dursley,the,12
+Marsh,Harry,6
+Marsh,don,4
 Marsh,miles,4
-McGonagall,Black,39
+Marsh,the,12
+McGonagall,Alicia,4
+McGonagall,Black,28
 McGonagall,Cadogan,4
-McGonagall,Cornelius,2
-McGonagall,Crookshanks,6
-McGonagall,Day,4
-McGonagall,Dumbledore,32
-McGonagall,Flitwick,28
-McGonagall,Fred,6
-McGonagall,Fred Weasley,3
-McGonagall,Hagrid,38
-McGonagall,Harry,166
-McGonagall,Harry Potter,13
-McGonagall,Hermione,135
-McGonagall,James,4
-McGonagall,James Potter,12
-McGonagall,Katie,3
-McGonagall,Lady,20
-McGonagall,Lavender,8
-McGonagall,Lavender Brown,3
-McGonagall,Lee,12
-McGonagall,Lee Jordan,11
-McGonagall,Lupin,21
-McGonagall,Magic,38
-McGonagall,Malfoy,4
-McGonagall,Minerva,12
-McGonagall,Miss Granger,12
-McGonagall,Neville,5
-McGonagall,Percy,3
+McGonagall,Dumbledore,29
+McGonagall,Flitwick,3
+McGonagall,GRIM,4
+McGonagall,Hagrid,32
+McGonagall,Hall,7
+McGonagall,Harry,519
+McGonagall,Harry Potter,32
+McGonagall,Hermione,3
+McGonagall,James Potter,4
+McGonagall,Lady,7
+McGonagall,Lupin,28
+McGonagall,Magic,12
+McGonagall,Malfoy,6
+McGonagall,Miss Granger,4
+McGonagall,Mr. Weasley,8
+McGonagall,Neville,4
+McGonagall,Percy,4
 McGonagall,Peter,4
-McGonagall,Poppy,9
-McGonagall,Ron,134
-McGonagall,Rosmerta,12
-McGonagall,SIRIUS BLACK,8
+McGonagall,Poppy,6
+McGonagall,Ron,104
+McGonagall,Rosmerta,28
 McGonagall,Severus,8
-McGonagall,Sirius Black,15
-McGonagall,Snape,3
-McGonagall,Trelawney,39
-McGonagall,Vernon,15
-McGonagall,ancient,6
-McGonagall,angry,12
-McGonagall,broom,14
+McGonagall,Sirius Black,4
+McGonagall,Snape,12
+McGonagall,THE,3
+McGonagall,The,16
+McGonagall,Trelawney,32
+McGonagall,Uncle,8
+McGonagall,ancient,4
+McGonagall,broom,4
+McGonagall,dawn,3
 McGonagall,day,4
-McGonagall,face,57
-McGonagall,forbidden,12
+McGonagall,face,26
 McGonagall,magic,8
 McGonagall,stunned,4
-McGonagall,uncle,1
-Merlin,Black,17
+McGonagall,the,133
+McGonagall,uncle,4
+Merlin,Black,5
 Merlin,Harry,4
 Merlin,Ron,7
+Merlin,Rosmerta,12
 Merlin,Severus,8
 Merlin,Snape,4
-Minerva,Black,5
-Minerva,Harry Potter,4
-Minerva,Lupin,4
+Minerva,Black,2
+Minerva,James,3
 Minerva,McGonagall,3
-Minerva,Trelawney,8
-Miss Granger,Cornelius,4
-Miss Granger,Dumbledore,3
-Miss Granger,Harry,12
-Miss Granger,Harry Potter,12
-Miss Granger,Hermione,12
-Miss Granger,McGonagall,3
-Miss Granger,Neville Longbottom,4
-Miss Granger,Parvati,3
-Miss Granger,Poppy,4
-Miss Granger,Ron,3
-Miss Granger,Sirius Black,3
-Miss Granger,Snape,47
-Miss Granger,Trelawney,3
-Miss Granger,able,4
-Miss Granger,black,3
-Molly,Black,8
-Molly,Harry,47
-Molly,clever,3
-Montague,Angelina,4
-Montague,George Weasley,8
-Montague,Katie,4
-Montague,Lee,11
-Montague,Malfoy,4
-Montague,broom,12
-Mr. Potter,Hagrid,4
-Mr. Potter,Harry,20
+Minerva,the,20
+Miss Granger,Dumbledore,6
+Miss Granger,Hall,3
+Miss Granger,Harry,11
+Miss Granger,Hermione,15
+Miss Granger,McGonagall,4
+Miss Granger,Poppy,12
+Miss Granger,Ron,4
+Miss Granger,Snape,3
+Miss Granger,Trelawney,8
+Miss Granger,Trevor,4
+Miss Granger,scarlet,6
+Miss Granger,the,56
+Molly,Black,36
+Molly,Harry,7
+Molly,Mr. Weasley,8
+Molly,Sirius Black,4
+Molly,the,4
+Montague,Katie,8
+Montague,Malfoy,3
+Montague,the,31
+Mr. Potter,Harry,3
 Mr. Potter,Hedwig,4
-Mr. Potter,Tom,4
-Mr. Weasley,Arthur,4
-Mr. Weasley,Black,3
-Mr. Weasley,Dumbledore,17
+Mr. Potter,Hermione,4
+Mr. Potter,handsome,8
+Mr. Potter,the,12
+Mr. Weasley,Arthur,8
+Mr. Weasley,Bill,4
+Mr. Weasley,Black,4
+Mr. Weasley,Dumbledore,16
 Mr. Weasley,Forbidden,3
-Mr. Weasley,Forest,6
-Mr. Weasley,Fred,6
-Mr. Weasley,George,6
-Mr. Weasley,Harry,92
-Mr. Weasley,Hermione,9
-Mr. Weasley,Magic,36
-Mr. Weasley,McGonagall,6
-Mr. Weasley,Molly,15
-Mr. Weasley,Ron,45
-Mr. Weasley,Sirius Black,15
+Mr. Weasley,Fred,3
+Mr. Weasley,George,12
+Mr. Weasley,Hagrid,3
+Mr. Weasley,Harry,144
+Mr. Weasley,Harry Potter,12
+Mr. Weasley,Magic,28
+Mr. Weasley,Molly,4
+Mr. Weasley,Percy,16
+Mr. Weasley,Ron,56
+Mr. Weasley,Sirius Black,4
 Mr. Weasley,Snape,4
-Mr. Weasley,Voldemort,6
-Mr. Weasley,black,9
-Mr. Weasley,fallen,3
-Mr. Weasley,trolley,6
-Neville,Black,16
-Neville,Cadogan,9
-Neville,Crabbe,2
-Neville,Crookshanks,9
-Neville,Ginny,11
-Neville,Hagrid,6
-Neville,Hall,4
-Neville,Harry,50
-Neville,Harry Potter,135
-Neville,Hedwig,16
-Neville,Hermione,74
-Neville,Lady,8
-Neville,Lavender,8
-Neville,Lupin,90
-Neville,Magic,4
-Neville,Malfoy,9
-Neville,McGonagall,18
-Neville,Miss Granger,4
-Neville,Neville Longbottom,4
-Neville,Peter Pettigrew,8
-Neville,Ron,11
-Neville,Seamus Finnigan,13
-Neville,Severus Snape,3
-Neville,Snape,119
+Mr. Weasley,The,4
+Mr. Weasley,Voldemort,8
+Mr. Weasley,tall,8
+Mr. Weasley,the,35
+Mr. Weasley,trolley,4
+Neville,Black,4
+Neville,Cadogan,8
+Neville,Ginny,4
+Neville,Harry,342
+Neville,Harry Potter,44
+Neville,Hermione,6
+Neville,Lord,6
+Neville,Lupin,125
+Neville,Malfoy,8
+Neville,McGonagall,16
+Neville,Ron,24
+Neville,Seamus Finnigan,4
+Neville,Snape,71
 Neville,Stanley,4
-Neville,Tom,4
-Neville,Trelawney,33
-Neville,ball,8
-Neville,black,8
-Neville,chambers,8
-Neville,count,11
-Neville,face,6
-Neville,hall,3
-Neville,ice,3
-Neville,one-eyed,4
+Neville,The,48
+Neville,Tom,8
+Neville,Trelawney,28
+Neville,Trevor,8
+Neville,ball,4
+Neville,face,3
+Neville,hall,8
 Neville,portly,12
 Neville,scarlet,4
 Neville,tall,8
-Neville Longbottom,Cadogan,3
-Neville Longbottom,Dean Thomas,6
-Neville Longbottom,Harry,12
-Neville Longbottom,Harry Potter,3
-Neville Longbottom,Magic,4
-Neville Longbottom,Neville,9
-Neville Longbottom,Ron,3
-Neville Longbottom,black,8
-Neville Longbottom,fluffy,4
-Neville Longbottom,scarlet,3
-Nick,George,3
-Nick,Lady,4
-Nick,Malfoy,4
+Neville,the,85
+Neville Longbottom,Harry,3
+Neville Longbottom,Harry Potter,4
+Neville Longbottom,Lupin,12
+Neville Longbottom,Neville,16
+Neville Longbottom,Percy,4
+Neville Longbottom,Ron,8
+Neville Longbottom,the,35
+Nick,Fred,3
 Nick,Ron,8
-Nick,Snape,4
-OLIVER,Harry,12
+Nick,hall,8
+Nick,the,4
+OLIVER,the,12
 Oliver,Alicia,12
-Oliver,Angelina,4
-Oliver,Fred,13
-Oliver,George,16
-Oliver,George Weasley,8
-Oliver,Harry,32
-Oliver,Harry Potter,4
-Oliver,Ron,4
-Oliver,black,8
-Oliver Wood,George,4
-Oliver Wood,Harry,12
-Oliver Wood,Harry Potter,9
-Oliver Wood,Hermione,4
-Oliver Wood,angry,4
-Oliver Wood,ball,3
-Oliver Wood,black,4
-PETER,Black,4
+Oliver,Alicia Spinnet,4
+Oliver,Angelina,8
+Oliver,Fred,7
+Oliver,George,12
+Oliver,Harry,12
+Oliver,day,3
+Oliver,hope,3
+Oliver,the,36
+Oliver Wood,George,12
+Oliver Wood,Oliver,4
+Oliver Wood,angry,3
+Oliver Wood,ball,4
+Oliver Wood,the,24
 PETER,Peter,4
-PETER,Ron,4
+PETER,the,8
+Pansy,Crabbe,3
 Pansy,Dean Thomas,4
-Pansy,Hagrid,8
-Pansy,Harry,8
-Pansy,Malfoy,4
-Pansy,Parkinson,4
-Pansy,Ron,4
-Pansy,hall,4
-Pansy Parkinson,George Weasley,2
-Pansy Parkinson,Harry,8
-Pansy Parkinson,Malfoy,8
+Pansy,Malfoy,9
+Pansy,Ron,12
+Pansy,the,4
+Pansy Parkinson,Harry Potter,4
+Pansy Parkinson,Malfoy,3
+Pansy Parkinson,The,6
 Pansy Parkinson,face,3
-Parkinson,Goyle,3
-Parkinson,Hagrid,3
-Parkinson,Pansy,3
-Parvati,Binky,4
-Parvati,Harry,12
-Parvati,Hermione,51
-Parvati,Lavender,4
-Parvati,Lavender Brown,4
-Parvati,Lupin,6
-Parvati,Ron,10
+Pansy Parkinson,the,4
+Parkinson,Malfoy,3
+Parkinson,The,4
+Parkinson,the,4
+Parvati,Harry,16
+Parvati,Harry Potter,28
+Parvati,Hermione,6
+Parvati,Lupin,4
 Parvati,Seamus Finnigan,4
 Parvati,Snape,12
-Parvati,Trelawney,7
-Parvati,ball,20
-Parvati,face,20
-Parvati Patil,Harry,8
-Parvati Patil,Lavender Brown,4
-Parvati Patil,Ron,3
-Parvati Patil,ball,3
-Peeves,Dean Thomas,7
-Peeves,Dumbledore,21
-Peeves,Forest,9
-Peeves,GRIM,4
-Peeves,Harry,21
-Peeves,Harry Potter,16
-Peeves,Hermione,18
-Peeves,Loony,7
-Peeves,Lupin,12
-Peeves,able,12
-Penelope,Crookshanks,3
-Penelope,Hagrid,6
-Penelope,Harry,12
-Penelope,Lupin,6
-Penelope,Penny,9
-Penelope,Percy,3
-Penelope,Ron,3
-Penelope,Seamus Finnigan,3
-Penelope Clearwater,Fred,3
-Penelope Clearwater,Percy,8
-Penny,Goyle,3
-Penny,Harry,12
-Penny,Penelope,4
-Penny,broom,3
-Percy,Black,4
+Parvati,Trelawney,24
+Parvati,black,3
+Parvati,face,15
+Parvati,group,3
+Parvati,the,47
+Parvati Patil,Lavender Brown,12
+Parvati Patil,Ron,4
+Parvati Patil,ball,4
+Parvati Patil,the,4
+Peeves,Dumbledore,3
+Peeves,Forbidden,4
+Peeves,the,156
+Penelope,Hagrid,3
+Penelope,Harry,6
+Penelope,Lupin,4
+Penelope,Percy,20
+Penelope,Percy Weasley,4
+Penelope,Sirius,4
+Penelope,the,16
+Penelope Clearwater,Percy,4
+Penelope Clearwater,The,4
+Penelope Clearwater,the,4
+Penny,Harry,16
+Penny,broom,4
 Percy,Buckbeak,3
-Percy,Cedric Diggory,8
-Percy,Dumbledore,20
-Percy,Flitwick,4
-Percy,Fred,43
-Percy,George,27
-Percy,Ginny,43
+Percy,Cadogan,3
+Percy,Dumbledore,18
+Percy,Fred,15
+Percy,George,33
+Percy,Ginny,12
 Percy,Hagrid,3
-Percy,Harry,34
-Percy,Harry Potter,124
-Percy,Hedwig,7
-Percy,Hermione,58
-Percy,Lady,6
-Percy,Lupin,3
-Percy,Mr. Weasley,4
-Percy,Neville Longbottom,4
-Percy,Penelope,16
+Percy,Harry,26
+Percy,Harry Potter,9
+Percy,Hermione,12
+Percy,Magic,4
+Percy,Penelope,9
 Percy,Penny,3
-Percy,Ron,41
-Percy,Seamus Finnigan,9
-Percy,Sirius Black,3
+Percy,Ron,263
+Percy,Seamus Finnigan,12
+Percy,The,9
 Percy,Zonko,4
-Percy,able,1
-Percy,angry,22
-Percy,black,8
-Percy,day,9
-Percy,face,3
-Percy,glossy,8
-Percy,hall,18
-Percy,hope,12
-Percy,lady,8
-Percy Weasley,Cadogan,4
-Percy Weasley,McGonagall,8
-Percy Weasley,Sirius,12
-Peter,Black,24
-Peter,Crookshanks,15
-Peter,Harry,19
-Peter,Harry Potter,24
-Peter,Hermione,10
-Peter,James,32
-Peter,Lily,6
-Peter,Lupin,77
-Peter,McGonagall,6
-Peter,Mr. Weasley,8
+Percy,brothers,6
+Percy,hall,9
+Percy,scarlet,6
+Percy,the,162
+Percy Weasley,Hagrid,4
+Percy Weasley,the,20
+Peter,Black,15
+Peter,Crookshanks,8
+Peter,Harry,67
+Peter,Harry Potter,6
+Peter,Hermione,11
+Peter,James,10
+Peter,Lupin,46
+Peter,McGonagall,7
 Peter,PETER,3
 Peter,Remus,6
-Peter,Ron,21
-Peter,Sirius,14
-Peter,Sirius Black,3
-Peter,Voldemort,4
-Peter,clever,3
-Peter,face,11
+Peter,Ron,18
+Peter,Sirius,12
+Peter,The,18
+Peter,Voldemort,3
+Peter,face,3
+Peter,the,127
 Peter Pettigrew,Black,16
-Peter Pettigrew,Hermione,20
-Peter Pettigrew,Lord,4
-Peter Pettigrew,Lupin,4
+Peter Pettigrew,Harry,3
+Peter Pettigrew,Hermione,3
+Peter Pettigrew,James Potter,4
+Peter Pettigrew,Lupin,8
+Peter Pettigrew,Miss Granger,4
 Peter Pettigrew,Sirius,8
-Peter Pettigrew,Sirius Black,15
-Peter Pettigrew,count,4
-Peter Pettigrew,face,4
-Petunia,Dudley,18
-Petunia,Harry,111
-Petunia,Harry Potter,4
+Peter Pettigrew,Sirius Black,8
+Peter Pettigrew,Snape,8
+Peter Pettigrew,the,20
+Petunia,Harry,12
+Petunia,Kit,3
 Petunia,Ripper,3
-Petunia,Uncle,48
-Petunia,Vernon,12
-Petunia,day,6
-Petunia,face,8
-Petunia,fry,8
-Petunia,hall,17
-Petunia,magic,21
-Petunia,uncle,3
-Poppy,Cornelius,4
-Poppy,Dumbledore,12
+Petunia,The,3
+Petunia,Uncle,4
+Petunia,Vernon,107
+Petunia,face,11
+Petunia,fry,6
+Petunia,hall,9
+Petunia,magic,3
+Petunia,the,103
+Poppy,Dumbledore,16
 Poppy,Harry,3
+Poppy,Hermione,8
 Poppy,McGonagall,4
-Poppy,lady,8
-RON,Ron,4
-RON,Vernon,4
-Remus,Black,35
-Remus,Harry,26
-Remus,Lily,9
-Remus,Lupin,11
-Remus,Peter,16
-Remus,Ron,8
-Remus,Sirius,35
-Remus,face,13
+RON,the,12
+Remus,Black,14
+Remus,Harry,6
+Remus,James,37
+Remus,Lupin,4
+Remus,Peter,4
+Remus,Ron,4
+Remus,face,24
+Remus,the,72
 Ripper,Fubster,4
 Ripper,Harry,36
-Ripper,Petunia,8
-Ripper,Uncle,4
-Ripper,Vernon,19
-Ron,Ancient,4
-Ron,Binky,4
-Ron,Black,173
-Ron,Buckbeak,3
-Ron,CROOKSHANKS,12
-Ron,Cadogan,52
+Ripper,The,12
+Ripper,Uncle,8
+Ripper,Vernon,12
+Ripper,the,4
+Ron,Albus Dumbledore,3
+Ron,Alicia,12
+Ron,Ancient,12
+Ron,Bill,3
+Ron,Black,128
+Ron,Buckbeak,88
+Ron,CROOKSHANKS,4
+Ron,Cadogan,9
 Ron,Chris,3
-Ron,Clever,12
-Ron,Crabbe,16
-Ron,Crookshanks,108
-Ron,Dean,7
-Ron,Dean Thomas,20
-Ron,Dumbledore,36
-Ron,Errol,12
-Ron,Fang,4
-Ron,Flitwick,11
-Ron,Forbidden,4
-Ron,Fred,15
-Ron,Fred Weasley,4
-Ron,George,24
-Ron,George Weasley,12
-Ron,Goyle,7
-Ron,Grim,6
-Ron,HARRY,12
-Ron,Hagrid,81
-Ron,Hall,27
-Ron,Harry,4260
-Ron,Harry Potter,441
-Ron,Hedwig,4
-Ron,Hermione,299
-Ron,James,4
-Ron,LADY,4
-Ron,Lady,4
-Ron,Lavender,12
-Ron,Lucius Malfoy,7
-Ron,Lupin,158
-Ron,Magic,4
-Ron,Malfoy,171
-Ron,McGonagall,36
-Ron,Mr. Weasley,19
-Ron,Neville,24
-Ron,Nick,6
+Ron,Clever,3
+Ron,Cornelius Fudge,3
+Ron,Crabbe,11
+Ron,Crookshanks,250
+Ron,Don,3
+Ron,Dumbledore,24
+Ron,Flitwick,27
+Ron,Florean,6
+Ron,Forbidden,6
+Ron,Fred,17
+Ron,George,56
+Ron,Ginny,6
+Ron,Goyle,12
+Ron,Grim,8
+Ron,Gringotts,3
+Ron,HARRY,3
+Ron,Hagrid,330
+Ron,Hall,30
+Ron,Hannah Abbott,4
+Ron,Harry,375
+Ron,Harry Potter,60
+Ron,Hedwig,6
+Ron,Hermione,1154
+Ron,Hermione Granger,6
+Ron,Hope,2
+Ron,James,3
+Ron,Kit,6
+Ron,Lady,9
+Ron,Lavender,21
+Ron,Lavender Brown,7
+Ron,Lucius Malfoy,3
+Ron,Lupin,86
+Ron,MAGIC,3
+Ron,Malfoy,273
+Ron,Malkin,9
+Ron,McGonagall,39
+Ron,Merlin,3
+Ron,Mr. Potter,3
+Ron,Mr. Weasley,18
+Ron,Neville,9
+Ron,Nick,3
 Ron,Oliver,3
-Ron,Parvati,7
-Ron,Parvati Patil,3
-Ron,Penelope Clearwater,8
-Ron,Percy,78
-Ron,Peter,26
+Ron,PETER,7
+Ron,Parvati,15
+Ron,Penelope Clearwater,6
+Ron,Percy,15
+Ron,Peter,19
+Ron,Peter Pettigrew,6
 Ron,Remus,3
-Ron,Rosmerta,8
-Ron,SIRIUS BLACK,3
-Ron,Sirius,58
-Ron,Sirius Black,65
-Ron,Snape,35
-Ron,Trelawney,19
-Ron,Uncle,16
-Ron,Voldemort,3
-Ron,Zonko,8
+Ron,Rubeus Hagrid,8
+Ron,SIRIUS BLACK,8
+Ron,Seamus Finnigan,3
+Ron,Sirius,6
+Ron,Sirius Black,48
+Ron,Snape,22
+Ron,THE,25
+Ron,The,145
+Ron,Trelawney,46
+Ron,Vernon,60
+Ron,Vernon Dursley,3
+Ron,Voldemort,20
+Ron,Zonko,12
 Ron,able,15
-Ron,amber,4
-Ron,ancient,9
-Ron,bald,16
-Ron,ball,3
-Ron,black,31
-Ron,broom,36
-Ron,butterbeer,4
-Ron,clever,3
-Ron,count,4
-Ron,day,3
+Ron,amber,3
+Ron,ancient,8
+Ron,bald,18
+Ron,ball,21
+Ron,black,70
+Ron,broom,12
+Ron,butterbeer,3
+Ron,chambers,6
+Ron,day,28
 Ron,don,3
-Ron,face,23
-Ron,fallen fifty,4
-Ron,fluffy,4
-Ron,glossy,4
-Ron,group,3
-Ron,hall,87
-Ron,hope,20
-Ron,ice,4
-Ron,magic,8
-Ron,mark,12
-Ron,rose,3
-Ron,ruby,8
-Ron,scarlet,4
-Ron,stunned,12
-Ron,tall,4
-Ron,uncle,3
-Rosmerta,Black,31
-Rosmerta,Dumbledore,5
-Rosmerta,Flitwick,16
-Rosmerta,Hagrid,11
-Rosmerta,Harry,4
-Rosmerta,Harry Potter,6
-Rosmerta,Hermione,6
-Rosmerta,James,4
-Rosmerta,Lily,3
-Rosmerta,Magic,3
-Rosmerta,McGonagall,24
-Rosmerta,Merlin,9
-Rosmerta,Ron,3
-Rosmerta,Sirius Black,18
-Rosmerta,day,6
-Rosmerta,face,3
+Ron,face,72
+Ron,fallen,36
+Ron,forest,3
+Ron,glossy,12
+Ron,group,16
+Ron,hall,21
+Ron,handsome,6
+Ron,holly,4
+Ron,hope,12
+Ron,magic,6
+Ron,mark,6
+Ron,one-eyed,18
+Ron,portly,3
+Ron,pumpkin,24
+Ron,rose,12
+Ron,tall,15
+Ron,the,2344
+Ron,uncle,8
+Rosmerta,Black,92
+Rosmerta,Dumbledore,3
+Rosmerta,Flitwick,8
+Rosmerta,Harry,5
+Rosmerta,James Potter,4
+Rosmerta,Magic,4
+Rosmerta,McGonagall,14
+Rosmerta,Ron,8
+Rosmerta,Sirius Black,12
+Rosmerta,The,9
+Rosmerta,day,4
+Rosmerta,hope,3
+Rosmerta,ice,8
+Rosmerta,the,60
 Rubeus Hagrid,Dumbledore,4
-Rubeus Hagrid,Ron,8
-SIRIUS BLACK,Crookshanks,9
-SIRIUS BLACK,McGonagall,3
-SIRIUS BLACK,Ron,8
-SNAPE,Black,7
+Rubeus Hagrid,Hagrid,3
+Rubeus Hagrid,Hermione,3
+SIRIUS BLACK,Cadogan,3
+SIRIUS BLACK,Hermione,4
+SIRIUS BLACK,McGonagall,6
+SIRIUS BLACK,the,4
 SNAPE,Harry Potter,4
-Seamus,Binky,4
-Seamus,Crookshanks,3
-Seamus,Dean,8
-Seamus,Dean Thomas,8
-Seamus,Harry,19
-Seamus,Lavender,5
+SNAPE,dawn,3
+Seamus,Binky,8
+Seamus,Crookshanks,8
+Seamus,Dean,3
+Seamus,Dean Thomas,4
+Seamus,Lavender,3
 Seamus,Lupin,4
-Seamus,Magic,1
-Seamus,Malfoy,4
-Seamus,Parvati,8
-Seamus,Ron,20
-Seamus,black,8
-Seamus Finnigan,Dean Thomas,8
-Seamus Finnigan,Grim,8
-Seamus Finnigan,Harry,8
-Seamus Finnigan,Hermione,19
-Seamus Finnigan,Neville,15
-Seamus Finnigan,Neville Longbottom,8
-Seamus Finnigan,Penelope,4
-Seamus Finnigan,Percy,4
-Seamus Finnigan,Ron,4
-Seamus Finnigan,day,8
-Seamus Finnigan,face,6
-Seamus Finnigan,group,4
-Severus,Black,11
-Severus,Dumbledore,78
-Severus,Harry,41
+Seamus,Parvati,4
+Seamus,Ron,4
+Seamus,Snape,4
+Seamus,The,3
+Seamus,the,52
+Seamus Finnigan,Dean Thomas,4
+Seamus Finnigan,Grim,4
+Seamus Finnigan,Harry,7
+Seamus Finnigan,Harry Potter,4
+Seamus Finnigan,Hermione,6
+Seamus Finnigan,Lady,3
+Seamus Finnigan,Lupin,3
+Seamus Finnigan,Malfoy,3
+Seamus Finnigan,Neville,6
+Seamus Finnigan,Neville Longbottom,4
+Seamus Finnigan,Parvati,8
+Seamus Finnigan,Penelope,8
+Seamus Finnigan,the,37
+Severus,Cornelius,3
+Severus,Dumbledore,22
 Severus,Harry Potter,3
-Severus,Lupin,9
-Severus,Merlin,6
-Severus,Ron,25
-Severus,Sirius,8
-Severus,Snape,24
-Severus,Trelawney,2
-Severus Snape,Harry,24
-Severus Snape,LORD,8
-Severus Snape,Snape,4
-Sirius,Black,69
-Sirius,Buckbeak,45
-Sirius,Crookshanks,19
-Sirius,Dumbledore,115
-Sirius,Flitwick,4
-Sirius,Hagrid,3
-Sirius,Harry,120
-Sirius,Harry Potter,64
-Sirius,Hermione,32
-Sirius,James,15
-Sirius,Lily,3
-Sirius,Lord,10
-Sirius,Lupin,52
-Sirius,Magic,8
-Sirius,Malfoy,4
-Sirius,Neville,4
+Severus,Hermione,11
+Severus,Lupin,76
+Severus,Magic,4
+Severus,Miss Granger,4
+Severus,Percy,16
+Severus,Poppy,4
+Severus,Ron,12
+Severus,Snape,23
+Severus,The,3
+Severus,Trelawney,8
+Severus,the,42
+Severus Snape,LORD,4
+Severus Snape,Snape,3
+Severus Snape,the,26
+Sirius,Black,184
+Sirius,Buckbeak,21
+Sirius,Crookshanks,28
+Sirius,Dumbledore,11
+Sirius,Flitwick,12
+Sirius,Harry,84
+Sirius,Harry Potter,11
+Sirius,Hermione,7
+Sirius,James,24
+Sirius,Lord,3
+Sirius,Lupin,85
+Sirius,Malfoy,3
 Sirius,Peeves,4
-Sirius,Penelope,12
-Sirius,Percy Weasley,3
-Sirius,Peter,48
-Sirius,Peter Pettigrew,3
-Sirius,Remus,3
-Sirius,Ron,45
-Sirius,Snape,30
-Sirius,Voldemort,4
-Sirius,able,35
-Sirius,black,4
-Sirius,butterbeer,3
-Sirius,count,8
-Sirius,day,9
-Sirius,face,27
-Sirius,forest,4
-Sirius,stunned,6
+Sirius,Penelope,8
+Sirius,Percy Weasley,4
+Sirius,Peter,44
+Sirius,Remus,29
+Sirius,Ron,44
+Sirius,Sirius Black,4
+Sirius,Snape,44
+Sirius,The,66
+Sirius,Uncle,4
+Sirius,Voldemort,7
+Sirius,able,8
+Sirius,face,20
+Sirius,forest,2
+Sirius,the,167
 Sirius Black,BLACK,12
-Sirius Black,Black,23
-Sirius Black,Dumbledore,12
-Sirius Black,GRIM,4
-Sirius Black,George,4
-Sirius Black,Hagrid,15
-Sirius Black,Hannah Abbott,8
-Sirius Black,Harry,154
-Sirius Black,Harry Potter,31
+Sirius Black,Black,2
+Sirius Black,Cadogan,3
+Sirius Black,Crookshanks,4
+Sirius Black,Dumbledore,6
+Sirius Black,Fred Weasley,4
+Sirius Black,GRIM,8
+Sirius Black,Gringotts,4
+Sirius Black,Hall,3
+Sirius Black,Harry,104
 Sirius Black,Hermione,3
-Sirius Black,James,4
-Sirius Black,James Potter,12
-Sirius Black,Lupin,12
-Sirius Black,MAGIC,3
-Sirius Black,Molly,8
-Sirius Black,Mr. Weasley,4
-Sirius Black,Neville,4
-Sirius Black,Peeves,8
-Sirius Black,Percy,5
-Sirius Black,Peter Pettigrew,3
-Sirius Black,Poppy,4
-Sirius Black,Ron,71
-Sirius Black,Rosmerta,8
-Sirius Black,Severus,3
-Sirius Black,Snape,8
-Sirius Black,Stanley,4
-Sirius Black,Voldemort,4
-Sirius Black,black,4
-Sirius Black,broom,12
-Sirius Black,butterbeer,10
+Sirius Black,Lupin,13
+Sirius Black,Magic,4
+Sirius Black,McGonagall,16
+Sirius Black,Miss Granger,8
+Sirius Black,Mr. Weasley,23
+Sirius Black,Peter,4
+Sirius Black,Peter Pettigrew,6
+Sirius Black,Ron,8
+Sirius Black,Seamus Finnigan,8
+Sirius Black,The,18
+Sirius Black,butterbeer,7
 Sirius Black,clever,4
-Sirius Black,day,12
-Sirius Black,face,12
-Snape,Black,40
-Snape,Buckbeak,3
-Snape,Cornelius Fudge,9
-Snape,Crookshanks,9
-Snape,Dean,3
-Snape,Dean Thomas,3
-Snape,Derek,3
+Sirius Black,count,3
+Sirius Black,face,40
+Sirius Black,the,193
+Snape,Black,230
+Snape,Crabbe,3
+Snape,Crookshanks,4
+Snape,Dean Thomas,4
 Snape,Dudley,4
-Snape,Dumbledore,38
-Snape,Florean Fortescue,3
-Snape,Fred,3
-Snape,Goyle,1
-Snape,HERMIONE,3
-Snape,Hall,8
-Snape,Harry,340
-Snape,Harry Potter,88
-Snape,Hermione,105
-Snape,James,3
-Snape,Lee Jordan,9
-Snape,Lupin,354
-Snape,Magic,6
-Snape,McGonagall,9
-Snape,Merlin,6
-Snape,Miss Granger,7
-Snape,Mr. Weasley,8
-Snape,Neville,48
-Snape,Pansy,8
-Snape,Parvati,13
-Snape,Percy,7
-Snape,Peter Pettigrew,9
-Snape,Ron,212
-Snape,Seamus Finnigan,3
-Snape,Severus,26
-Snape,Severus Snape,6
-Snape,Sirius,6
-Snape,Sirius Black,3
-Snape,Trelawney,11
-Snape,Trevor,10
-Snape,able,2
-Snape,angry,6
-Snape,black,12
-Snape,count,6
-Snape,day,14
-Snape,face,145
-Snape,forbidden,3
-Snape,hall,3
-Snape,one-eyed,9
-Stanley,Sirius Black,9
-TRELAWNEY,Harry,8
-TRELAWNEY,pumpkin,4
-Tom,Fred,8
-Tom,Harry,44
-Tom,Harry Potter,12
-Tom,Hedwig,6
-Tom,Hermione,4
-Tom,Mr. Potter,15
-Tom,Neville,4
-Tom,handsome,4
-Tom,magic,8
-Trelawney,Buckbeak,12
+Snape,Dumbledore,39
+Snape,Hagrid,4
+Snape,Harry,317
+Snape,Hermione,21
+Snape,James,4
+Snape,Lady,3
+Snape,Lupin,229
+Snape,Magic,4
+Snape,Malfoy,12
+Snape,McGonagall,16
+Snape,Miss Granger,24
+Snape,Mr. Weasley,9
+Snape,Neville,115
+Snape,Parvati,11
+Snape,Ron,112
+Snape,Severus,5
+Snape,Severus Snape,8
+Snape,Sirius,8
+Snape,Sirius Black,16
+Snape,THE,4
+Snape,The,73
+Snape,Trelawney,16
+Snape,Trevor,12
+Snape,Voldemort,4
+Snape,Zonko,24
+Snape,able,28
+Snape,angry,20
+Snape,black,32
+Snape,day,15
+Snape,face,154
+Snape,grim,8
+Snape,lady,12
+Snape,magic,3
+Snape,the,629
+Stanley,Sirius Black,8
+Stanley,the,4
+THE,Angelina,3
+THE,Black,6
+THE,Cho,3
+THE,Crookshanks,4
+THE,Flitwick,4
+THE,George,12
+THE,Hagrid,21
+THE,Harry,6
+THE,Hedwig,20
+THE,Hermione,45
+THE,Sirius Black,4
+THE,broom,12
+THE,face,8
+THE,stunned,4
+THE,the,112
+TRELAWNEY,Harry,4
+TRELAWNEY,the,8
+The,Alicia,4
+The,Black,34
+The,Buckbeak,20
+The,Cadogan,12
+The,Cho Chang,4
+The,Crookshanks,12
+The,Dean,12
+The,Don,4
+The,Draco Malfoy,4
+The,Dumbledore,45
+The,Fang,3
+The,Flitwick,11
+The,Forbidden,8
+The,Fred,6
+The,Fubster,3
+The,George,3
+The,Grim,4
+The,Gringotts,3
+The,HALL,3
+The,Hagrid,57
+The,Hall,3
+The,Hannah Abbott,8
+The,Harry,2062
+The,Harry Potter,239
+The,Hedwig,3
+The,Hermione,30
+The,James,7
+The,James Potter,4
+The,Lady,6
+The,Lavender,18
+The,Lord,3
+The,Lupin,193
+The,Magic,28
+The,Malfoy,26
+The,McGonagall,7
+The,Miss Granger,16
+The,Molly,4
+The,Mr. Weasley,11
+The,Neville,15
+The,Neville Longbottom,8
+The,Oliver Wood,3
+The,Pansy,8
+The,Parvati Patil,4
+The,Percy,43
+The,Peter,8
+The,Ron,195
+The,Rosmerta,16
+The,Seamus Finnigan,8
+The,Severus,24
+The,Sirius,18
+The,Snape,39
+The,Trelawney,44
+The,Trevor,4
+The,Uncle,48
+The,Voldemort,4
+The,Wendelin the Weird,4
+The,able,3
+The,ancient,4
+The,black,18
+The,bloody,6
+The,broom,3
+The,day,25
+The,evil,4
+The,face,36
+The,fallen,8
+The,fallen fifty,4
+The,forest,3
+The,hall,26
+The,handsome,8
+The,hope,3
+The,lady,4
+The,magic,12
+The,miles,8
+The,rose,4
+The,ruby,8
+The,scarlet,10
+The,the,365
+The fates,Hermione,4
+The fates,the,4
+The fates,the fates,4
+Tom,Harry,86
+Tom,Harry Potter,23
+Tom,Mr. Potter,4
+Tom,The,7
+Tom,the,8
+Trelawney,Buckbeak,3
 Trelawney,Day,4
-Trelawney,Dumbledore,35
+Trelawney,Dean Thomas,2
+Trelawney,Dumbledore,15
 Trelawney,Flitwick,4
-Trelawney,Grim,31
-Trelawney,Harry,135
-Trelawney,Harry Potter,22
-Trelawney,Hermione,111
-Trelawney,Lavender,56
-Trelawney,Lavender Brown,22
-Trelawney,Lord,33
-Trelawney,Lupin,20
-Trelawney,Magic,8
+Trelawney,Grim,75
+Trelawney,Hagrid,8
+Trelawney,Harry,120
+Trelawney,Harry Potter,7
+Trelawney,Hermione,18
+Trelawney,Lavender,12
+Trelawney,Lavender Brown,10
+Trelawney,Lupin,8
 Trelawney,McGonagall,28
-Trelawney,Minerva,7
-Trelawney,Miss Granger,8
+Trelawney,Minerva,8
+Trelawney,Miss Granger,6
 Trelawney,Neville,32
-Trelawney,Parvati,3
-Trelawney,Parvati Patil,2
-Trelawney,Ron,103
-Trelawney,Severus,5
-Trelawney,Snape,4
-Trelawney,Voldemort,8
-Trelawney,able,6
-Trelawney,ball,30
-Trelawney,day,12
+Trelawney,Parvati,4
+Trelawney,Ron,74
+Trelawney,The,48
+Trelawney,The fates,3
+Trelawney,Voldemort,4
+Trelawney,ball,3
+Trelawney,day,4
 Trelawney,face,28
-Trelawney,magic,4
-Trevor,Miss Granger,4
-Trevor,Neville,9
-Trevor,Snape,12
-Uncle,Black,8
-Uncle,Brutus,9
-Uncle,Dudley,24
-Uncle,Errol,4
+Trelawney,the,343
+Trevor,The,8
+Trevor,face,3
+Trevor,the,15
+Uncle,Brutus,33
+Uncle,Dean Thomas,12
+Uncle,Dudley,8
 Uncle,Fubster,4
-Uncle,Harry,19
-Uncle,Harry Potter,104
-Uncle,Hedwig,17
-Uncle,Hermione,32
-Uncle,Hermione Granger,2
-Uncle,Kit,4
+Uncle,Hagrid,3
+Uncle,Harry,201
+Uncle,Harry Potter,11
 Uncle,Lupin,4
-Uncle,McGonagall,7
-Uncle,Mr. Weasley,8
-Uncle,Petunia,8
-Uncle,RON,3
-Uncle,Ripper,12
-Uncle,Ron,11
-Uncle,Vernon,248
-Uncle,Vernon Dursley,8
-Uncle,able,8
-Uncle,angry,15
-Uncle,day,3
-Uncle,evil,8
-Uncle,face,24
-Uncle,hall,3
-Uncle,hope,4
-Uncle,trolley,3
-Uncle,uncle,4
-Vernon,Brutus,27
-Vernon,Dudley,12
-Vernon,Dumbledore,8
+Uncle,McGonagall,4
+Uncle,Petunia,125
+Uncle,Ripper,4
+Uncle,Ron,40
+Uncle,The,23
+Uncle,Vernon,109
+Uncle,Wendelin the Weird,3
+Uncle,able,11
+Uncle,angry,4
+Uncle,newspaper,4
+Uncle,the,63
+Vernon,Brutus,4
+Vernon,Dudley,8
 Vernon,Fubster,8
-Vernon,HARRY POTTER,9
-Vernon,Hagrid,3
-Vernon,Harry,259
-Vernon,Harry Potter,3
-Vernon,Hedwig,7
-Vernon,Hermione Granger,3
-Vernon,Lupin,3
-Vernon,Petunia,200
-Vernon,Ripper,3
-Vernon,Ron,38
-Vernon,Sirius,4
-Vernon,Uncle,68
-Vernon,able,3
-Vernon,bloody,9
-Vernon,broom,4
-Vernon,face,3
-Vernon,hope,3
-Vernon,newspaper,12
-Vernon,trolley,6
-Vernon Dursley,Ron,6
-Vernon Dursley,Vernon,4
-Vincent Crabbe,Harry,8
-Vincent Crabbe,face,4
-Voldemort,Albus Dumbledore,8
-Voldemort,Black,61
-Voldemort,Crookshanks,3
-Voldemort,Harry,110
-Voldemort,Harry Potter,7
-Voldemort,Hermione,12
-Voldemort,James,16
-Voldemort,Lord,96
-Voldemort,Lupin,16
-Voldemort,Malfoy,4
-Voldemort,Mr. Weasley,4
-Voldemort,Peter,12
-Voldemort,Ron,12
-Voldemort,Sirius,7
-Voldemort,Sirius Black,16
-Voldemort,face,6
-Voldemort,handsome,8
-Walden,Buckbeak,3
-Walden,Hagrid,6
+Vernon,HARRY,20
+Vernon,Hagrid,4
+Vernon,Harry,90
+Vernon,Harry Potter,4
+Vernon,Hedwig,32
+Vernon,Hermione,20
+Vernon,Hermione Granger,4
+Vernon,Kit,4
+Vernon,Magic,4
+Vernon,Mr. Weasley,8
+Vernon,Petunia,4
+Vernon,RON,4
+Vernon,Uncle,214
+Vernon,Vernon Dursley,8
+Vernon,Wendelin the Weird,8
+Vernon,day,12
+Vernon,hall,8
+Vernon,hope,8
+Vernon,magic,28
+Vernon,newspaper,8
+Vernon,the,232
+Vernon,trolley,12
+Vernon Dursley,the,12
+Vincent Crabbe,Harry,12
+Voldemort,Albus Dumbledore,6
+Voldemort,Black,18
+Voldemort,Draco,3
+Voldemort,Dumbledore,9
+Voldemort,Harry,21
+Voldemort,Hermione,24
+Voldemort,James,11
+Voldemort,Lord,36
+Voldemort,Lupin,3
+Voldemort,Malfoy,6
+Voldemort,Mr. Weasley,3
+Voldemort,Peter,15
+Voldemort,Sirius Black,8
+Voldemort,The,3
+Voldemort,face,16
+Voldemort,handsome,3
+Voldemort,the,174
+Walden,Buckbeak,4
+Walden,Harry,4
+Walden,the,4
+Wendelin the Weird,Harry,3
+Wendelin the Weird,Hedwig,8
+Wendelin the Weird,the,12
 Zonko,Bill,4
-Zonko,Fred,14
-Zonko,Harry,8
-Zonko,Harry Potter,8
+Zonko,Harry,16
 Zonko,Hermione,12
-Zonko,Lupin,14
-Zonko,Ron,9
-Zonko,Snape,14
-Zonko,butterbeer,13
-Zonko,day,3
-able,Black,19
-able,Buckbeak,17
-able,Dean Thomas,8
-able,Dumbledore,6
-able,Goyle,3
-able,Gringotts,3
-able,Hagrid,9
-able,Harry,35
-able,Harry Potter,36
-able,Hermione,12
-able,James,6
-able,Lady,3
-able,Lupin,31
+Zonko,Lupin,3
+Zonko,Severus,7
+Zonko,The,12
+Zonko,butterbeer,20
+Zonko,the,40
+able,Black,4
+able,Dumbledore,4
+able,Harry,206
+able,Harry Potter,4
+able,Lady,7
+able,Lupin,12
 able,Malfoy,3
-able,Miss Granger,6
-able,Peeves,3
-able,Ron,16
-able,Sirius,3
-able,Snape,39
-able,Trelawney,2
-able,Vernon,3
-able,angry,3
-able,broom,4
-able,day,3
-able,face,3
-able,magic,6
-able,miles,9
-able,one-eyed,12
-able,rose,4
-amber,Hedwig,12
-ancient,Magic,6
+able,McGonagall,8
+able,Miss Granger,4
+able,Peeves,4
+able,Ron,12
+able,Sirius,23
+able,Snape,8
+able,The,36
+able,Trelawney,8
+able,Uncle,12
+able,Vernon,4
+able,magic,4
+able,the,39
+amber,Hedwig,4
+amber,Hermione,8
+ancient,Flitwick,3
+ancient,Hermione,12
+ancient,Magic,4
 ancient,Ron,4
-ancient,black,20
-ancient,broom,12
-ancient,hall,4
-angry,Alicia,12
-angry,Crookshanks,9
-angry,Dumbledore,36
-angry,Harry,46
-angry,Harry Potter,4
+ancient,black,6
+ancient,tall,6
+ancient,the,4
+angry,Crookshanks,8
+angry,Dumbledore,6
+angry,Flitwick,4
+angry,Grim,4
+angry,Harry,31
 angry,Hermione,3
-angry,Malfoy,8
-angry,Peeves,3
-angry,Percy,4
-angry,Ron,15
-angry,Severus,12
-angry,Sirius Black,3
-angry,Snape,8
-angry,Vernon,20
-angry,broom,3
-angry,pumpkin,3
-bald,Black,4
-bald,Crookshanks,6
-bald,Harry,8
-bald,Harry Potter,3
-bald,Hermione,3
-bald,Ron,12
-bald,face,3
-bald,fallen,6
+angry,Lupin,3
+angry,McGonagall,4
+angry,Oliver Wood,4
+angry,Peeves,4
+angry,Ron,16
+angry,Sirius Black,12
+angry,Snape,9
+angry,The,16
+angry,Uncle,16
+angry,Vernon,3
+angry,face,12
+angry,the,47
+angry,uncle,8
+bald,Black,7
+bald,Crookshanks,4
+bald,Hermione,4
+bald,Ron,8
+bald,fallen,4
 bald,forest,8
+bald,the,36
+ball,Flitwick,4
 ball,George,4
-ball,Gringotts,4
-ball,Harry,56
-ball,Hermione,15
-ball,Lavender,4
-ball,Neville,4
-ball,Oliver,3
-ball,Oliver Wood,8
-ball,Parvati,3
-ball,Ron,26
-ball,Trelawney,21
-ball,handsome,4
-black,Bill,4
-black,Crookshanks,9
-black,Hagrid,48
-black,Harry,103
-black,Harry Potter,27
-black,Hermione,13
-black,Ice,4
-black,Lily,3
-black,Lupin,27
-black,MAGIC,4
-black,Oliver Wood,3
-black,Ron,71
-black,Seamus,3
-black,Snape,80
-black,Zonko,2
-black,bald,4
-black,broom,6
-black,day,3
-black,face,22
-black,hall,8
-black,one-eyed,4
-black,tall,4
-bloody,Hagrid,6
-bloody,Harry,4
-bloody,Lupin,6
-bloody,Uncle,9
-blossom,George,8
+ball,Hermione,20
+ball,Parvati,8
+ball,Ron,8
+ball,The fates,8
+ball,Trelawney,16
+ball,black,12
+ball,broom,4
+ball,day,16
+ball,handsome,8
+ball,the,60
+black,Crookshanks,12
+black,Dumbledore,4
+black,Flitwick,8
+black,Ginny,8
+black,Goyle,12
+black,Hagrid,40
+black,Harry,15
+black,Hermione,47
+black,Kit,4
+black,Lupin,4
+black,Oliver,4
+black,Oliver Wood,4
+black,Percy,8
+black,Seamus,12
+black,Sirius,3
+black,Sirius Black,4
+black,Snape,6
+black,The,4
+black,Voldemort,4
+black,bald,12
+black,broom,3
+black,day,12
+black,face,8
+black,fallen,4
+black,one-eyed,12
+black,the,315
+bloody,Lupin,4
+bloody,The,20
+bloody,Uncle,12
 blossom,Harry Potter,4
-broom,Cedric Diggory,8
-broom,Cho,3
-broom,Crookshanks,3
-broom,Draco Malfoy,4
-broom,Flitwick,3
-broom,Fred,3
-broom,Fred Weasley,3
-broom,George,4
-broom,George Weasley,8
-broom,Gringotts,4
-broom,Hagrid,4
-broom,Harry,193
-broom,Harry Potter,16
-broom,Hermione,29
-broom,Katie Bell,8
-broom,Lee Jordan,8
-broom,Lupin,4
-broom,Malfoy,12
-broom,Marcus Flint,12
-broom,Montague,3
-broom,Penny,4
-broom,Ron,26
-broom,Snape,12
+blossom,THE,8
+broom,Davies,4
+broom,Draco Malfoy,8
+broom,Dumbledore,4
+broom,Flitwick,8
+broom,Fred Weasley,8
+broom,Harry,182
+broom,Harry Potter,4
+broom,McGonagall,4
+broom,Montague,12
+broom,Penelope,4
+broom,Ron,8
+broom,The,4
 broom,Uncle,4
-broom,ball,4
-broom,day,22
-broom,face,36
-broom,miles,3
-broom,scarlet,6
+broom,day,20
+broom,evil,4
+broom,face,3
+broom,fallen,12
+broom,hall,12
+broom,miles,4
+broom,the,189
 brothers,Black,4
-brothers,Flitwick,3
-brothers,Fred,3
-brothers,Percy,12
-butterbeer,Black,8
-butterbeer,Dumbledore,4
-butterbeer,Flitwick,4
-butterbeer,George,8
-butterbeer,George Weasley,4
-butterbeer,Harry,16
-butterbeer,Harry Potter,3
-butterbeer,Hermione,36
-butterbeer,Lupin,22
-butterbeer,Sirius Black,3
-butterbeer,face,3
-butterbeer,rose,8
-chambers,Ron,9
-clever,Buckbeak,5
-clever,Harry,4
-clever,Hermione,12
-clever,Sirius Black,8
-count,Buckbeak,9
+brothers,Fred,8
+brothers,Ginny,12
+butterbeer,Harry,79
+butterbeer,Harry Potter,4
+butterbeer,Hermione,4
+butterbeer,Lupin,3
+butterbeer,McGonagall,12
+butterbeer,Ron,4
+butterbeer,The,23
+butterbeer,Zonko,4
+butterbeer,pumpkin,3
+chambers,Harry,4
+chambers,the,8
+clever,Buckbeak,4
+clever,Hagrid,2
+clever,Molly,4
+clever,Ron,4
+clever,The,3
+clever,the,11
 count,Dumbledore,8
-count,Flitwick,4
-count,Harry,6
-count,Hermione,3
-count,Lupin,13
-count,Ron,6
-count,Snape,8
-count,forest,4
-count,rose,4
-daisy,Ron,4
-daisy,Snape,8
-dawn,Cedric Diggory,4
+count,Harry,27
+count,Hermione,4
+count,Lupin,8
+count,Neville,12
+count,Peter Pettigrew,4
+count,Ron,4
+count,Sirius,8
+count,the,8
+daisy,Snape,4
+daisy,the,8
+dawn,Crookshanks,8
 dawn,Flitwick,8
-dawn,Harry,8
-dawn,SNAPE,4
-day,Black,8
-day,Buckbeak,20
-day,Cadogan,16
-day,Dean Thomas,4
-day,Dudley,4
-day,Fubster,4
-day,Hagrid,11
-day,Harry,174
-day,Harry Potter,27
-day,Hermione,44
-day,Lady,4
-day,Lavender,5
-day,Lupin,6
-day,Magic,12
-day,Malfoy,4
-day,McGonagall,12
-day,Oliver,3
-day,Parvati,4
-day,Petunia,4
-day,Ron,118
-day,Rosmerta,4
-day,Sirius Black,4
-day,Trelawney,3
-day,Vernon,8
-day,Zonko,4
-day,ball,2
-day,butterbeer,4
-day,dawn,4
+dawn,the,8
+day,Crookshanks,4
+day,Hagrid,14
+day,Harry,7
+day,Harry Potter,3
+day,Hermione,3
+day,Malfoy,6
+day,McGonagall,6
+day,Parvati,16
+day,Percy,4
+day,Peter Pettigrew,3
+day,Petunia,8
+day,Ron,4
+day,Rosmerta,7
+day,Seamus Finnigan,8
+day,The,9
+day,Trelawney,8
+day,Vernon,3
 day,face,4
-day,marsh,4
-day,scarlet,8
-don,Black,4
-don,Buckbeak,15
+day,fallen,8
+day,the,453
 don,Don,3
-don,Dumbledore,3
-don,Hagrid,33
-don,Harry,3
-don,Harry Potter,8
-don,Malfoy,3
-don,Marsh,6
-duke,Ron,6
-duke,able,3
-evil,Black,3
-evil,Dudley,6
-evil,Harry,3
-evil,Hermione,12
-evil,Lupin,3
-evil,Peter,3
+don,Dumbledore,4
+don,Hagrid,60
+don,Harry,14
+don,Marsh,4
+don,THE,4
+don,the,16
+duke,Ron,4
+duke,the,8
+evil,Harry,18
+evil,Peter,5
+evil,Ron,4
 evil,Snape,2
-evil,Vernon,3
-evil,broom,5
-evil,face,3
+evil,The,6
+evil,Vernon,8
+evil,broom,3
+evil,face,2
+evil,hall,4
+evil,the,8
 face,Alicia,8
-face,Black,79
-face,Buckbeak,50
-face,Cedric Diggory,4
-face,Crabbe,4
-face,Crookshanks,6
-face,Dudley,15
-face,Dumbledore,9
-face,Fang,4
-face,Fred,4
-face,Fubster,4
-face,George Weasley,4
-face,Goyle,11
-face,Hagrid,18
-face,Harry,601
-face,Harry Potter,38
-face,Hedwig,8
-face,Hermione,100
-face,James,12
-face,Lady,3
-face,Lily,3
-face,Lupin,36
-face,Magic,8
-face,Marcus Flint,4
-face,McGonagall,6
+face,Black,74
+face,Buckbeak,6
+face,Crookshanks,13
+face,Dean Thomas,4
+face,Dudley,11
+face,Dumbledore,7
+face,Face,3
+face,Fang,3
+face,Fred,6
+face,Fubster,3
+face,George,3
+face,Goyle,3
+face,Gringotts,12
+face,Hagrid,31
+face,Harry,512
+face,Harry Potter,9
+face,Hedwig,11
+face,Hermione,54
+face,James,6
+face,Lavender,3
+face,Lupin,132
+face,Malfoy,27
+face,McGonagall,67
 face,Miss Granger,4
-face,Neville,19
-face,Pansy Parkinson,8
-face,Parvati,8
-face,Peter,5
-face,Petunia,10
-face,Remus,25
-face,Ron,358
-face,Seamus,16
-face,Severus,8
-face,Sirius,17
-face,Sirius Black,14
-face,Snape,54
-face,Trevor,8
-face,Uncle,6
-face,Vernon,29
-face,Voldemort,40
-face,ball,12
-face,black,8
-face,day,4
+face,Neville,51
+face,Pansy Parkinson,12
+face,Percy,4
+face,Peter,11
+face,Petunia,7
+face,Remus,6
+face,Ripper,4
+face,Ron,78
+face,Seamus,3
+face,Seamus Finnigan,6
+face,Severus,4
+face,Sirius,27
+face,Sirius Black,4
+face,Snape,59
+face,The,114
+face,Trelawney,11
+face,Uncle,29
+face,Vernon,7
+face,Vincent Crabbe,4
+face,Voldemort,18
+face,able,12
+face,black,3
+face,broom,6
+face,count,3
 face,don,4
-face,fluffy,4
-face,forbidden,4
-face,hall,15
-face,handsome,15
-face,magic,4
-face,miles,11
-face,stunned,12
-fallen,Black,8
-fallen,Dumbledore,4
-fallen,Hagrid,4
-fallen,Harry,38
-fallen,Hermione,4
-fallen,McGonagall,4
-fallen,Percy,4
-fallen,Peter,4
-fallen,Ron,44
+face,gorilla,4
+face,group,3
+face,handsome,3
+face,ice,4
+face,newspaper,3
+face,rose,4
+face,stunned,16
+face,the,217
+fallen,Harry,9
+fallen,Ron,3
 fallen,angry,4
-fallen,broom,6
-fallen,day,6
-fallen,scarlet,12
-fallen fifty,Grim,3
-fallen fifty,Hermione,4
-fallen fifty,Ron,4
-fluffy,Black,8
-fluffy,Harry,18
-fluffy,Hermione,4
-fluffy,Neville Longbottom,9
-fluffy,Peter,4
-forbidden,Davey Gudgeon,8
-forbidden,Harry,16
-forbidden,Neville,12
-forbidden,Snape,12
-forest,Buckbeak,9
-forest,Dumbledore,3
-forest,Grim,9
-forest,Hagrid,33
-forest,Harry,22
-forest,Harry Potter,5
-forest,Hermione,12
-forest,Lavender Brown,3
-forest,Lupin,13
-forest,Malfoy,2
-forest,Ron,12
-forest,Sirius,8
-foul-smelling,Crabbe,4
-foul-smelling,Harry,8
-fry,Dudley,3
-fry,Harry Potter,3
-fry,Petunia,3
-glossy,Goyle,3
-glossy,Ron,9
-glossy,rose,6
-grim,Snape,12
-group,Albus Dumbledore,8
-group,Binky,3
-group,Crookshanks,3
-group,Goyle,3
-group,Hagrid,3
-group,Harry,8
-group,Harry Potter,4
-group,Hermione,1
-group,Lavender,16
-group,Malfoy,16
-group,Ron,23
-group,Sirius,4
-group,day,3
-group,one-eyed,6
-hall,Black,8
-hall,Cadogan,8
-hall,Crabbe,8
-hall,Dudley,6
-hall,Dumbledore,33
-hall,George,8
-hall,Grim,4
-hall,Hagrid,14
-hall,Hall,28
-hall,Harry,90
-hall,Harry Potter,68
-hall,Hermione,68
-hall,Lupin,8
-hall,Magic,3
-hall,McGonagall,3
-hall,Neville,16
-hall,Percy,24
-hall,Petunia,4
-hall,Ripper,12
-hall,Ron,23
-hall,Trelawney,4
-hall,Vernon,3
-hall,evil,4
+fallen,bald,3
+fallen,the,144
+fallen fifty,Grim,12
+fluffy,Black,4
+fluffy,Harry,4
+fluffy,Hedwig,3
+fluffy,Neville Longbottom,12
+fluffy,face,12
+fluffy,the,12
+forbidden,Davey Gudgeon,12
+forbidden,Harry Potter,12
+forbidden,McGonagall,4
+forbidden,Neville,8
+forbidden,The,8
+forbidden,face,4
+forest,Buckbeak,8
+forest,Dumbledore,12
+forest,Grim,12
+forest,Hagrid,4
+forest,Harry,42
+forest,Harry Potter,7
+forest,Hermione,23
+forest,Lupin,4
+forest,Malfoy,6
+forest,The,3
+forest,the,56
+foul-smelling,the,12
+fry,Harry Potter,4
+fry,Petunia,8
+glossy,Buckbeak,6
+glossy,Malfoy,3
+glossy,the,12
+gorilla,Harry,4
+gorilla,Malfoy,6
+grim,Lee Jordan,7
+group,Crabbe,12
+group,George,4
+group,Hagrid,8
+group,Hermione,52
+group,Ron,7
+group,THE,12
+group,one-eyed,4
+group,the,15
+hall,Black,4
+hall,Dudley,12
+hall,Dumbledore,64
+hall,Forbidden,12
+hall,George,4
+hall,Goyle,20
+hall,Hagrid,7
+hall,Harry,12
+hall,Harry Potter,24
+hall,Hedwig,4
+hall,Percy,12
+hall,Ron,24
+hall,Snape,4
 hall,face,4
-hall,fallen,6
-handsome,Black,4
-handsome,Harry,43
-handsome,Ron,9
-handsome,Tom,4
-handsome,Voldemort,3
-handsome,broom,3
-handsome,face,6
-holly,Hermione,8
-holly,Ron,10
-hope,Bill,3
-hope,Black,6
-hope,Buckbeak,3
-hope,Dumbledore,6
-hope,Fred,3
-hope,George,3
-hope,Hagrid,6
-hope,Harry,9
-hope,Harry Potter,12
-hope,Hedwig,3
-hope,Hermione,20
-hope,Lupin,14
-hope,Magic,3
-hope,McGonagall,1
+hall,the,281
+handsome,Harry,12
+handsome,Hedwig,8
+handsome,Hermione,12
+handsome,Mr. Potter,3
+handsome,The,3
+handsome,the,42
+holly,Hall,8
+holly,Harry,12
+holly,Ron,4
+hope,Black,12
+hope,Dumbledore,20
+hope,Hagrid,12
+hope,Hall,12
+hope,Harry Potter,16
+hope,Hermione,19
+hope,Lupin,8
+hope,Magic,8
+hope,Oliver,4
+hope,Percy,8
 hope,Peter,5
-hope,Ron,18
-hope,Snape,14
-hope,Vernon,8
-hope,evil,2
-hope,fallen,3
-hope,uncle,13
-ice,Cornelius Fudge,2
-ice,Hermione,5
-ice,Magic,5
+hope,Ron,15
+hope,Snape,4
+hope,the,68
+hope,uncle,12
+ice,Harry,16
+ice,Ice,4
 ice,McGonagall,4
-ice,Ron,3
-ice,Rosmerta,8
-ice,black,7
+ice,Neville,4
+ice,the,16
 lady,Cadogan,3
-lady,Harry Potter,3
-lady,Hermione,20
-lady,McGonagall,10
-lady,Percy,3
-lady,stunned,6
-loony,Lupin,12
-magic,Black,10
-magic,Dudley,16
-magic,Harry,32
-magic,Harry Potter,24
-magic,Lupin,6
-magic,Magic,15
-magic,McGonagall,3
-magic,Snape,7
-magic,Trelawney,6
-magic,able,16
-magic,face,18
-magic,uncle,3
-mark,Black,8
-mark,Cho,6
-mark,Fred,3
-mark,Harry,6
-mark,Miss Granger,4
-mark,Snape,8
-marsh,Harry Potter,8
-marsh,Lupin,4
-mercy,Harry,7
-mercy,Lupin,4
-miles,Harry,29
-newspaper,Gringotts,4
+lady,Harry,16
+lady,McGonagall,4
+lady,Percy,4
+lady,The,4
+lady,face,8
+lady,the,20
+loony,Peeves,12
+magic,Black,8
+magic,Harry,40
+magic,Harry Potter,8
+magic,Hermione,4
+magic,Magic,12
+magic,Trelawney,4
+magic,face,4
+magic,tall,8
+magic,the,104
+mark,Ginny,8
+mark,Harry,12
+mark,Hermione,4
+mark,Ron,4
+mark,the,20
+marsh,day,4
+marsh,the,8
+mercy,James,8
+mercy,the,13
+miles,Harry,3
+miles,the,31
+newspaper,Arthur Weasley,8
 newspaper,Harry,4
-newspaper,Harry Potter,10
-newspaper,Magic,4
-newspaper,Uncle,12
+newspaper,Harry Potter,4
 newspaper,black,4
-one-eyed,Fred,19
-one-eyed,George,14
-one-eyed,Harry,34
-one-eyed,Harry Potter,5
-one-eyed,Hermione,3
-one-eyed,Ron,25
-one-eyed,Severus Snape,3
-one-eyed,Snape,28
-one-eyed,group,4
-portly,Hagrid,5
-portly,Harry,6
-portly,Neville,3
-portly,Ron,3
+newspaper,the,26
+one-eyed,George,8
+one-eyed,Harry,12
+one-eyed,Harry Potter,4
+one-eyed,Hermione,12
+one-eyed,Severus Snape,4
+one-eyed,duke,4
+one-eyed,the,112
+portly,Hagrid,12
+portly,Harry,4
+portly,Neville,6
+pumpkin,Angelina Johnson,8
+pumpkin,Buckbeak,40
 pumpkin,Don,8
-pumpkin,Dumbledore,4
-pumpkin,Fred,12
-pumpkin,George Weasley,3
-pumpkin,Hagrid,30
-pumpkin,Harry,36
-pumpkin,Harry Potter,8
-pumpkin,Hermione,3
-pumpkin,Ron,12
-rose,Alicia Spinnet,3
-rose,Black,11
-rose,Buckbeak,16
-rose,Cho,9
-rose,Harry,31
-rose,Harry Potter,3
-rose,Hermione,7
-rose,James,14
-rose,Lily,3
-rose,Lupin,11
-rose,McGonagall,3
-rose,Sirius,4
-rose,able,3
-rose,face,6
-ruby,Harry Potter,4
-ruby,Hermione,3
-ruby,Ron,3
-ruby,black,8
-ruby,stunned,4
+pumpkin,Hagrid,28
+pumpkin,Harry,8
+pumpkin,Harry Potter,4
+pumpkin,Hermione,12
+pumpkin,scarlet,4
+pumpkin,the,8
+rose,Alicia Spinnet,4
+rose,Black,8
+rose,Cho,8
+rose,Hagrid,4
+rose,Harry,3
+rose,Hermione,24
+rose,James,8
+rose,Remus,4
+rose,face,4
+rose,the,86
+ruby,Harry Potter,12
+ruby,Ron,4
+ruby,face,4
+ruby,the,4
 scarlet,Angelina,4
+scarlet,Crabbe,8
 scarlet,George,4
-scarlet,Ginny,3
-scarlet,Harry,45
-scarlet,Harry Potter,3
-scarlet,Lupin,3
-scarlet,Malfoy,8
+scarlet,Ginny,4
+scarlet,Hall,12
+scarlet,Harry,33
+scarlet,Hermione,4
+scarlet,Marcus Flint,8
 scarlet,Miss Granger,4
-scarlet,Neville,8
-scarlet,Ron,9
-scarlet,broom,4
-scarlet,day,3
-scarlet,grim,8
-scarlet,pumpkin,3
-stunned,Black,6
-stunned,Cadogan,8
-stunned,Harry,2
-stunned,Hermione,9
-stunned,Lupin,3
-stunned,McGonagall,6
-stunned,Ron,30
-stunned,Rubeus Hagrid,8
-stunned,black,4
-stunned,face,6
-stunned,fluffy,2
-stunned,lady,4
-tall,Cedric Diggory,3
-tall,Fred,3
+scarlet,Ron,4
+scarlet,Snape,8
+scarlet,THE,8
+scarlet,broom,12
+scarlet,day,8
+scarlet,the,8
+stunned,Black,4
+stunned,Goyle,4
+stunned,Harry,8
+stunned,Ron,12
+stunned,Sirius,4
+stunned,face,4
+stunned,the,72
+tall,Angelina,7
 tall,Ginny,4
-tall,Hagrid,3
-tall,Hermione,12
+tall,Harry Potter,8
+tall,Hermione,8
 tall,Katie,4
-tall,Lavender Brown,6
-tall,Lupin,6
-tall,Mr. Weasley,8
-tall,Neville,3
-tall,Ron,6
-tall,ancient,6
-tall,black,6
-trolley,Harry,12
-trolley,Hedwig,12
+tall,Lavender Brown,4
+tall,Lupin,4
+tall,Ron,8
+tall,black,32
+tall,magic,4
+tall,the,4
+the,Albus Dumbledore,6
+the,Ancient,12
+the,Angelina,24
+the,Angelina Johnson,3
+the,Apothecary,4
+the,BROOM,4
+the,Bathilda,8
+the,Bilius,8
+the,Bill,16
+the,Black,507
+the,Brutus,3
+the,Buckbeak,173
+the,CROOKSHANKS,6
+the,Cadogan,54
+the,Charlie,12
+the,Cho,29
+the,Cho Chang,12
+the,Cornelius,12
+the,Cornelius Fudge,27
+the,Crabbe,12
+the,Crookshanks,150
+the,Davies,6
+the,Dean,21
+the,Dean Thomas,10
+the,Don,12
+the,Draco,33
+the,Draco Malfoy,12
+the,Dudley,51
+the,Dumbledore,209
+the,Errol,26
+the,Fang,30
+the,Flitwick,24
+the,Florean Fortescue,3
+the,Forbidden,8
+the,Forest,47
+the,Fred,519
+the,Fred Weasley,6
+the,Fubster,4
+the,George,57
+the,George Weasley,47
+the,Ginny,14
+the,Goyle,6
+the,Grim,15
+the,Gringotts,20
+the,HARRY,9
+the,HARRY POTTER,4
+the,HERMIONE,9
+the,Hagrid,184
+the,Hall,30
+the,Harry,4674
+the,Harry Potter,2972
+the,Hedwig,21
+the,Hermes,12
+the,Hermione,1775
+the,Hope,3
+the,James,28
+the,James Potter,28
+the,Katie,4
+the,Katie Bell,12
+the,Kit,6
+the,LORD,4
+the,Lady,9
+the,Lavender,53
+the,Lavender Brown,6
+the,Lee,28
+the,Lee Jordan,28
+the,Lily,34
+the,Loony,8
+the,Lord,69
+the,Lucius Malfoy,14
+the,Lupin,341
+the,MAGIC,20
+the,Magic,59
+the,Malfoy,355
+the,Malkin,3
+the,Marsh,9
+the,McGonagall,359
+the,Merlin,24
+the,Minerva,6
+the,Miss Granger,21
+the,Molly,11
+the,Montague,4
+the,Mr. Weasley,105
+the,Neville,331
+the,Neville Longbottom,27
+the,Nick,6
+the,Oliver,9
+the,Oliver Wood,9
+the,Parvati,46
+the,Parvati Patil,6
+the,Peeves,12
+the,Penelope,6
+the,Penelope Clearwater,3
+the,Penny,15
+the,Percy,57
+the,Peter,61
+the,Peter Pettigrew,12
+the,Petunia,15
+the,Poppy,3
+the,RON,3
+the,Remus,13
+the,Ripper,33
+the,Ron,456
+the,Rosmerta,80
+the,SIRIUS BLACK,4
+the,Seamus,11
+the,Seamus Finnigan,26
+the,Severus,23
+the,Severus Snape,4
+the,Sirius,284
+the,Sirius Black,65
+the,Snape,652
+the,Stanley,3
+the,THE,35
+the,The,1453
+the,Tom,77
+the,Trelawney,238
+the,Uncle,104
+the,Vernon,166
+the,Voldemort,18
+the,Walden,6
+the,Zonko,24
+the,able,155
+the,ancient,9
+the,angry,42
+the,bald,12
+the,ball,33
+the,black,56
+the,bloody,19
+the,blossom,3
+the,broom,124
+the,brothers,3
+the,butterbeer,51
+the,chambers,3
+the,clever,4
+the,count,45
+the,dawn,6
+the,day,35
+the,don,21
+the,evil,18
+the,face,486
+the,fallen,9
+the,fallen fifty,4
+the,fluffy,24
+the,forbidden,42
+the,forest,76
+the,fry,3
+the,gorilla,8
+the,group,23
+the,hall,51
+the,handsome,17
+the,holly,7
+the,hope,77
+the,ice,19
+the,lady,12
+the,magic,48
+the,mark,12
+the,mercy,3
+the,newspaper,15
+the,one-eyed,36
+the,portly,3
+the,pumpkin,24
+the,rose,20
+the,ruby,16
+the,scarlet,48
+the,stunned,12
+the,tall,9
+the,the fates,3
+the,uncle,33
+the fates,Hermione,4
+the fates,the,8
+trolley,Harry,4
+trolley,Hermione,12
+trolley,the,8
 uncle,Black,8
-uncle,Buckbeak,8
-uncle,Dumbledore,8
-uncle,Grim,3
-uncle,Gringotts,4
-uncle,Harry,39
-uncle,Magic,9
-uncle,McGonagall,13
-uncle,Ron,10
-uncle,Vernon,4
-uncle,angry,16
-uncle,hope,8
+uncle,Buckbeak,4
+uncle,Grim,4
+uncle,Harry,33
+uncle,McGonagall,17
+uncle,Ron,4
+uncle,The,4
+uncle,Uncle,4
+uncle,angry,8
+uncle,hope,3
+uncle,the,60

@@ -23,18 +23,25 @@ alias_map = {
     'rubeus': 'hagrid',
     'dark lord': 'voldemort',
     'lord': 'voldemort',
-    'uncle': 'vernon'
+    'uncle': 'vernon',
+    'draco malfoy' : 'malfoy',
+    'gilderoy lockhart': 'lockhart',
+    'sirus black': 'sirius',
+    'severus snape': 'snape',
+    'severus': 'snape',
+    'tom riddle': 'voldemort',
+    'marvolo': 'voldemort'
     # Add other variants as needed
 }
 
 # Stopplist: characters to exclude from visualization
-stopplist = {'mr.', 'mrs.', 'miss', 'dr.', 'sir', 'madam', 'narrator', 'unknown', 'the','page', 'forest', 'voice', 'will', 'dungeon', 
-              'staring', 'two', 'boy', 'three', 'third', 'able ', 'rich', 'magic', 'dark', 'father', 'potions', 'witch', 'fat', 'little',
+stopplist = {'mr.', 'mrs.', 'miss', 'dr.', 'sir', 'madam', 'narrator', 'unknown', 'the', 'page', 'forest', 'voice', 'will', 'dungeon', 
+              'staring', 'two', 'boy', 'three', 'third', 'able', 'rich', 'magic', 'dark', 'father', 'potions', 'witch', 'fat', 'little',
               'mark', 'st', 'hall', 'house', 'death', 'face', 'bloody', 'ice', 'quiditch', 'ceremony', 'serpent', 'second', 'ghost', 'kit',
               'keeper', 'secret', 'angry', 'ministry', 'curious', 'night', 'ancient', 'bane', 'old', 'tall', 'nope' 'young', 'leaky', 'evil',
               'goblin', 'entrance', 'squat,', 'circe', 'gloomy', 'knight', 'norwegian', 'hope', 'first', 'music', 'red', 'platform', 'day',
               'fallen', 'wizard', 'group', 'h.', 'g.', 'newspaper', 'crowd', 'owner', 'red-haired', 'm.', 'magical', 'holy', 'paper', 'mother',
-              'hogwarts', 'stunned', 'man', 'forbidden', 'rose', 'broom'}  # extend as needed
+              'hogwarts', 'stunned', 'man', 'forbidden', 'rose', 'broom', 'black', 'brothers'}  # extend as needed
 
 
 
@@ -63,31 +70,42 @@ def filter_weak_nodes(df, min_weight=MIN_TOTAL_WEIGHT):
 
 # Build and style network with node sizing by weight
 def create_network_from_df(df, width, height, enable_physics=False):
+    # 1) NetworkX-Graph aufbauen
     G = nx.from_pandas_edgelist(
         df, source='source', target='target', edge_attr='value', create_using=nx.Graph()
     )
-    # Compute communities
     part = community_louvain.best_partition(G)
     nx.set_node_attributes(G, part, 'group')
-    # Compute node sizes based on weighted degree
     for node in G.nodes():
         total_weight = sum(d['value'] for _, _, d in G.edges(node, data=True))
-        # scale: base size 10 plus weight * 5
-        G.nodes[node]['size'] = 10 + total_weight/50
+        size = 10 + total_weight/50
+        G.nodes[node]['size'] = size
 
+    # 2) PyVis-Network erzeugen und Graph importieren
     net = Network(
         width=f'{width}px',
         height=f'{height}px',
-        bgcolor='#222222',
-        font_color='white',
+        bgcolor="#000000",
+        font_color='white',    # Default-Font für Buttons, etc.
         directed=False
     )
     net.from_nx(G)
+
+    # 3) Für jede Node die font-Eigenschaften setzen
+    for n in net.nodes:
+        n['font'] = {
+            'size': n['size'],  # Schriftgröße = Knotengröße
+            'color': 'white'     # Schriftfarbe explizit weiß
+        }
+
+    # 4) Physics-Buttons
     if enable_physics:
         net.show_buttons(filter_=['physics'])
     else:
         net.toggle_physics(False)
+
     return net
+
 
 # Ensure output directory exists
 os.makedirs(output_dir, exist_ok=True)
