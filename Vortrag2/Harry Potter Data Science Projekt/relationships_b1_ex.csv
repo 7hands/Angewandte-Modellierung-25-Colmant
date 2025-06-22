@@ -1,0 +1,29 @@
+source,target,value
+Dumbledore,McGonagall,124
+Dumbledore,Hagrid,83
+Hagrid,McGonagall,66
+Hagrid,Quirrell,36
+Hagrid,Ron,297
+Dumbledore,Ron,143
+Malfoy,Ron,141
+McGonagall,Ron,68
+Quirrell,Ron,36
+Dumbledore,Quirrell,43
+Quirrell,Snape,117
+Malfoy,Snape,44
+Flitwick,McGonagall,40
+McGonagall,Quirrell,19
+Hagrid,Snape,94
+Flitwick,Snape,15
+McGonagall,Snape,23
+Ron,Snape,263
+Hagrid,Malfoy,49
+Flitwick,Ron,39
+Malfoy,McGonagall,12
+McGonagall,Miss Granger,15
+Miss Granger,Snape,8
+Flitwick,Hagrid,7
+Dumbledore,Snape,44
+Miss Granger,Quirrell,4
+Malfoy,Quirrell,4
+Ginny,Ron,2

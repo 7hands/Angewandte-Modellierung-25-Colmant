@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": "Harry", "label": "Harry", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Third", "label": "Third", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Petunia", "label": "Petunia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dudley", "label": "Dudley", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dursley", "label": "Dursley", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hogwarts", "label": "Hogwarts", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Uncle", "label": "Uncle", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "House", "label": "House", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hedwig", "label": "Hedwig", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Vernon", "label": "Vernon", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mason", "label": "Mason", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Quidditch", "label": "Quidditch", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hermione", "label": "Hermione", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Two", "label": "Two", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dobby", "label": "Dobby", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fred", "label": "Fred", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "George", "label": "George", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Draco", "label": "Draco", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Weasley", "label": "Weasley", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Celestina", "label": "Celestina", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Arthur", "label": "Arthur", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Muggle", "label": "Muggle", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Percy", "label": "Percy", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Errol", "label": "Errol", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Bill", "label": "Bill", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Charlie", "label": "Charlie", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gringotts", "label": "Gringotts", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ministry", "label": "Ministry", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Borgin", "label": "Borgin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Page", "label": "Page", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Magic", "label": "Magic", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Molly", "label": "Molly", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Slytherin", "label": "Slytherin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Severus", "label": "Severus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gryffindor", "label": "Gryffindor", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Seamus", "label": "Seamus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Neville", "label": "Neville", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hufflepuff", "label": "Hufflepuff", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Colin", "label": "Colin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Creevey", "label": "Creevey", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dean", "label": "Dean", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Gilderoy", "label": "Gilderoy", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Oliver", "label": "Oliver", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Three", "label": "Three", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Keeper", "label": "Keeper", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fang", "label": "Fang", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Nick", "label": "Nick", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Peeves", "label": "Peeves", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Patrick", "label": "Patrick", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Myrtle", "label": "Myrtle", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Potions", "label": "Potions", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Skower", "label": "Skower", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Justin", "label": "Justin", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Grant", "label": "Grant", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Dark", "label": "Dark", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Transylvanian", "label": "Transylvanian", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Adrian", "label": "Adrian", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Minerva", "label": "Minerva", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Albus", "label": "Albus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Goyle", "label": "Goyle", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "First", "label": "First", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hannah", "label": "Hannah", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Second", "label": "Second", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fawkes", "label": "Fawkes", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Crabbe", "label": "Crabbe", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Ravenclaw", "label": "Ravenclaw", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Tom", "label": "Tom", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Rubeus", "label": "Rubeus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Fluffy", "label": "Fluffy", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Cornelius", "label": "Cornelius", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Aragog", "label": "Aragog", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Mosag", "label": "Mosag", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Armenian", "label": "Armenian", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lucius", "label": "Lucius", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Smeltings", "label": "Smeltings", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Argus", "label": "Argus", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Alicia", "label": "Alicia", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Angelina", "label": "Angelina", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Lee", "label": "Lee", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Hermes", "label": "Hermes", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Leaky", "label": "Leaky", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Katie", "label": "Katie", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Boot", "label": "Boot", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Sinistra", "label": "Sinistra", "shape": "dot", "size": 10}, {"color": "#97c2fc", "id": "Marvolo", "label": "Marvolo", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "Harry", "to": "Third", "value": 5, "width": 1}, {"from": "Harry", "to": "Petunia", "value": 21, "width": 1}, {"from": "Harry", "to": "Dudley", "value": 178, "width": 1}, {"from": "Harry", "to": "Dursley", "value": 5, "width": 1}, {"from": "Harry", "to": "Hogwarts", "value": 135, "width": 1}, {"from": "Harry", "to": "Uncle", "value": 6, "width": 1}, {"from": "Harry", "to": "House", "value": 75, "width": 1}, {"from": "Harry", "to": "Hedwig", "value": 130, "width": 1}, {"from": "Harry", "to": "Vernon", "value": 15, "width": 1}, {"from": "Harry", "to": "Mason", "value": 24, "width": 1}, {"from": "Harry", "to": "Quidditch", "value": 107, "width": 1}, {"from": "Harry", "to": "Hermione", "value": 750, "width": 1}, {"from": "Harry", "to": "Two", "value": 22, "width": 1}, {"from": "Harry", "to": "Dobby", "value": 521, "width": 1}, {"from": "Harry", "to": "Fred", "value": 289, "width": 1}, {"from": "Harry", "to": "George", "value": 299, "width": 1}, {"from": "Harry", "to": "Draco", "value": 49, "width": 1}, {"from": "Harry", "to": "Weasley", "value": 390, "width": 1}, {"from": "Harry", "to": "Celestina", "value": 6, "width": 1}, {"from": "Harry", "to": "Arthur", "value": 8, "width": 1}, {"from": "Harry", "to": "Muggle", "value": 31, "width": 1}, {"from": "Harry", "to": "Percy", "value": 124, "width": 1}, {"from": "Harry", "to": "Errol", "value": 5, "width": 1}, {"from": "Harry", "to": "Bill", "value": 11, "width": 1}, {"from": "Harry", "to": "Charlie", "value": 19, "width": 1}, {"from": "Harry", "to": "Gringotts", "value": 41, "width": 1}, {"from": "Harry", "to": "Ministry", "value": 5, "width": 1}, {"from": "Harry", "to": "Borgin", "value": 25, "width": 1}, {"from": "Harry", "to": "Page", "value": 9, "width": 1}, {"from": "Harry", "to": "Magic", "value": 20, "width": 1}, {"from": "Harry", "to": "Molly", "value": 6, "width": 1}, {"from": "Harry", "to": "Slytherin", "value": 246, "width": 1}, {"from": "Harry", "to": "Severus", "value": 9, "width": 1}, {"from": "Harry", "to": "Gryffindor", "value": 101, "width": 1}, {"from": "Harry", "to": "Seamus", "value": 13, "width": 1}, {"from": "Harry", "to": "Neville", "value": 81, "width": 1}, {"from": "Harry", "to": "Hufflepuff", "value": 45, "width": 1}, {"from": "Harry", "to": "Colin", "value": 193, "width": 1}, {"from": "Harry", "to": "Creevey", "value": 23, "width": 1}, {"from": "Harry", "to": "Dean", "value": 15, "width": 1}, {"from": "Harry", "to": "Gilderoy", "value": 21, "width": 1}, {"from": "Harry", "to": "Oliver", "value": 28, "width": 1}, {"from": "Harry", "to": "Three", "value": 22, "width": 1}, {"from": "Harry", "to": "Keeper", "value": 5, "width": 1}, {"from": "Harry", "to": "Fang", "value": 26, "width": 1}, {"from": "Harry", "to": "Nick", "value": 73, "width": 1}, {"from": "Harry", "to": "Peeves", "value": 29, "width": 1}, {"from": "Harry", "to": "Patrick", "value": 28, "width": 1}, {"from": "Harry", "to": "Myrtle", "value": 107, "width": 1}, {"from": "Harry", "to": "Potions", "value": 9, "width": 1}, {"from": "Harry", "to": "Skower", "value": 6, "width": 1}, {"from": "Harry", "to": "Justin", "value": 149, "width": 1}, {"from": "Harry", "to": "Grant", "value": 6, "width": 1}, {"from": "Harry", "to": "Dark", "value": 26, "width": 1}, {"from": "Harry", "to": "Transylvanian", "value": 11, "width": 1}, {"from": "Harry", "to": "Adrian", "value": 6, "width": 1}, {"from": "Harry", "to": "Minerva", "value": 3, "width": 1}, {"from": "Harry", "to": "Albus", "value": 12, "width": 1}, {"from": "Harry", "to": "Goyle", "value": 75, "width": 1}, {"from": "Harry", "to": "First", "value": 12, "width": 1}, {"from": "Harry", "to": "Hannah", "value": 32, "width": 1}, {"from": "Harry", "to": "Second", "value": 7, "width": 1}, {"from": "Harry", "to": "Fawkes", "value": 144, "width": 1}, {"from": "Harry", "to": "Crabbe", "value": 17, "width": 1}, {"from": "Harry", "to": "Ravenclaw", "value": 3, "width": 1}, {"from": "Harry", "to": "Tom", "value": 39, "width": 1}, {"from": "Harry", "to": "Rubeus", "value": 10, "width": 1}, {"from": "Harry", "to": "Fluffy", "value": 5, "width": 1}, {"from": "Harry", "to": "Cornelius", "value": 5, "width": 1}, {"from": "Harry", "to": "Aragog", "value": 107, "width": 1}, {"from": "Harry", "to": "Mosag", "value": 5, "width": 1}, {"from": "Harry", "to": "Armenian", "value": 4, "width": 1}, {"from": "Harry", "to": "Lucius", "value": 14, "width": 1}, {"from": "Petunia", "to": "Smeltings", "value": 6, "width": 1}, {"from": "Petunia", "to": "Dudley", "value": 6, "width": 1}, {"from": "Petunia", "to": "Mason", "value": 18, "width": 1}, {"from": "Petunia", "to": "Dobby", "value": 5, "width": 1}, {"from": "Dudley", "to": "Smeltings", "value": 5, "width": 1}, {"from": "Dudley", "to": "Dursley", "value": 6, "width": 1}, {"from": "Dudley", "to": "Vernon", "value": 6, "width": 1}, {"from": "Dudley", "to": "Mason", "value": 32, "width": 1}, {"from": "Dudley", "to": "Hermione", "value": 16, "width": 1}, {"from": "Dudley", "to": "Uncle", "value": 5, "width": 1}, {"from": "Dudley", "to": "Dobby", "value": 5, "width": 1}, {"from": "Dudley", "to": "Arthur", "value": 5, "width": 1}, {"from": "Dudley", "to": "Hogwarts", "value": 6, "width": 1}, {"from": "Hogwarts", "to": "Potions", "value": 5, "width": 1}, {"from": "Hogwarts", "to": "Hermione", "value": 7, "width": 1}, {"from": "Hogwarts", "to": "Dobby", "value": 19, "width": 1}, {"from": "Hogwarts", "to": "George", "value": 15, "width": 1}, {"from": "Hogwarts", "to": "Weasley", "value": 9, "width": 1}, {"from": "Hogwarts", "to": "Percy", "value": 13, "width": 1}, {"from": "Hogwarts", "to": "Colin", "value": 5, "width": 1}, {"from": "Hogwarts", "to": "Muggle", "value": 9, "width": 1}, {"from": "Hogwarts", "to": "Justin", "value": 4, "width": 1}, {"from": "Hogwarts", "to": "Slytherin", "value": 6, "width": 1}, {"from": "Potions", "to": "Quidditch", "value": 6, "width": 1}, {"from": "Potions", "to": "Justin", "value": 5, "width": 1}, {"from": "Potions", "to": "Hermione", "value": 5, "width": 1}, {"from": "Potions", "to": "Fred", "value": 1, "width": 1}, {"from": "Quidditch", "to": "Two", "value": 4, "width": 1}, {"from": "Quidditch", "to": "George", "value": 5, "width": 1}, {"from": "Quidditch", "to": "Percy", "value": 2, "width": 1}, {"from": "Quidditch", "to": "Colin", "value": 23, "width": 1}, {"from": "Quidditch", "to": "Fred", "value": 10, "width": 1}, {"from": "Quidditch", "to": "Hermione", "value": 19, "width": 1}, {"from": "Quidditch", "to": "Slytherin", "value": 11, "width": 1}, {"from": "Quidditch", "to": "Gryffindor", "value": 12, "width": 1}, {"from": "Quidditch", "to": "Creevey", "value": 6, "width": 1}, {"from": "Quidditch", "to": "Hannah", "value": 4, "width": 1}, {"from": "Quidditch", "to": "Hufflepuff", "value": 6, "width": 1}, {"from": "Quidditch", "to": "House", "value": 2, "width": 1}, {"from": "Quidditch", "to": "Ravenclaw", "value": 5, "width": 1}, {"from": "Two", "to": "Uncle", "value": 6, "width": 1}, {"from": "Two", "to": "Borgin", "value": 5, "width": 1}, {"from": "Two", "to": "Neville", "value": 6, "width": 1}, {"from": "Two", "to": "Slytherin", "value": 15, "width": 1}, {"from": "Two", "to": "Fred", "value": 5, "width": 1}, {"from": "Two", "to": "Lucius", "value": 4, "width": 1}, {"from": "Uncle", "to": "Vernon", "value": 12, "width": 1}, {"from": "Uncle", "to": "Dobby", "value": 4, "width": 1}, {"from": "House", "to": "George", "value": 4, "width": 1}, {"from": "House", "to": "Draco", "value": 2, "width": 1}, {"from": "House", "to": "Gryffindor", "value": 9, "width": 1}, {"from": "House", "to": "Slytherin", "value": 23, "width": 1}, {"from": "House", "to": "Dark", "value": 12, "width": 1}, {"from": "House", "to": "Weasley", "value": 1, "width": 1}, {"from": "House", "to": "Severus", "value": 5, "width": 1}, {"from": "House", "to": "Minerva", "value": 4, "width": 1}, {"from": "House", "to": "Hermione", "value": 9, "width": 1}, {"from": "House", "to": "Colin", "value": 5, "width": 1}, {"from": "Hedwig", "to": "Dobby", "value": 14, "width": 1}, {"from": "Hedwig", "to": "Fred", "value": 5, "width": 1}, {"from": "Hedwig", "to": "George", "value": 6, "width": 1}, {"from": "Hedwig", "to": "Hermione", "value": 4, "width": 1}, {"from": "Hermione", "to": "Dobby", "value": 12, "width": 1}, {"from": "Hermione", "to": "Percy", "value": 35, "width": 1}, {"from": "Hermione", "to": "Errol", "value": 3, "width": 1}, {"from": "Hermione", "to": "Fred", "value": 17, "width": 1}, {"from": "Hermione", "to": "Weasley", "value": 29, "width": 1}, {"from": "Hermione", "to": "Muggle", "value": 3, "width": 1}, {"from": "Hermione", "to": "Gryffindor", "value": 21, "width": 1}, {"from": "Hermione", "to": "Neville", "value": 14, "width": 1}, {"from": "Hermione", "to": "Hufflepuff", "value": 6, "width": 1}, {"from": "Hermione", "to": "Slytherin", "value": 30, "width": 1}, {"from": "Hermione", "to": "Myrtle", "value": 37, "width": 1}, {"from": "Hermione", "to": "Peeves", "value": 9, "width": 1}, {"from": "Hermione", "to": "Patrick", "value": 6, "width": 1}, {"from": "Hermione", "to": "Nick", "value": 9, "width": 1}, {"from": "Hermione", "to": "Argus", "value": 4, "width": 1}, {"from": "Hermione", "to": "Magic", "value": 4, "width": 1}, {"from": "Hermione", "to": "Colin", "value": 6, "width": 1}, {"from": "Hermione", "to": "Draco", "value": 11, "width": 1}, {"from": "Hermione", "to": "Seamus", "value": 10, "width": 1}, {"from": "Hermione", "to": "Justin", "value": 15, "width": 1}, {"from": "Hermione", "to": "Goyle", "value": 8, "width": 1}, {"from": "Hermione", "to": "George", "value": 5, "width": 1}, {"from": "Hermione", "to": "Crabbe", "value": 6, "width": 1}, {"from": "Hermione", "to": "Three", "value": 4, "width": 1}, {"from": "Hermione", "to": "Fluffy", "value": 5, "width": 1}, {"from": "Hermione", "to": "Ravenclaw", "value": 6, "width": 1}, {"from": "Hermione", "to": "Aragog", "value": 6, "width": 1}, {"from": "Dobby", "to": "Fred", "value": 5, "width": 1}, {"from": "Dobby", "to": "Dark", "value": 9, "width": 1}, {"from": "Dobby", "to": "Colin", "value": 6, "width": 1}, {"from": "Dobby", "to": "Lucius", "value": 5, "width": 1}, {"from": "Fred", "to": "George", "value": 261, "width": 1}, {"from": "Fred", "to": "Percy", "value": 37, "width": 1}, {"from": "Fred", "to": "Weasley", "value": 95, "width": 1}, {"from": "Fred", "to": "Bill", "value": 6, "width": 1}, {"from": "Fred", "to": "Arthur", "value": 3, "width": 1}, {"from": "Fred", "to": "Colin", "value": 4, "width": 1}, {"from": "Fred", "to": "Draco", "value": 4, "width": 1}, {"from": "Fred", "to": "Ravenclaw", "value": 4, "width": 1}, {"from": "George", "to": "Percy", "value": 26, "width": 1}, {"from": "George", "to": "Muggle", "value": 2, "width": 1}, {"from": "George", "to": "Weasley", "value": 57, "width": 1}, {"from": "George", "to": "Gringotts", "value": 5, "width": 1}, {"from": "George", "to": "Molly", "value": 5, "width": 1}, {"from": "George", "to": "Oliver", "value": 16, "width": 1}, {"from": "George", "to": "Alicia", "value": 6, "width": 1}, {"from": "George", "to": "Slytherin", "value": 12, "width": 1}, {"from": "George", "to": "Adrian", "value": 6, "width": 1}, {"from": "George", "to": "Angelina", "value": 12, "width": 1}, {"from": "George", "to": "Bill", "value": 6, "width": 1}, {"from": "George", "to": "Lee", "value": 4, "width": 1}, {"from": "George", "to": "Gryffindor", "value": 6, "width": 1}, {"from": "George", "to": "Ravenclaw", "value": 5, "width": 1}, {"from": "Draco", "to": "Borgin", "value": 31, "width": 1}, {"from": "Draco", "to": "Weasley", "value": 4, "width": 1}, {"from": "Draco", "to": "Page", "value": 4, "width": 1}, {"from": "Draco", "to": "Arthur", "value": 4, "width": 1}, {"from": "Draco", "to": "Slytherin", "value": 6, "width": 1}, {"from": "Hermes", "to": "Percy", "value": 6, "width": 1}, {"from": "Percy", "to": "Magic", "value": 5, "width": 1}, {"from": "Percy", "to": "Weasley", "value": 25, "width": 1}, {"from": "Percy", "to": "Gryffindor", "value": 8, "width": 1}, {"from": "Percy", "to": "Slytherin", "value": 2, "width": 1}, {"from": "Percy", "to": "Tom", "value": 3, "width": 1}, {"from": "Muggle", "to": "Weasley", "value": 16, "width": 1}, {"from": "Muggle", "to": "Gringotts", "value": 10, "width": 1}, {"from": "Muggle", "to": "Slytherin", "value": 2, "width": 1}, {"from": "Muggle", "to": "Tom", "value": 1, "width": 1}, {"from": "Weasley", "to": "Bill", "value": 18, "width": 1}, {"from": "Weasley", "to": "Celestina", "value": 5, "width": 1}, {"from": "Weasley", "to": "Molly", "value": 15, "width": 1}, {"from": "Weasley", "to": "Arthur", "value": 62, "width": 1}, {"from": "Weasley", "to": "Charlie", "value": 5, "width": 1}, {"from": "Weasley", "to": "Gringotts", "value": 8, "width": 1}, {"from": "Weasley", "to": "Borgin", "value": 1, "width": 1}, {"from": "Weasley", "to": "Leaky", "value": 11, "width": 1}, {"from": "Weasley", "to": "Ministry", "value": 4, "width": 1}, {"from": "Weasley", "to": "Page", "value": 5, "width": 1}, {"from": "Weasley", "to": "Gryffindor", "value": 18, "width": 1}, {"from": "Weasley", "to": "Severus", "value": 1, "width": 1}, {"from": "Weasley", "to": "Slytherin", "value": 8, "width": 1}, {"from": "Weasley", "to": "Argus", "value": 5, "width": 1}, {"from": "Weasley", "to": "Gilderoy", "value": 5, "width": 1}, {"from": "Weasley", "to": "Neville", "value": 2, "width": 1}, {"from": "Weasley", "to": "Hufflepuff", "value": 6, "width": 1}, {"from": "Weasley", "to": "Dean", "value": 5, "width": 1}, {"from": "Weasley", "to": "Fawkes", "value": 3, "width": 1}, {"from": "Weasley", "to": "Minerva", "value": 7, "width": 1}, {"from": "Bill", "to": "Charlie", "value": 6, "width": 1}, {"from": "Bill", "to": "Gringotts", "value": 6, "width": 1}, {"from": "Arthur", "to": "Molly", "value": 5, "width": 1}, {"from": "Gryffindor", "to": "Dark", "value": 8, "width": 1}, {"from": "Gryffindor", "to": "Hufflepuff", "value": 6, "width": 1}, {"from": "Gryffindor", "to": "Slytherin", "value": 18, "width": 1}, {"from": "Gryffindor", "to": "Neville", "value": 3, "width": 1}, {"from": "Gryffindor", "to": "Gilderoy", "value": 3, "width": 1}, {"from": "Dark", "to": "Borgin", "value": 6, "width": 1}, {"from": "Dark", "to": "Hannah", "value": 4, "width": 1}, {"from": "Dark", "to": "Slytherin", "value": 4, "width": 1}, {"from": "Borgin", "to": "Ministry", "value": 10, "width": 1}, {"from": "Magic", "to": "Dean", "value": 5, "width": 1}, {"from": "Hufflepuff", "to": "Ravenclaw", "value": 18, "width": 1}, {"from": "Hufflepuff", "to": "Justin", "value": 12, "width": 1}, {"from": "Hufflepuff", "to": "Slytherin", "value": 6, "width": 1}, {"from": "Ravenclaw", "to": "Slytherin", "value": 6, "width": 1}, {"from": "Slytherin", "to": "Colin", "value": 2, "width": 1}, {"from": "Slytherin", "to": "Katie", "value": 5, "width": 1}, {"from": "Slytherin", "to": "Three", "value": 2, "width": 1}, {"from": "Slytherin", "to": "Oliver", "value": 5, "width": 1}, {"from": "Slytherin", "to": "Justin", "value": 5, "width": 1}, {"from": "Slytherin", "to": "Hannah", "value": 4, "width": 1}, {"from": "Slytherin", "to": "Creevey", "value": 1, "width": 1}, {"from": "Slytherin", "to": "Goyle", "value": 3, "width": 1}, {"from": "Slytherin", "to": "Lee", "value": 3, "width": 1}, {"from": "Slytherin", "to": "Myrtle", "value": 4, "width": 1}, {"from": "Slytherin", "to": "Fawkes", "value": 4, "width": 1}, {"from": "Severus", "to": "Minerva", "value": 5, "width": 1}, {"from": "Severus", "to": "Argus", "value": 1, "width": 1}, {"from": "Seamus", "to": "Dean", "value": 34, "width": 1}, {"from": "Seamus", "to": "Neville", "value": 10, "width": 1}, {"from": "Seamus", "to": "First", "value": 5, "width": 1}, {"from": "Seamus", "to": "Justin", "value": 6, "width": 1}, {"from": "Dean", "to": "Neville", "value": 23, "width": 1}, {"from": "Dean", "to": "Justin", "value": 3, "width": 1}, {"from": "Neville", "to": "Justin", "value": 12, "width": 1}, {"from": "Neville", "to": "Boot", "value": 1, "width": 1}, {"from": "Colin", "to": "Creevey", "value": 10, "width": 1}, {"from": "Colin", "to": "Keeper", "value": 2, "width": 1}, {"from": "Colin", "to": "Albus", "value": 10, "width": 1}, {"from": "Colin", "to": "Justin", "value": 5, "width": 1}, {"from": "Alicia", "to": "Angelina", "value": 6, "width": 1}, {"from": "Alicia", "to": "Katie", "value": 6, "width": 1}, {"from": "Nick", "to": "Patrick", "value": 24, "width": 1}, {"from": "Nick", "to": "Sinistra", "value": 4, "width": 1}, {"from": "Nick", "to": "Justin", "value": 5, "width": 1}, {"from": "Peeves", "to": "Myrtle", "value": 17, "width": 1}, {"from": "Peeves", "to": "Justin", "value": 7, "width": 1}, {"from": "Myrtle", "to": "Goyle", "value": 4, "width": 1}, {"from": "Justin", "to": "Sinistra", "value": 6, "width": 1}, {"from": "Albus", "to": "Cornelius", "value": 9, "width": 1}, {"from": "Goyle", "to": "Crabbe", "value": 6, "width": 1}, {"from": "Tom", "to": "Marvolo", "value": 10, "width": 1}, {"from": "Tom", "to": "Rubeus", "value": 7, "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
