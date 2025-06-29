@@ -12,7 +12,7 @@
 \allowdisplaybreaks
 \setlength{\parindent}{0pt}
 
-\title{Assignment 8}
+\title{Assignment 9}
 \subtitle{Angewandte Modellierung 25}
 \author{Carl Colmant}
 \date{\today}
@@ -26,6 +26,18 @@ Um eine Verteilung für den Zug und dne Bus zu berechnen müssen wir zuerst die 
 Ausgabe: 
 P(train arrives after 08:45) = 0.3694\\
 P(bus leaves before train arrives) = 0.0289
+
+\section*{Exercise 2. }
+Nach mehr stündigen versuchen blicke ich durch Exel einfach nicht durch deshalb ist meine 2. Aufgabe leider fehlerhaft. Für die Monte Carlo simulation habe ich zuerst die Würfelboxwurf probiert zu simulieren dafür habe ich eine Zufals zahl gebildet und diese dann auf die sumierten Seiten Wahrscheinlichkeiten abgebildet. Hier bei ist es leider zu starken komplikationen gekommen, zu erst hatte ich viele \#NV Errors, die ich bis jetzt nicht verstanden haben immer wenn die 6 gewürfelt wurde. Darauf hin habe ich diese einfach mit =WENNFEHLER() auf die 6 abgebildet. Zum testen habe ich eine Wahrscheinlichkeitsverteilung genommen in der die 6 mit 71\% Wahrscheinlichkeit geworfen wird.\\
+\includegraphics*[scale=0.8]{ExelHorror1.png}\\
+Wie man sehen kann ist das aber nicht passiert, die 6 wurde nur selten gewürfelt das liegt daran wie die Zufallszahlen generiert werden. Ich generiere eine Zahl zwischen 0 und 1 und bilde dann die zahl darauf ab dessen summe aller vorigen Wahrscheinlichkeiten am nächsten ist. So sollte es zu mindest funktionieren aber weil ich wenig ahnung von Exel habe scheint die funktion etwas anderes zu machen, anders kann ich mir die Verteilung nicht erklären. Darauf hin habe ich mit den gleichen Formeln wie die vorgegebenen werten diese Werte errechnet.\\
+\includegraphics*[scale=0.8]{ExelHorror2.png}\\
+
+\section*{Exercise 3. }
+In dieser Aufgabe sollten mögliche Entwicklungen eines Unternehmens simuliert werden bzw. eines Produktes. Dazu habe ich aus den gegebenen mittelwerten und Standardabweichungen eine Normalverteilung generiert. Diese habe ich dann 1000 mal ausgewertet und die spalten von den kosten (Producktion, fixcost, Payroll) von den Einnahmen (Gros) abgezogen diese Ergebnisse habe ich dann in der Spalte Net gespeichert und dann die Gesuchten Werte von der Aufgabe berechnet. Für die durchschnittliche Profitabilität habe ich =SUMME(WENN(G6:G1005>0;1;0))/1000 benutzt (G6:G1005 ist die Spalte Net).Für Min und Maximum der samples habe ich die =MIN(Sample) bzw =MAX(sample) Funktion benutzt und für den Durchschnittswert alle Werte Aufsummiert und durch 1000 geteilt. Für die Standardabweichung habe ich =STABW.S(G6:G1005) benutzt.\\
+\includegraphics*[scale=0.86]{ExelHorror3.png}\\
+
+
 \section*{Exercise 4.}
 Die Monte Carlo Methode zur Berechnung von $\pi$ ist relativ simple, man generiert random punkte in einem viertel-kreis und bildet den Anteil der Punkte die im Kreis liegen zu der Gesamtzahl der Punkte. Der Anteil der Punkte im Kreis sollte dann $\frac{\pi}{4}$ sein.\\
 \includegraphics*[scale=0.24]{Monte_Carlo_pi_py.png}\\

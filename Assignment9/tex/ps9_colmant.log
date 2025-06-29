@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  27 JUN 2025 14:15
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  29 JUN 2025 18:25
  system commands enabled.
  file:line:error style messages enabled.
 **"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment9/tex/ps9_colmant"
@@ -759,48 +759,75 @@ Overfull \hbox (55.84534pt too wide) in paragraph at lines 23--29
  []
 
 [2<./Bus_pi.png>]
-<Monte_Carlo_pi_py.png, id=26, 1975.38pt x 554.07pt>
+<ExelHorror1.png, id=26, 389.20406pt x 243.15843pt>
+File: ExelHorror1.png Graphic file (type png)
+<use ExelHorror1.png>
+Package luatex.def Info: ExelHorror1.png  used on input line 32.
+(luatex.def)             Requested size: 311.36366pt x 194.52701pt.
+<ExelHorror2.png, id=28, 278.54062pt x 114.4275pt>
+File: ExelHorror2.png Graphic file (type png)
+<use ExelHorror2.png>
+Package luatex.def Info: ExelHorror2.png  used on input line 34.
+(luatex.def)             Requested size: 222.8328pt x 91.54211pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
+
+[3<./Bus_R.png>]
+<ExelHorror3.png, id=37, 140.77594pt x 126.4725pt>
+File: ExelHorror3.png Graphic file (type png)
+<use ExelHorror3.png>
+Package luatex.def Info: ExelHorror3.png  used on input line 38.
+(luatex.def)             Requested size: 121.06708pt x 108.76614pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+
+ []
+
+[4<./ExelHorror1.png><./ExelHorror2.png>]
+<Monte_Carlo_pi_py.png, id=48, 1975.38pt x 554.07pt>
 File: Monte_Carlo_pi_py.png Graphic file (type png)
 <use Monte_Carlo_pi_py.png>
-Package luatex.def Info: Monte_Carlo_pi_py.png  used on input line 31.
+Package luatex.def Info: Monte_Carlo_pi_py.png  used on input line 43.
 (luatex.def)             Requested size: 474.10089pt x 132.9795pt.
-<Monte_Carlo_pi_R.png, id=28, 1975.38pt x 554.07pt>
+<Monte_Carlo_pi_R.png, id=50, 1975.38pt x 554.07pt>
 File: Monte_Carlo_pi_R.png Graphic file (type png)
 <use Monte_Carlo_pi_R.png>
-Package luatex.def Info: Monte_Carlo_pi_R.png  used on input line 32.
+Package luatex.def Info: Monte_Carlo_pi_R.png  used on input line 44.
 (luatex.def)             Requested size: 474.10089pt x 132.9795pt.
 
-Overfull \hbox (55.84534pt too wide) in paragraph at lines 30--33
+Overfull \hbox (55.84534pt too wide) in paragraph at lines 42--45
 [] 
  []
 
 
-Overfull \hbox (55.84534pt too wide) in paragraph at lines 30--33
+Overfull \hbox (55.84534pt too wide) in paragraph at lines 42--45
 [] 
  []
 
-[3<./Bus_R.png><./Monte_Carlo_pi_py.png>]
-<estimate_beta_py.png, id=42, 1975.38pt x 457.71pt>
+[5<./ExelHorror3.png><./Monte_Carlo_pi_py.png><./Monte_Carlo_pi_R.png>]
+<estimate_beta_py.png, id=71, 1975.38pt x 457.71pt>
 File: estimate_beta_py.png Graphic file (type png)
 <use estimate_beta_py.png>
-Package luatex.def Info: estimate_beta_py.png  used on input line 40.
+Package luatex.def Info: estimate_beta_py.png  used on input line 52.
 (luatex.def)             Requested size: 474.10089pt x 109.85265pt.
-<estimate_beta_R.png, id=44, 1975.38pt x 409.53pt>
+<estimate_beta_R.png, id=73, 1975.38pt x 409.53pt>
 File: estimate_beta_R.png Graphic file (type png)
 <use estimate_beta_R.png>
-Package luatex.def Info: estimate_beta_R.png  used on input line 41.
+Package luatex.def Info: estimate_beta_R.png  used on input line 53.
 (luatex.def)             Requested size: 474.10089pt x 98.2892pt.
 
-Overfull \hbox (55.84534pt too wide) in paragraph at lines 39--42
+Overfull \hbox (55.84534pt too wide) in paragraph at lines 51--54
 [] 
  []
 
 
-Overfull \hbox (55.84534pt too wide) in paragraph at lines 39--42
+Overfull \hbox (55.84534pt too wide) in paragraph at lines 51--54
 [] 
  []
 
-[4<./Monte_Carlo_pi_R.png><./estimate_beta_py.png><./estimate_beta_R.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment9/tex/ps9_colmant.aux")
+[6<./estimate_beta_py.png><./estimate_beta_R.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment9/tex/ps9_colmant.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -810,19 +837,19 @@ Package rerunfilecheck Info: File `ps9_colmant.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35770 strings out of 476729
+ 35801 strings out of 476729
  100000,1977958 words of node,token memory allocated
  544 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 61 glue_spec, 9 attribute_list, 2 write nodes
-   avail lists: 1:1,2:178,3:83,4:39,5:108,6:13,7:1112,8:49,9:195,10:8,11:38
- 56713 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:181,3:93,4:39,5:255,6:12,7:3067,8:49,9:186,10:8,11:168
+ 56734 multiletter control sequences out of 65536+600000
  81 fonts using 5238247 bytes
- 108i,7n,101p,11029b,341s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,8n,101p,11029b,341s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ps9_colmant.pdf (4 pages, 475617 bytes).
+Output written on ps9_colmant.pdf (6 pages, 494637 bytes).
 
-PDF statistics: 107 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 131072)
- 76 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 129 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 131072)
+ 106 words of extra memory for PDF output out of 10000 (max. 100000000)
 
