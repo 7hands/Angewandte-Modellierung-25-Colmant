@@ -1,0 +1,50 @@
+\documentclass{scrartcl}
+\usepackage{amsmath,amsfonts,amsthm,bm,graphicx}
+\usepackage{tikz,pgfplots}
+\usepackage{listings}
+\usepackage{stmaryrd}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\pgfplotsset{width=15cm,compat=1.18}
+\allowdisplaybreaks
+\setlength{\parindent}{0pt}
+
+\title{Assignment 8}
+\subtitle{Angewandte Modellierung 25}
+\author{Carl Colmant}
+\date{\today}
+\begin{document}
+\maketitle
+\newpage
+\section*{Exercise 1. }
+Um eine Verteilung für den Zug und dne Bus zu berechnen müssen wir zuerst die Ankunftszeiten in Integer Werte umwandeln, dazu habe ich die Zeiten in Minuten umgerechnet. Dann dann habe ich die in der Aufgabe vorgegebenen Werte als Variablen definiert. Der Zug ist nun zu spät wenn der Wert der Zufallsvariable größer ist als 525 (8:45) ist. Außerdem habe ich die Wahrscheinlichkeit für den Bus berechnet, dass dieser for dem Zug abfährt.\\
+\includegraphics*[scale=0.24]{Bus_pi.png}\\
+\includegraphics*[scale=0.24]{Bus_R.png}\\
+Ausgabe: 
+P(train arrives after 08:45) = 0.3694\\
+P(bus leaves before train arrives) = 0.0289
+\section*{Exercise 4.}
+Die Monte Carlo Methode zur Berechnung von $\pi$ ist relativ simple, man generiert random punkte in einem viertel-kreis und bildet den Anteil der Punkte die im Kreis liegen zu der Gesamtzahl der Punkte. Der Anteil der Punkte im Kreis sollte dann $\frac{\pi}{4}$ sein.\\
+\includegraphics*[scale=0.24]{Monte_Carlo_pi_py.png}\\
+\includegraphics*[scale=0.24]{Monte_Carlo_pi_R.png}
+\section*{Exercise 5.}
+In dieser Aufgabe soll das Beta-integral approximiert werden. Die Funktion ist gegeben mit
+$$B(0.5,2) = \int_{0}^{1} x^{-0.5}(1-x)^{2-1}dx$$
+Als Riemann Summe geschrieben erhalten wir dann:
+$$B(0.5,2)= \sum_{i=0}^{1} x^{-0.5}(1-x)^{2-1} = \frac1N \sum_{i=0}^{N} x^{-0.5}(1-x)^{2-1} $$
+
+Das bewerkstelligt folgender Python Code:\\
+\includegraphics*[scale=0.24]{estimate_beta_py.png}\\
+\includegraphics*[scale=0.24]{estimate_beta_R.png}
+
+
+\section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
+Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden. 
+
+
+
+
+\end{document}
