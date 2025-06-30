@@ -8,6 +8,7 @@ from torchvision import transforms as T
 from torchvision.models.detection import fasterrcnn_mobilenet_v3_large_fpn
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
+# for the CNN we need functions to get the data 
 class ObjectDetectionDataset(torch.utils.data.Dataset):
     def __init__(self, annotations, transforms=None):
         """
@@ -44,9 +45,18 @@ def get_transforms(train):
 def collate_fn(batch):
     return tuple(zip(*batch))
 
-
+# Load data
 def load_wider_annotations(mat_path, images_root):
-    data = scipy.io.loadmat(mat_path)
+    '''
+    creates annotation list for the Data loader
+    out:
+    - image_id
+    - box coordinates
+    - labels
+    as a dictionary
+    '''
+    data = scipy.io.loadmat(mat_path) # meta data is encoded on a mat file
+    # split up data in variables
     events = [e[0] for e in data['event_list'][0]]
     file_lists = data['file_list'][0]
     face_bbx_lists = data['face_bbx_list'][0]
@@ -80,28 +90,31 @@ def run_inference(model, image_paths, output_dir, device, threshold=0.5):
     """
     Run inference on a list of image files and save visualized outputs.
     """
-    from torchvision.utils import draw_bounding_boxes
-    from torchvision.transforms import ToTensor
-    output_dir = Path(output_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
+    from torchvision.utils import draw_bounding_boxes # for he boxes around the faces
+    from torchvision.transforms import ToTensor # to load the trained model.
+    output_dir = Path(output_dir) # Vortrag_Projeckt\inference_results
+    output_dir.mkdir(parents=True, exist_ok=True) # if not there create output directory
 
-    model.eval()
+    model.eval() # switch mode to eval for inference 
     to_tensor = ToTensor()
-    for img_path in image_paths:
-        img = Image.open(img_path).convert("RGB")
-        img_tensor = to_tensor(img).to(device)
+    for img_path in image_paths:        
+        img = Image.open(img_path).convert("RGB") # open the image in Rgb
+        img_tensor = to_tensor(img).to(device) # convert the image to a array like Tensor
         with torch.no_grad():
             outputs = model([img_tensor])[0]
-        boxes = outputs['boxes']
+        # outputs
+        boxes = outputs['boxes'] 
         scores = outputs['scores']
         labels = outputs['labels']
         keep = scores >= threshold
+        # Draw the box in the image
         img_boxes = draw_bounding_boxes(
             (img_tensor * 255).to(torch.uint8),
             boxes[keep],
             labels=[str(int(l.item())) for l in labels[keep]],
             width=2
         )
+        # save the new image to the output directory
         save_path = output_dir / Path(img_path).name
         T.ToPILImage()(img_boxes).save(save_path)
         print(f"Saved inference result to {save_path}")
@@ -115,13 +128,14 @@ if __name__ == "__main__":
     # Load dataset
     train_records = load_wider_annotations(split_mat, images_root)
     print(f"Loaded {len(train_records)} training images")
+    # load the data via the ObjectdetectionDataset class
     train_ds = ObjectDetectionDataset(train_records, transforms=get_transforms(train=True))
-    train_loader = torch.utils.data.DataLoader(train_ds, batch_size=4, shuffle=True, num_workers=4, pin_memory=True, collate_fn=collate_fn)
-
+    train_loader = torch.utils.data.DataLoader(train_ds, batch_size=4, shuffle=True, num_workers=4, pin_memory=True, collate_fn=collate_fn) 
+    
     # Model setup
-    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-    model = fasterrcnn_mobilenet_v3_large_fpn(weights=None)
-    num_classes = 2
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu') # uses GPu when possibly
+    model = fasterrcnn_mobilenet_v3_large_fpn(weights=None) # A RCNN from Mobilenet that I finetune
+    num_classes = 2 # either a face ore background
     in_features = model.roi_heads.box_predictor.cls_score.in_features
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
     model.to(device)
@@ -139,10 +153,10 @@ if __name__ == "__main__":
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
 
     # Training loop
-    num_epochs = 10
+    num_epochs = 20 # 20 training cycles
     for epoch in range(num_epochs):
         model.train()
-        epoch_loss = 0.0
+        epoch_loss = 0.0 # loss function less is better
         for images, targets in train_loader:
             images = [img.to(device) for img in images]
             targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
@@ -151,18 +165,18 @@ if __name__ == "__main__":
             optimizer.zero_grad()
             losses.backward()
             optimizer.step()
-            epoch_loss += losses.item()
+            epoch_loss += losses.item() # adds the loss of training classification 
         lr_scheduler.step()
         print(f"Epoch [{epoch+1}/{num_epochs}] Loss: {epoch_loss/len(train_loader):.4f}")
 
     # Save final model
     checkpoints_dir.mkdir(exist_ok=True)
-    torch.save(model.state_dict(), checkpoint_path)
+    torch.save(model.state_dict(), checkpoint_path) # saves the modell to the checkpoint folder
     print(f"Model weights saved to {checkpoint_path}")
 
     print("Training complete")
 
-    # Example inference
+    # images for face detection
     custom_images = ["Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/istockphoto.jpg", "Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/people.jpg"]
     inference_dir = project_root / "inference_results"
     run_inference(model, custom_images, inference_dir, device)
