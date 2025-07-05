@@ -85,40 +85,6 @@ def load_wider_annotations(mat_path, images_root):
             records.append({'image_id': str(img_path), 'boxes': boxes, 'labels': [1]*len(boxes)})
     return records
 
-
-def run_inference(model, image_paths, output_dir, device, threshold=0.5):
-    """
-    Run inference on a list of image files and save visualized outputs.
-    """
-    from torchvision.utils import draw_bounding_boxes # for he boxes around the faces
-    from torchvision.transforms import ToTensor # to load the trained model.
-    output_dir = Path(output_dir) # Vortrag_Projeckt\inference_results
-    output_dir.mkdir(parents=True, exist_ok=True) # if not there create output directory
-
-    model.eval() # switch mode to eval for inference 
-    to_tensor = ToTensor()
-    for img_path in image_paths:        
-        img = Image.open(img_path).convert("RGB") # open the image in Rgb
-        img_tensor = to_tensor(img).to(device) # convert the image to a array like Tensor
-        with torch.no_grad():
-            outputs = model([img_tensor])[0]
-        # outputs
-        boxes = outputs['boxes'] 
-        scores = outputs['scores']
-        labels = outputs['labels']
-        keep = scores >= threshold
-        # Draw the box in the image
-        img_boxes = draw_bounding_boxes(
-            (img_tensor * 255).to(torch.uint8),
-            boxes[keep],
-            labels=[str(int(l.item())) for l in labels[keep]],
-            width=2
-        )
-        # save the new image to the output directory
-        save_path = output_dir / Path(img_path).name
-        T.ToPILImage()(img_boxes).save(save_path)
-        print(f"Saved inference result to {save_path}")
-
 if __name__ == "__main__":
     project_root = Path(__file__).resolve().parent
     # Paths
@@ -134,7 +100,7 @@ if __name__ == "__main__":
     
     # Model setup
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu') # uses GPu when possibly
-    model = fasterrcnn_mobilenet_v3_large_fpn(weights=None) # A RCNN from Mobilenet that I finetune
+    model = fasterrcnn_mobilenet_v3_large_fpn(weights=None, pretrained =False, pretrained_backbone = False, trainable_backbone_layers= 5) # A RCNN from Mobilenet that I finetune
     num_classes = 2 # either a face ore background
     in_features = model.roi_heads.box_predictor.cls_score.in_features
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
@@ -143,9 +109,9 @@ if __name__ == "__main__":
     # Load pretrained weights if available
     checkpoints_dir = project_root / "checkpoints"
     checkpoint_path = checkpoints_dir / "fasterrcnn_mobilenet_v3_finetuned.pth"
-    if checkpoint_path.exists():
-        model.load_state_dict(torch.load(checkpoint_path, map_location=device))
-        print(f"Loaded checkpoint from {checkpoint_path}")
+    # if checkpoint_path.exists():
+    #     model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+    #     print(f"Loaded checkpoint from {checkpoint_path}")
 
     # Optimizer & scheduler
     params = [p for p in model.parameters() if p.requires_grad]
@@ -153,7 +119,7 @@ if __name__ == "__main__":
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
 
     # Training loop
-    num_epochs = 20 # 20 training cycles
+    num_epochs = 40 # 40 training cycles
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0.0 # loss function less is better
@@ -176,7 +142,3 @@ if __name__ == "__main__":
 
     print("Training complete")
 
-    # images for face detection
-    custom_images = ["Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/istockphoto.jpg", "Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/people.jpg"]
-    inference_dir = project_root / "inference_results"
-    run_inference(model, custom_images, inference_dir, device)
