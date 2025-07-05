@@ -91,7 +91,7 @@ Hier als Beispiel der Decision Tree der durch das Python script erzeugt wurde:\\
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.29]{Decision_tree.png}
-  \caption{Auf meinem Discord ist das ganze auch noch mal in Hochauflösender}
+  \caption{Auf meinem Discord ist das ganze auch noch mal in Hochauflösender \href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant/blob/ec393fbadefd2cd1f55424f5d22f02f7f0c764c9/Assignment10/Tex/Decision_tree_py.svg}{link}}
 \end{figure}
 
 
@@ -99,39 +99,55 @@ Hier als Beispiel der Decision Tree der durch das Python script erzeugt wurde:\\
 \textbf{Interpretation:} Alle Confusion Matrizen sind genau so wie die obigen aus Aufgabe 1 heißt alle classen wurden richtig zugeordnet.
 \newpage
 
-\section*{Aufgabe 3: Unüberwachtes Clustering (Rotwein-Daten)}
 
-\textbf{Ziel:} Strukturen in den Rotwein-Daten entdecken mittels K-Means und hierarchischem Clustering.\
+\section*{Aufgabe 3: Unüberwachtes Clustering (Rotwein‑Daten) mit Python}
 
-\textbf{Vorgehen:} Zunächst wurden fehlende Werte im Datensatz behandelt und eine Z-Score-Normalisierung auf alle Merkmale angewendet. Zur Bestimmung der optimalen Cluster-Anzahl wurde ein Elbow-Plot (Within-Cluster-Sum-of-Squares) sowie der Silhouette-Score berechnet.
+Das Ziel dieser Aufgabe ist es, im „Wine“‑Datensatz mithilfe zweier Clustering‑Verfahren, nämlich K‑Means und hierarchischem Clustering, verborgene Gruppen in den Daten zu identifizieren. Dabei konzentrieren wir uns auf die chemischen Kenngrößen der Weine und untersuchen, ob sich anhand statistischer Kriterien sinnvolle Cluster bilden lassen.
 
-Es kamen zwei Clustering-Methoden zum Einsatz:
 
-\textbf{K-Means:} R: \lstinline|kmeans()|, Python: \lstinline|KMeans()|, Orange: K-Means-Widget, RapidMiner: K-Means-Operator.
+Für das K‑Means‑Clustering wird das Modell mit \texttt{KMeans(n\_clusters=3, random\_state=42)} trainiert; parallel dazu wird ein hierarchisches Modell mit Ward‑Linkage über \texttt{AgglomerativeClustering(n\_clusters=3, linkage='ward')} erstellt und sein Dendrogramm mit \texttt{scipy.cluster.hierarchy.dendrogram} visualisiert. Die resultierenden Cluster werden anschließend durch die Berechnung der mittleren Feature‑Werte pro Gruppe charakterisiert und im zweidimensionalen Raum der ersten beiden Hauptkomponenten (PCA) farblich dargestellt.
 
-\textbf{Hierarchisches Clustering:} Mit Ward-Linkage in allen Tools verfügbar.
-
-Zur Auswertung wurden die Silhouette-Scores, Cluster-Profile (Mittelwerte je Cluster) sowie Visualisierungen wie Dendrogramme und PCA-Plots genutzt.
-
-\textbf{Ergebnisse (Beispiel):} Die optimale Clusterzahl war k = 3. Die Cluster unterschieden sich insbesondere im Phenol-Gehalt.
-
-\textbf{Interpretation:} Es zeigten sich zwei Cluster mit hohem bzw. niedrigem Phenolgehalt und ein intermediäres Cluster.
+Daraus ergibt sich dieses Hirachische Cluster:\\
+\includegraphics*[scale=0.6]{Hirac_clustering.png}\\
+und diese PCA:\\
+\includegraphics*[scale=0.6]{PCA_py.png}
+Als Ergebnis zeigt sich, dass drei Cluster die beste Kompromisslösung zwischen Kompaktheit und Trennschärfe liefern.
 
 \newpage
 
 \section*{Aufgabe 4: Google Trends Clustering}
+Ich habe mir Trend daten zu 4 verschiednen themen rausgesucht und noch eine extra tabelle mit hilfe von den Wahlergebnissen der letzten buindestagwahl erstellt. Einmal Vergleiche ich Klima mit dem Fleischintresse und vergleiche dann noch ob die Geodaten von den Suchanfragen im zusammenhang zu den Wahlwerten der AFD haben.\\
+Dann habe ich noch probiert den intressens umschwung von League of Legends auf Valorant einzufangen aber das hat so semi geklappt.\\
+\includegraphics*[scale=0.6]{ValoLOLTime.png}\\
+Wie man sieht sind die beiden spiele seit dem Valorant aus der Beta ist ungefähr auf dem selben intressen level, dass könnte daran liegen das viele Lol spieler auch valorant spieler sind und umgekehrt.\\
+Jetzt zum interressanten teil:\\
+\begin{table}[h!]
+\begin{tabular}{llll}
+Region                 & Value\_Klima & Value\_Schwein & Value\_Faschos \\
+Berlin                 & 100          & 82             & 15.2           \\
+Hessen                 & 98           & 71             & 17.7           \\
+Bremen                 & 84           & 61             & 15.2           \\
+Brandenburg            & 82           & 86             & 34.4           \\
+Rheinland-Pfalz        & 80           & 88             & 19.2           \\
+Hamburg                & 80           & 72             & 11.0           \\
+Bayern                 & 73           & 100            & 17.4           \\
+Schleswig-Holstein     & 72           & 85             & 16.1           \\
+Baden-Württemberg      & 72           & 87             & 19.4           \\
+Sachsen                & 71           & 64             & 38.5           \\
+Niedersachsen          & 69           & 81             & 17.6           \\
+Nordrhein-Westfalen    & 67           & 79             & 16.4           \\
+Saarland               & 66           & 74             & 21.6           \\
+Thüringen              & 65           & 69             & 38.7           \\
+Mecklenburg-Vorpommern & 64           & 64             & 37.0           \\
+Sachsen-Anhalt         & 61           & 61             & 38.8          
+\end{tabular}
+\end{table}
+ich habe die Suchterme Klima und Schweinebauch als gegenidee des Weltkonsums gegenübergestellt. Dazu habe ich die Wahlwerte der letzten Bundestagswahl für die AFD per Bundesland raus gesucht (Spalte Faschos in Porzent).\\
+\includegraphics[scale=0.4]{KliSchwaFaschGEO.png}
+\includegraphics*[scale=0.4]{PCA_KLI.png}\\
 
-\textbf{Ziel:} Regionale Suchmuster in Google Trends-Zeitreihen clustern.\
+Wie man sehen kann sind viele der alten Ost und Westländer in je einer Gruppe. Zusätzlich entstehen noch zwei weiter gruppen die aus Hessen und Berlin, und die Aus Bremen und Hamburg. Die Berlin, Hessen Gruppe fällt auf durch starkes Klima interresse und swächere AFD Werte wärend die andere extra Gruppe wenig intresse an weder Klima noch Schweinefleisch hat aber auch eher schwache AFD Werte hat. In der ersten Graphik (links) sieht man auch das die Ost länder generell weniger diese beiden dinge gegoogled haben, vielleicht liegt das an erst späteren zugang zu weit verbreiteten Internet oder and einer generellen politischen unintresse.
 
-\textbf{Vorgehen:} Zunächst wurde ein CSV-Export aus Google Trends geladen. Fehlende Werte wurden entfernt oder imputiert. Anschließend wurden die Daten normalisiert.
-
-Die Feature-Matrix bestand aus Regionen als Beobachtungen und Zeitpunkten bzw. Suchbegriffen als Merkmalen. Für das Clustering wurden erneut K-Means und hierarchisches Clustering (siehe Aufgabe 3) genutzt. Zur Visualisierung wurden PCA-Scatterplots und Kartenplots eingesetzt (z.,B. mit Python \lstinline|geopandas| oder dem Geo-Widget in Orange).
-
-\textbf{Ergebnisse (Beispiel):} Drei Cluster konnten identifiziert werden: Regionen mit saisonalen Peaks, mit stabilen Suchvolumina sowie mit volatilen Trends.
-
-\textbf{Interpretation:} Die Cluster spiegeln typische geografische Nutzungsmuster wider, z.,B. Urlaubsregionen mit Saisonalität im Vergleich zu dauerhaft populären oder wenig frequentierten Regionen.
-
-\vspace{1em}
-\noindent\textit{Hinweis: Alle Arbeitsschritte wurden in R, Python (scikit-learn), Orange und RapidMiner (Repdiminer) implementiert, um Tool-typische Unterschiede in Usability und Konfigurationsmöglichkeiten zu vergleichen.}
-
+\section*{\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant}{Github}}
+Wie immer sind alle meine benutzten Dateien auf meinem Github zu finden. 
 \end{document}

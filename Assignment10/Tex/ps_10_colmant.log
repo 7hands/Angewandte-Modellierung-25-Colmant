@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  5 JUL 2025 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  5 JUL 2025 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -783,11 +783,62 @@ File: Decision_tree.png Graphic file (type png)
 Package pdftex.def Info: Decision_tree.png  used on input line 93.
 (pdftex.def)             Requested size: 426.2809pt x 260.08583pt.
  [2 <./iris_2_py.png>] [3 <./Decision_tree.png>]
-Overfull \hbox (20.69757pt too wide) in paragraph at lines 106--107
-\T1/cmr/m/n/12 Cluster-Anzahl wur-de ein Elbow-Plot (Within-Cluster-Sum-of-Squares) so-wie der Silhouette-
+Overfull \hbox (41.74521pt too wide) in paragraph at lines 108--109
+[]\T1/cmr/m/n/12 Für das K[]Means[]Clustering wird das Mo-dell mit \T1/cmtt/m/n/12 KMeans(n_clusters=3, random_state=42)
  []
 
-[4] [5] (./ps_10_colmant.aux)
+
+Overfull \hbox (170.18724pt too wide) in paragraph at lines 108--109
+\T1/cmr/m/n/12 trai-niert; par-al-lel da-zu wird ein hier-ar-chi-sches Mo-dell mit Ward[]Linkage über \T1/cmtt/m/n/12 AgglomerativeClustering(n_clusters=3,
+ []
+
+
+Overfull \hbox (35.76344pt too wide) in paragraph at lines 108--109
+\T1/cmtt/m/n/12 linkage='ward') \T1/cmr/m/n/12 er-stellt und sein Den-dro-gramm mit \T1/cmtt/m/n/12 scipy.cluster.hierarchy.dendrogram
+ []
+
+<Hirac_clustering.png, id=42, 722.7pt x 361.35pt>
+File: Hirac_clustering.png Graphic file (type png)
+<use Hirac_clustering.png>
+Package pdftex.def Info: Hirac_clustering.png  used on input line 111.
+(pdftex.def)             Requested size: 433.62334pt x 216.81168pt.
+<PCA_py.png, id=44, 762.4485pt x 594.0594pt>
+File: PCA_py.png Graphic file (type png)
+<use PCA_py.png>
+Package pdftex.def Info: PCA_py.png  used on input line 113.
+(pdftex.def)             Requested size: 457.47263pt x 356.43839pt.
+
+Overfull \hbox (9.34167pt too wide) in paragraph at lines 110--115
+[]
+ []
+
+[4 <./Hirac_clustering.png>] [5 <./PCA_py.png>]
+<ValoLOLTime.png, id=60, 722.7pt x 289.08pt>
+File: ValoLOLTime.png Graphic file (type png)
+<use ValoLOLTime.png>
+Package pdftex.def Info: ValoLOLTime.png  used on input line 121.
+(pdftex.def)             Requested size: 433.62334pt x 173.44933pt.
+<KliSchwaFaschGEO.png, id=62, 578.16pt x 433.62pt>
+File: KliSchwaFaschGEO.png Graphic file (type png)
+<use KliSchwaFaschGEO.png>
+Package pdftex.def Info: KliSchwaFaschGEO.png  used on input line 146.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+<PCA_KLI.png, id=63, 578.16pt x 433.62pt>
+File: PCA_KLI.png Graphic file (type png)
+<use PCA_KLI.png>
+Package pdftex.def Info: PCA_KLI.png  used on input line 147.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
+
+Overfull \hbox (16.99934pt too wide) in paragraph at lines 119--148
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--148
+
+ []
+
+[6 <./ValoLOLTime.png>] [7 <./KliSchwaFaschGEO.png> <./PCA_KLI.png>] (./ps_10_colmant.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -796,18 +847,18 @@ Package rerunfilecheck Info: File `ps_10_colmant.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36920 strings out of 474398
- 845393 string characters out of 5754205
+ 36958 strings out of 474398
+ 846187 string characters out of 5754205
  1940036 words of memory out of 5000000
- 58400 multiletter control sequences out of 15000+600000
+ 58435 multiletter control sequences out of 15000+600000
  571249 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,9n,107p,11016b,1059s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on ps_10_colmant.pdf (5 pages, 354126 bytes).
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on ps_10_colmant.pdf (7 pages, 563180 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 

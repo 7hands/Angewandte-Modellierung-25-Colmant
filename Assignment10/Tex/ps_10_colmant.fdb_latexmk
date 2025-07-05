@@ -1,6 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1751715713 "y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.tex" "ps_10_colmant.pdf" "ps_10_colmant" 1751715714 0
+["pdflatex"] 1751729284 "y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.tex" "ps_10_colmant.pdf" "ps_10_colmant" 1751729286 0
   "Decision_tree.png" 1751715641 110660 c8e680e3e31ecf105a0be8b51c1281f4 ""
+  "Hirac_clustering.png" 1751716878 19188 0606b09afaeb6d65aef88943f9c2ab11 ""
+  "KliSchwaFaschGEO.png" 1751727264 58862 84e2d7014a20533f48eac79e95bc7bdc ""
+  "PCA_KLI.png" 1751728504 43881 baa8251442a0eb92acfacd546755078b ""
+  "PCA_py.png" 1751716898 36581 51e5b5dae7d0097cbe1c64ea14a2e683 ""
+  "ValoLOLTime.png" 1751728491 88976 510c510017286832b6e2e9f48427fef7 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1698327317 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1698328480 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1698327852 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -45,6 +50,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb" 1698327317 144018 78ee202c0d340458a26cbb39f48b6bb2 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb" 1698327317 198221 29e050730bc4b56b13a53cd149c0a42c ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb" 1698327317 169201 651a6333c3213b38091f54d2ab2d2cd6 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb" 1698327317 167085 3b331a8ed51d2a40eb9422e52a3bcab8 ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1698329937 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1698326575 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "c:/texlive/2023/texmf-dist/tex/generic/babel-german/german.ldf" 1698326658 2317 40210c959e8d1b681cdd9a3e3a7081df ""
@@ -247,10 +253,10 @@
   "iris_1_py.png" 1751707981 50076 f0cd45e391edcdb2684ed5987cbae74d ""
   "iris_2_R.png" 1751708014 44355 3bfe91479549b4a53507c9c81704b402 ""
   "iris_2_py.png" 1751707991 70140 cd14a63d048f3aaab24179c5d44e9919 ""
-  "ps_10_colmant.aux" 1751715714 599 f0ab86771b7636db09be23017c574f75 "pdflatex"
-  "ps_10_colmant.out" 1751715714 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "ps_10_colmant.tex" 1751715711 6532 a109ed273c4c91c09d961185f5548649 ""
-  "y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.tex" 1751715711 6532 a109ed273c4c91c09d961185f5548649 ""
+  "ps_10_colmant.aux" 1751729286 759 74f1098f14cd40417913f7bbc46a3445 "pdflatex"
+  "ps_10_colmant.out" 1751729285 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "ps_10_colmant.tex" 1751729284 8891 0efbecee588167c07f36aef0dc8bec2c ""
+  "y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.tex" 1751729284 8891 0efbecee588167c07f36aef0dc8bec2c ""
   (generated)
   "ps_10_colmant.aux"
   "ps_10_colmant.log"
