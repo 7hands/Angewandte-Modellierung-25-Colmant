@@ -1,0 +1,197 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Einstellungen für Quellcode
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{green!60!black},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  tabsize=2,
+  breaklines=true,
+  frame=single
+}
+
+\begin{document}
+
+\section*{Aufgabe 1: Iris-Klassifikation}
+
+\textbf{Ziel:} Klassifikation der Iris-Blumen in die drei Arten \textit{setosa}, \textit{versicolor} und \textit{virginica}.\\
+
+\textbf{Vorgehen:}
+\begin{enumerate}
+  \item \textbf{Datenaufbereitung}
+    \begin{itemize}
+      \item Datensatz laden und auf Vollständigkeit prüfen.
+      \item Aufteilen in Trainings- (80\,\%) und Testdaten (20\,\%) mit festem Seed:
+      \begin{itemize}
+        \item R: \lstinline|set.seed(42)|
+        \item Python: \lstinline|random_state=42|
+        \item RapidMiner: \lstinline|random_seed=42|
+      \end{itemize}
+    \end{itemize}
+  \item \textbf{Modellbildung}
+    \begin{itemize}
+      \item R:
+      \begin{lstlisting}[language=R]
+model_rf <- randomForest(Species ~ ., data = train)
+      \end{lstlisting}
+      \item Python:
+      \begin{lstlisting}[language=Python]
+from sklearn.ensemble import RandomForestClassifier
+clf = RandomForestClassifier(random_state=42)
+clf.fit(X_train, y_train)
+      \end{lstlisting}
+      \item Orange: File $\to$ Data Sampler (80/20) $\to$ Random Forest $\to$ Test & Score
+      \item RapidMiner: Read CSV $\to$ Split Data $\to$ Random Forest $\to$ Apply Model $\to$ Performance
+    \end{itemize}
+  \item \textbf{Evaluation}
+    \begin{itemize}
+      \item Metriken: Accuracy, Precision, Recall, F1-Score, Confusion Matrix.
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Ergebnisse (Beispiel):}
+\begin{itemize}
+  \item Accuracy: 0.97
+  \item Precision: Beste Klasse \textit{virginica} (0.98)
+\end{itemize}
+
+\textbf{Interpretation:} Hohe Trennbarkeit, besonders zwischen \textit{setosa} und den anderen beiden Arten.
+
+\newpage
+
+\section*{Aufgabe 2: Algorithmusvergleich (Decision Tree, Naive Bayes, SVM)}
+
+\textbf{Ziel:} Vergleich der Klassifikationsleistung dreier Algorithmen auf demselben Datensatz und Splits.\\
+
+\textbf{Vorgehen:}
+\begin{enumerate}
+  \item Datenbasis: Iris oder anderer Benchmark-Datensatz.
+  \item Splits: Wie in Aufgabe\,1.
+  \item Modelle:
+    \begin{itemize}
+      \item \textbf{Decision Tree}
+      \begin{itemize}
+        \item R: \lstinline|rpart()|
+        \item Python: \lstinline|DecisionTreeClassifier()|
+        \item Orange: Decision Tree-Widget
+        \item RapidMiner: Decision Tree $\to$ Apply Model
+      \end{itemize}
+      \item \textbf{Naive Bayes}
+      \begin{itemize}
+        \item R: \lstinline|e1071::naiveBayes()|
+        \item Python: \lstinline|GaussianNB()|
+        \item Orange: Naive Bayes-Widget
+        \item RapidMiner: Naive Bayes $\to$ Apply Model
+      \end{itemize}
+      \item \textbf{SVM}
+      \begin{itemize}
+        \item R: \lstinline|e1071::svm()|
+        \item Python: \lstinline|SVC()|
+        \item Orange: SVM-Widget
+        \item RapidMiner: SVM $\to$ Apply Model
+      \end{itemize}
+    \end{itemize}
+  \item Evaluation \& Vergleich:
+    \begin{itemize}
+      \item Accuracy, Precision, Recall, F1
+      \item ROC-AUC (binär) bzw. Micro-/Macro-AUC (multiklassig)
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Ergebnisse (Beispiel):}
+\begin{center}
+\begin{tabular}{lcc}
+\hline
+Algorithmus & Accuracy & ROC-AUC \\
+\hline
+Decision Tree & 0.93 & 0.95 \\
+Naive Bayes & 0.95 & 0.96 \\
+SVM & 0.96 & 0.98 \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Interpretation:} SVM zeigt insgesamt höchste Genauigkeit und AUC.
+
+\newpage
+
+\section*{Aufgabe 3: Unüberwachtes Clustering (Rotwein-Daten)}
+
+\textbf{Ziel:} Strukturen in den Rotwein-Daten entdecken mittels K-Means und hierarchischem Clustering.\\
+
+\textbf{Vorgehen:}
+\begin{enumerate}
+  \item Preprocessing:
+    \begin{itemize}
+      \item Fehlende Werte behandeln
+      \item Z-Score-Skalierung aller Merkmale
+    \end{itemize}
+  \item Bestimmung k:
+    \begin{itemize}
+      \item Elbow-Plot (Within-Cluster-Sum-of-Squares)
+      \item Silhouette-Score
+    \end{itemize}
+  \item Clustering:
+    \begin{itemize}
+      \item K-Means (R: \lstinline|kmeans()|, Python: \lstinline|KMeans()|, Orange: K-Means-Widget, RapidMiner: K-Means-Operator)
+      \item Hierarchical (Ward)
+    \end{itemize}
+  \item Auswertung:
+    \begin{itemize}
+      \item Silhouette-Score, Cluster-Profile (Mittelwerte)
+      \item Visualisierung (Dendrogramm, PCA-Plot)
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Ergebnisse (Beispiel):}
+\begin{itemize}
+  \item Optimaler k = 3
+  \item Cluster unterscheiden sich vor allem im Phenol-Gehalt
+\end{itemize}
+
+\textbf{Interpretation:} Zwei Cluster mit hohem bzw. niedrigem Phenolgehalt; ein drittes Cluster intermediär.
+
+\newpage
+
+\section*{Aufgabe 4: Google Trends Clustering}
+
+\textbf{Ziel:} Regionale Suchmuster in Google Trends-Zeitreihen clustern.\\
+
+\textbf{Vorgehen:}
+\begin{enumerate}
+  \item Datenbeschaffung: CSV-Export aus Google Trends
+  \item Preprocessing:
+    \begin{itemize}
+      \item Fehlende Werte imputieren oder entfernen
+      \item Normalisierung/Standardisierung
+    \end{itemize}
+  \item Feature-Matrix: Regionen als Beobachtungen, Suchbegriffe/Zeiträume als Merkmale
+  \item Clustering: Wie in Aufgabe 3 (K-Means, hierarchisch)
+  \item Visualisierung:
+    \begin{itemize}
+      \item PCA-Scatterplots
+      \item Kartenplot (z.B. mit Python \lstinline|geopandas| oder Orange-Geo-Widget)
+    \end{itemize}
+\end{enumerate}
+
+\textbf{Ergebnisse (Beispiel):}
+\begin{itemize}
+  \item Drei Cluster: saisonale Peaks, stabile Volumina, volatile Trends
+\end{itemize}
+
+\textbf{Interpretation:} Saisonale Urlaubsregionen vs. ganzjährig beliebte Destinationen vs. gering frequentierte Gebiete.
+
+\vspace{1em}
+\noindent\textit{Hinweis: Alle Arbeitsschritte wurden in R, Python (scikit-learn), Orange und RapidMiner (Repdiminer) implementiert, um Tool-typische Unterschiede in Usability und Konfigurationsmöglichkeiten zu vergleichen.}
+
+\end{document}
+
