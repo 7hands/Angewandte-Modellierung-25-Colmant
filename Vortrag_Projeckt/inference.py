@@ -87,4 +87,4 @@ if __name__ == "__main__":
         raise FileNotFoundError(f"Checkpoint not found at {checkpoint_path}")
 
     # Run inference
-    run_inference(model, custom_images, inference_dir, device, threshold=0.4)
+    run_inference(model, custom_images, inference_dir, device, threshold=0)
