@@ -143,9 +143,9 @@ if __name__ == "__main__":
     # Load pretrained weights if available
     checkpoints_dir = project_root / "checkpoints"
     checkpoint_path = checkpoints_dir / "fasterrcnn_mobilenet_v3_finetuned.pth"
-    if checkpoint_path.exists():
-        model.load_state_dict(torch.load(checkpoint_path, map_location=device))
-        print(f"Loaded checkpoint from {checkpoint_path}")
+    # if checkpoint_path.exists():
+    #     model.load_state_dict(torch.load(checkpoint_path, map_location=device))
+    #     print(f"Loaded checkpoint from {checkpoint_path}")
 
     # Optimizer & scheduler
     params = [p for p in model.parameters() if p.requires_grad]
@@ -177,6 +177,6 @@ if __name__ == "__main__":
     print("Training complete")
 
     # images for face detection
-    custom_images = ["Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/istockphoto.jpg", "Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/people.jpg"]
+    custom_images = ["Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/istockphoto.jpg", "Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/people.jpg", "Y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Vortrag_Projeckt/own_images/common-emotions.jpg"]
     inference_dir = project_root / "inference_results"
     run_inference(model, custom_images, inference_dir, device)
