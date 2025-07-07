@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Übersicht}{2}{section.1}%
+\contentsline {section}{\numberline {2}Voraussetzungen}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Bibliotheken}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Hardware}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Projektstruktur}{2}{section.3}%
+\contentsline {section}{\numberline {4}Wichtige Komponenten des Skripts}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}ObjectDetectionDataset}{2}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Transformationsfunktion}{2}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Annotation-Parser}{3}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Trainingspipeline}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Modellinitialisierung}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Training Loop}{3}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Checkpoint-Speicherung}{3}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Inference / Vorhersage}{3}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Beispiel-Aufruf}{4}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Funktionsweise}{4}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Modellspeicherung und Wiederverwendung}{4}{section.7}%
+\contentsline {section}{\numberline {8}Anpassungsmöglichkeiten}{4}{section.8}%
+\contentsline {section}{\numberline {9}Beispielausgabe}{4}{section.9}%
+\contentsline {section}{\numberline {10}Fazit}{4}{section.10}%
