@@ -46,43 +46,89 @@ def collate_fn(batch):
     return tuple(zip(*batch))
 
 # Load data
-def load_wider_annotations(mat_path, images_root):
-    '''
-    creates annotation list for the Data loader
-    out:
-    - image_id
-    - box coordinates
-    - labels
-    as a dictionary
-    '''
-    data = scipy.io.loadmat(mat_path) # meta data is encoded on a mat file
-    # split up data in variables
-    events = [e[0] for e in data['event_list'][0]]
-    file_lists = data['file_list'][0]
-    face_bbx_lists = data['face_bbx_list'][0]
+def load_widerface_annotation(txt_path, images_root):
+    """
+    Liest WIDER-Face TXT (ohne Count‑Zeilen) ein,
+    filtert invalid=1 und fehlende Dateien,
+    und gibt Records zurück.
+    """
+    images_root = Path(images_root)
     records = []
-    for ei, event in enumerate(events):
-        img_names = file_lists[ei].ravel()
-        bb_lists = face_bbx_lists[ei].ravel()
-        for img_name_arr, bb_info in zip(img_names, bb_lists):
-            if isinstance(img_name_arr, (np.ndarray, list, tuple)):
-                img_name = str(img_name_arr[0])
-            else:
-                img_name = str(img_name_arr)
-            if not img_name.lower().endswith('.jpg'):
-                img_name += '.jpg'
-            img_path = (images_root / event / img_name).resolve()
-            boxes = []
-            for x, y, w, h in bb_info:
-                if w <= 0 or h <= 0:
-                    continue
-                x1, y1 = float(x), float(y)
-                x2, y2 = x1 + float(w), y1 + float(h)
-                if x2 > x1 and y2 > y1:
-                    boxes.append([x1, y1, x2, y2])
-            if not boxes:
+    current_img = None
+    boxes = []
+    labels = []
+    attributes = []
+
+    with open(txt_path, 'r') as f:
+        for raw in f:
+            line = raw.strip()
+            if not line:
                 continue
-            records.append({'image_id': str(img_path), 'boxes': boxes, 'labels': [1]*len(boxes)})
+
+            # Wird’s ein neuer Bild-Block?
+            if line.lower().endswith('.jpg'):
+                # Alten Block abschließen
+                if current_img and boxes:
+                    img_path = images_root.joinpath(*Path(current_img).parts).resolve()
+                    if img_path.is_file():
+                        records.append({
+                            'image_id': str(img_path),
+                            'boxes': boxes,
+                            'labels': labels,
+                            'attributes': attributes
+                        })
+                    else:
+                        print(f"[WARN] Datei fehlt, skippe: {img_path}")
+                # Reset für neues Bild
+                current_img = line
+                boxes = []
+                labels = []
+                attributes = []
+                continue
+
+            # Box‑Zeile: x y w h blur expr illum invalid occ pose
+            parts = line.split()
+            if len(parts) < 10 or current_img is None:
+                # Format‑Fehler oder kein Bild vorher – überspringen
+                continue
+
+            x, y, w, h = map(float, parts[:4])
+            blur, expr, illum, invalid, occ, pose = map(int, parts[4:10])
+
+            # invalid=1 → gesamten Block verwerfen
+            if invalid == 1:
+                current_img = None
+                boxes = []
+                labels = []
+                attributes = []
+                continue
+
+            if w > 0 and h > 0:
+                x1, y1 = x, y
+                x2, y2 = x + w, y1 + h
+                boxes.append([x1, y1, x2, y2])
+                labels.append(1)
+                attributes.append({
+                    'blur': blur,
+                    'expression': expr,
+                    'illumination': illum,
+                    'occlusion': occ,
+                    'pose': pose
+                })
+
+    # Letzten Block anhängen
+    if current_img and boxes:
+        img_path = images_root.joinpath(*Path(current_img).parts).resolve()
+        if img_path.is_file():
+            records.append({
+                'image_id': str(img_path),
+                'boxes': boxes,
+                'labels': labels,
+                'attributes': attributes
+            })
+        else:
+            print(f"[WARN] Datei fehlt, skippe: {img_path}")
+
     return records
 
 
@@ -122,11 +168,11 @@ def run_inference(model, image_paths, output_dir, device, threshold=0.5):
 if __name__ == "__main__":
     project_root = Path(__file__).resolve().parent
     # Paths
-    split_mat = project_root / "data" / "widerface" / "wider_face_annotations" / "wider_face_split" / "wider_face_train.mat"
+    wider_txt = project_root / "data" / "widerface" / "wider_face_annotations" / "wider_face_split" / "wider_face_train_bbx_gt.txt"
     images_root = project_root / "data" / "widerface" / "WIDER_train"  / "WIDER_train" / "images"
 
     # Load dataset
-    train_records = load_wider_annotations(split_mat, images_root)
+    train_records = load_widerface_annotation(wider_txt, images_root)
     print(f"Loaded {len(train_records)} training images")
     # load the data via the ObjectdetectionDataset class
     train_ds = ObjectDetectionDataset(train_records, transforms=get_transforms(train=True))
@@ -153,7 +199,7 @@ if __name__ == "__main__":
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
 
     # Training loop
-    num_epochs = 20 # 20 training cycles
+    num_epochs = 5 # 20 training cycles
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0.0 # loss function less is better
