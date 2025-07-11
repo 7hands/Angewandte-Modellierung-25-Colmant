@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  8 JUL 2025 09:09
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.10.26)  8 JUL 2025 09:21
  system commands enabled.
  file:line:error style messages enabled.
-**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant"
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.tex"
+**"y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment11/Tex/ps_11_colmant"
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment11/Tex/ps_11_colmant.tex"
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-23>
 Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
@@ -804,33 +804,33 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 Package: transparent 2022-10-27 v1.5 Transparency with color stacks
  (c:/texlive/2023/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
-)) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.aux")
-\openout1 = ps_10_colmant.aux
+)) ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment11/Tex/ps_11_colmant.aux")
+\openout1 = ps_11_colmant.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 18.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 \c@lstlisting=\count324
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -853,13 +853,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 29.
+ on input line 18.
 
-Package hyperref Info: Link coloring OFF on input line 29.
-("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.out")
+Package hyperref Info: Link coloring OFF on input line 18.
+("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment11/Tex/ps_11_colmant.out") ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment11/Tex/ps_11_colmant.out")
 \@outlinefile=\write4
 
-\openout4 = ps_10_colmant.out
+\openout4 = ps_11_colmant.out
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
 (scrartcl)           because of handling of possible bookmark level gaps.
@@ -867,7 +867,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 29.
+(scrartcl)           before \begin{document} on input line 18.
  (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (c:/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
@@ -880,154 +880,47 @@ Package svg Warning: No version of Inkscape was detected by invoking
 (svg)                so the Inkscape export will fail quite sure as the
 (svg)                command is probably unknown to your OS. You could set
 (svg)                `inkscapeversion=<version>' manually but this is very
-(svg)                unlikely to work on input line 29.
+(svg)                unlikely to work on input line 18.
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 31.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 21.
 (c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 35.
- (c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<iris_1_R.png, id=7, 1718.42pt x 435.6275pt>
-File: iris_1_R.png Graphic file (type png)
-<use iris_1_R.png>
-Package luatex.def Info: iris_1_R.png  used on input line 38.
-(luatex.def)             Requested size: 429.60396pt x 108.9066pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
-
- []
-
-<iris_1_py.png, id=8, 1718.42pt x 397.485pt>
-File: iris_1_py.png Graphic file (type png)
-<use iris_1_py.png>
-Package luatex.def Info: iris_1_py.png  used on input line 41.
-(luatex.def)             Requested size: 429.60396pt x 99.371pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+ (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 42.
- (c:/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-<iris_2_R.png, id=9, 1718.42pt x 321.2pt>
-File: iris_2_R.png Graphic file (type png)
-<use iris_2_R.png>
-Package luatex.def Info: iris_2_R.png  used on input line 46.
-(luatex.def)             Requested size: 429.60396pt x 80.2998pt.
-<iris_2_py.png, id=10, 1718.42pt x 435.6275pt>
-File: iris_2_py.png Graphic file (type png)
-<use iris_2_py.png>
-Package luatex.def Info: iris_2_py.png  used on input line 48.
-(luatex.def)             Requested size: 429.60396pt x 108.9066pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--60
-
- []
-
-[1
-
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./iris_1_R.png><./iris_1_py.png><./iris_2_R.png>]
-<Decision_tree.png, id=26, 1469.9718pt x 896.8707pt>
-File: Decision_tree.png Graphic file (type png)
-<use Decision_tree.png>
-Package luatex.def Info: Decision_tree.png  used on input line 93.
-(luatex.def)             Requested size: 426.2809pt x 260.08583pt.
- [2<./iris_2_py.png>] [3<./Decision_tree.png>]
-Overfull \hbox (33.78809pt too wide) in paragraph at lines 108--109
-[]\T1/lmr/m/n/12 Für das K‑Me-ans‑Clu-ste-ring wird das Mo-dell mit \T1/lmtt/m/n/12 KMeans(n_clusters=3, random_state=42)
- []
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 21.
+ (c:/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
 
-Overfull \hbox (167.07469pt too wide) in paragraph at lines 108--109
-\T1/lmr/m/n/12 trai-niert; par-al-lel da-zu wird ein hier-ar-chi-sches Mo-dell mit Ward‑Lin-kage über \T1/lmtt/m/n/12 AgglomerativeClustering(n_clusters=3,
- []
-
-
-Overfull \hbox (35.88277pt too wide) in paragraph at lines 108--109
-\T1/lmtt/m/n/12 linkage='ward') \T1/lmr/m/n/12 er-stellt und sein Den-dro-gramm mit \T1/lmtt/m/n/12 scipy.cluster.hierarchy.dendrogram
- []
-
-<Hirac_clustering.png, id=42, 722.7pt x 361.35pt>
-File: Hirac_clustering.png Graphic file (type png)
-<use Hirac_clustering.png>
-Package luatex.def Info: Hirac_clustering.png  used on input line 111.
-(luatex.def)             Requested size: 433.62334pt x 216.81168pt.
-<PCA_py.png, id=44, 762.4485pt x 594.0594pt>
-File: PCA_py.png Graphic file (type png)
-<use PCA_py.png>
-Package luatex.def Info: PCA_py.png  used on input line 113.
-(luatex.def)             Requested size: 457.47263pt x 356.43839pt.
-
-Overfull \hbox (9.34167pt too wide) in paragraph at lines 110--115
-[]
- []
-
-[4
-Missing character: There is no ‑ (U+2011) in font ec-lmssbx10!
-Missing character: There is no „ (U+201E) in font ec-lmr12!
-Missing character: There is no “ (U+201C) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-Missing character: There is no ‑ (U+2011) in font ec-lmr12!
-<./Hirac_clustering.png>] [5<./PCA_py.png>]
-<ValoLOLTime.png, id=60, 722.7pt x 289.08pt>
-File: ValoLOLTime.png Graphic file (type png)
-<use ValoLOLTime.png>
-Package luatex.def Info: ValoLOLTime.png  used on input line 121.
-(luatex.def)             Requested size: 433.62334pt x 173.44933pt.
-<KliSchwaFaschGEO.png, id=62, 578.16pt x 433.62pt>
-File: KliSchwaFaschGEO.png Graphic file (type png)
-<use KliSchwaFaschGEO.png>
-Package luatex.def Info: KliSchwaFaschGEO.png  used on input line 146.
-(luatex.def)             Requested size: 231.2599pt x 173.44492pt.
-<PCA_KLI.png, id=63, 578.16pt x 433.62pt>
-File: PCA_KLI.png Graphic file (type png)
-<use PCA_KLI.png>
-Package luatex.def Info: PCA_KLI.png  used on input line 147.
-(luatex.def)             Requested size: 231.2599pt x 173.44492pt.
-
-Overfull \hbox (16.99992pt too wide) in paragraph at lines 119--148
-[] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--148
-
- []
-
-[6<./ValoLOLTime.png>] [7<./PCA_KLI.png><./KliSchwaFaschGEO.png>] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment10/Tex/ps_10_colmant.aux")
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] ("y:/Angewandte Modellierung/Angewandte-Modellierung-25-Colmant/Assignment11/Tex/ps_11_colmant.aux")
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `ps_10_colmant.out' has not changed.
+Package rerunfilecheck Info: File `ps_11_colmant.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38010 strings out of 476729
+ 37878 strings out of 476729
  100000,1977958 words of node,token memory allocated
- 578 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 12 attribute, 61 glue_spec, 8 attribute_list, 2 write nodes
-   avail lists: 1:1,2:1132,3:138,4:56,5:447,6:22,7:3599,8:1,9:893,10:6,11:351
- 58825 multiletter control sequences out of 65536+600000
- 53 fonts using 3244655 bytes
- 108i,9n,101p,11011b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ps_10_colmant.pdf (7 pages, 563864 bytes).
+ 584 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 14 attribute, 61 glue_spec, 9 attribute_list, 2 write nodes
+   avail lists: 1:3,2:229,3:79,4:51,5:394,6:16,7:5844,8:1,9:149,10:27,11:642
+ 58725 multiletter control sequences out of 65536+600000
+ 52 fonts using 3164535 bytes
+ 108i,7n,101p,11011b,355s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on ps_11_colmant.pdf (2 pages, 80193 bytes).
 
-PDF statistics: 108 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 40 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
