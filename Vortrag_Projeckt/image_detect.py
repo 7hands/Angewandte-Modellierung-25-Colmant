@@ -199,7 +199,7 @@ if __name__ == "__main__":
     lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
 
     # Training loop
-    num_epochs = 5 # 20 training cycles
+    num_epochs = 10 # 20 training cycles
     for epoch in range(num_epochs):
         model.train()
         epoch_loss = 0.0 # loss function less is better

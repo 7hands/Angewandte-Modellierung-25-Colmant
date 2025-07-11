@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vortrag Project Gallery</title>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; }
+    h2 { margin-top: 2rem; color: #444; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .caption {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vortrag Project: Image Galleries</h1>
+
+  <h2>Own Images</h2>
+  <div class="gallery" id="own-gallery">
+    <!-- own_images will be injected here -->
+  </div>
+
+  <h2>Inference Results</h2>
+  <div class="gallery" id="infer-gallery">
+    <!-- inference_results will be injected here -->
+  </div>
+
+  <script>
+    // List out your image filenames here—or generate this list in CI.
+    const ownImgs = [
+      'own_images/photo1.jpg',
+      'own_images/photo2.png',
+      'own_images/diagram.svg',
+      // …add as many as you have
+    ];
+
+    const inferImgs = [
+      'inference_results/output1.png',
+      'inference_results/output2.png',
+      'inference_results/output3.jpg',
+      // …etc
+    ];
+
+    function renderGallery(imgArray, containerId) {
+      const container = document.getElementById(containerId);
+      imgArray.forEach(path => {
+        const wrapper = document.createElement('figure');
+        const img = document.createElement('img');
+        img.src = path;
+        img.alt = path.split('/').pop();
+        const cap = document.createElement('figcaption');
+        cap.className = 'caption';
+        cap.textContent = img.alt;
+        wrapper.appendChild(img);
+        wrapper.appendChild(cap);
+        container.appendChild(wrapper);
+      });
+    }
+
+    renderGallery(ownImgs, 'own-gallery');
+    renderGallery(inferImgs, 'infer-gallery');
+  </script>
+</body>
+</html>
