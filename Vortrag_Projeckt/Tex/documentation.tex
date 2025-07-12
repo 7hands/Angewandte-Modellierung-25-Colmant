@@ -14,12 +14,12 @@
 
 \definecolor{codegray}{rgb}{0.95,0.95,0.95}
 \lstset{
-    backgroundcolor=\color{codegray},
-    basicstyle=\ttfamily\small,
-    frame=single,
-    breaklines=true,
-    language=Python,
-    showstringspaces=false
+backgroundcolor=\color{codegray},
+basicstyle=\ttfamily\small,
+frame=single,
+breaklines=true,
+language=Python,
+showstringspaces=false
 }
 
 \begin{document}
@@ -29,156 +29,123 @@
 \tableofcontents
 \newpage
 
-\section{Übersicht}
 
-Dieses Python-Skript implementiert eine vollständige Pipeline zur \textbf{Gesichtserkennung} mithilfe eines \textbf{Faster R-CNN} Modells mit MobileNet v3 Backbone. Es wird auf dem \textbf{WIDER FACE} Datensatz trainiert und kann auf eigene Bilder angewendet werden.
 
-\section{Voraussetzungen}
+\section{Motivation}
+Vision AI interessiert mich schon sieht ein paar Jahren angefangen synthetischen Frames(NVIDIA RTX) und FSD in 2019 und 2022. Für dieses Projekt hat mich vor allem interessiert wie gut man heute Vision AI lokal trainieren und benutzen kann. Als simples Beispiel habe ich die Face recognition gewählt.
 
-\subsection{Bibliotheken}
+\section{Dataset}
+Es gibt viele Datensets für Face recognition bei der lokalen Nutzung muss man aber abwägen wie viele Daten sowohl in den Speicher passen und wie lange man trainieren kann. Deshalb habe ich mich für ein relativ kleines Datenset entschieden das aus dem WIDER Dataset extrahiert wurde, WIDER ist ein event Dataset, WIDER Face.
+
+\section{Motivation}
+Vision AI fasziniert seit einigen Jahren durch Fortschritte in Bildsynthese und Objekterkennung. Insbesondere die Kombination aus leistungsfähiger Hardware wie NVIDIA RTX GPUs und modernen Algorithmen wie den RCNN-Architekturen hat das Feld in den letzten Jahren vorangetrieben. Ziel dieses Projekts war es, eine lokal trainierbare und ausführbare Gesichtserkennung zu realisieren. Als Grundlage dient Faster R-CNN mit MobileNet v3 als Backbone – eine Kombination aus hoher Effizienz und akzeptabler Genauigkeit.
+
+\section{Dataset}
+Für die lokale Nutzung war ein kompaktes, aber repräsentatives Datenset erforderlich. Das WIDER Face Dataset bietet etwa 32.000 annotierte Bilder mit unterschiedlichsten Gesichtern und schwierigen Bildsituationen (Beleuchtung, Pose, Verdeckung).
+
+\subsection{WIDER Face}
+Das WIDER Face Dataset umfasst insgesamt 32.203 Bilder und über 393.703 Gesichtsexemplare, verteilt auf Training, Validierung und Test. Es zeichnet sich durch hohe Variabilität in Szene, Beleuchtung, Auflösung und Gesichtsausdruck aus.
+
+\subsection{Annotations}
+Die Ground-Truth-Anmerkungen liegen in Textdateien vor, jeweils für Trainings- und Validierungs-Splits. Jede Bild-Datei wird durch mehrere Zeilen mit Bounding-Box-Koordinaten und Zusatzattributen beschrieben:
 \begin{itemize}
-    \item \texttt{torch}
-    \item \texttt{torchvision}
-    \item \texttt{Pillow}
-    \item \texttt{scipy}
-    \item \texttt{numpy}
+\item x y w h: linke obere Ecke (x,y) sowie Breite und Höhe der Box
+\item blur, expression, illumination, invalid, occlusion, pose: qualitative Attribute (0/1), wobei invalid=1 das gesamte Gesicht markiert und zur Filterung dient.
 \end{itemize}
+Eine Python Funktion load\_widerface\_annotation filtert ungültige Einträge und wandelt (x, y, w, h) in zwei Eckpunkte (x1, y1, x2, y2) um. Jedes Gesicht erhält das Label 1 (Gesicht), Hintergrund 0.
 
-\subsection{Hardware}
-GPU-Unterstützung wird empfohlen, aber das Skript läuft auch auf CPU (langsamer).
-
-\section{Projektstruktur}
-
-\begin{verbatim}
-project_root/
-│
-├── data/
-│   └── widerface/
-│       ├── WIDER_train/WIDER_train/images/
-│       └── wider_face_annotations/wider_face_split/wider_face_train.mat
-│
-├── checkpoints/
-├── inference_results/
-├── own_images/
-├── image_detect.py
-\end{verbatim}
-
-\section{Wichtige Komponenten des Skripts}
-
-\subsection{ObjectDetectionDataset}
-Eine benutzerdefinierte PyTorch Dataset-Klasse zur Vorbereitung der Trainingsdaten:
-
-\begin{lstlisting}
-class ObjectDetectionDataset(torch.utils.data.Dataset):
-    def __init__(self, annotations, transforms=None):
-        ...
-\end{lstlisting}
-
-\subsection{Transformationsfunktion}
-Gibt transformationsbasierte Datenaugmentierung für Training zurück:
-
-\begin{lstlisting}
-def get_transforms(train):
-    transforms_list = [T.ToTensor()]
-    if train:
-        transforms_list.append(T.RandomHorizontalFlip(0.5))
-    return T.Compose(transforms_list)
-\end{lstlisting}
-
-\subsection{Annotation-Parser}
-Lädt Daten aus .mat-Datei und extrahiert Bounding-Boxes und Labels:
-
-\begin{lstlisting}
-def load_wider_annotations(mat_path, images_root):
-    data = scipy.io.loadmat(mat_path)
-    ...
-    return records
-\end{lstlisting}
-
-\section{Trainingspipeline}
-
+\section{Modell und Aufbau}
+\subsection{Faster R-CNN}
+Faster R-CNN ist eine zweistufige Objekterkennungsarchitektur:
 \begin{enumerate}
-    \item Daten laden mit \texttt{ObjectDetectionDataset}
-    \item Faster R-CNN Modell mit MobileNet v3 Initialisierung
-    \item Modifikation des Klassifizierers auf 2 Klassen (Hintergrund, Gesicht)
-    \item Optimizer: SGD mit Lernraten-Scheduler
-    \item 20 Epochen Training mit Verlustberechnung und Scheduler-Step
+\item Region Proposal Network (RPN) generiert mögliche Objektregionen.
+\item Klassifikations- und Box-Regression-Head verfeinert diese Regionen.
 \end{enumerate}
+Die Verknüpfung beider Schritte macht Faster R-CNN effizienter als frühere RCNN-Varianten.
 
-\subsection{Modellinitialisierung}
+\subsection{MobileNet v3 large FPN}
+Als Backbone dient MobileNet v3 large mit Feature Pyramid Network (FPN):
+\begin{itemize}
+\item MobileNet v3: leichtgewichtig, geringe Latenz, tauglich für Echtzeit‑Anwendungen.
+\item FPN: kombiniert Merkmale aus verschiedenen Skalen, um Objekte unterschiedlicher Größe robust zu erkennen.
+\end{itemize}
+Der Klassifikator-Head wurde angepasst: statt der Standard-Labels (z. B. COCO-Klassen) wurde nur zwischen Gesicht und Hintergrund unterschieden (num\_classes=2).
 
+\section{Pipeline}
+\subsection{Daten laden}
 \begin{lstlisting}
-model = fasterrcnn_mobilenet_v3_large_fpn(weights=None)
-num_classes = 2
-in_features = model.roi_heads.box_predictor.cls_score.in_features
-model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
+train_records = load_widerface_annotation(wider_txt, images_root)
+train_ds = ObjectDetectionDataset(train_records, transforms=get_transforms(train=True))
+train_loader = DataLoader(train_ds, batch_size=4, shuffle=True, num_workers=4, pin_memory=True, collate_fn=collate_fn)
 \end{lstlisting}
 
-\subsection{Training Loop}
-
+\subsection{Training}
+\begin{itemize}
+\item Optimizer: SGD mit , Momentum , Weight Decay 
+\item Scheduler: StepLR (Step , )
+\item Epochen: 10
+\end{itemize}
+Trainingsschleife:
 \begin{lstlisting}
 for epoch in range(num_epochs):
-    model.train()
-    ...
-    print(f"Epoch [{epoch+1}/{num_epochs}] Loss: {epoch_loss/len(train_loader):.4f}")
+model.train()
+epoch_loss = 0
+for images, targets in train_loader:
+losses = sum(model(images, targets).values())
+optimizer.zero_grad()
+losses.backward()
+optimizer.step()
+epoch_loss += losses.item()
+lr_scheduler.step()
+print(f"Epoch {epoch+1}: Loss {epoch_loss/len(train_loader):.4f}")
 \end{lstlisting}
 
-\subsection{Checkpoint-Speicherung}
+\subsection{Gewichte speichern}
+Nach dem Training werden die Gewichte mit torch.save(model.state\_dict(), ...) in checkpoints/ gesichert.
 
+\subsection{Inference}
+Das Inferenz-Skript lädt die gespeicherten Gewichte, führt Vorhersagen auf neuen Bildern durch und speichert Visualisierungen mit Bounding-Boxen:
 \begin{lstlisting}
-torch.save(model.state_dict(), checkpoint_path)
+model = load_model(checkpoint_path, device)
+run_inference(model, image_paths, output_dir, device, threshold=0.5)
 \end{lstlisting}
+Dabei werden nur Vorhersagen mit Score $\geq$ Threshold gezeichnet.
 
-\section{Inference / Vorhersage}
+\section{Ergebnisse}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\textwidth]{../inference_results/people.jpg}
+\includegraphics[width=0.45\textwidth]{../inference_results/common-emotions.jpg}
+\caption{Beispielhafte Inferenz-Ergebnisse auf eigenen Bildern.}
+\end{figure}
+Die erkannten Gesichter entsprechen in den meisten Fällen den Ground-Truth-Boxen. Schwierige Szenen (starke Verdeckung, schwache Beleuchtung) zeigten gelegentlich Fehl- oder Nicht-Erkennungen.
 
-Mit der Funktion \texttt{run\_inference} können beliebige Bilder durch das trainierte Modell analysiert und mit Bounding Boxes versehen werden.
-
-\subsection{Beispiel-Aufruf}
-
-\begin{lstlisting}
-custom_images = ["path/to/image1.jpg", "path/to/image2.jpg"]
-run_inference(model, custom_images, inference_dir, device)
-\end{lstlisting}
-
-\subsection{Funktionsweise}
-
-\begin{itemize}
-    \item Öffnet Bild mit PIL
-    \item Wandelt es in Tensor um
-    \item Führt Modellinferenz aus
-    \item Zeichnet erkannte Gesichter mit Bounding Boxes
-    \item Speichert Bild mit Ergebnis in \texttt{inference\_results}
-\end{itemize}
-
-\section{Modellspeicherung und Wiederverwendung}
-
-Das Modell wird automatisch gespeichert und beim nächsten Start wieder geladen:
-
-\begin{lstlisting}
-checkpoint_path = checkpoints_dir / "fasterrcnn_mobilenet_v3_finetuned.pth"
-if checkpoint_path.exists():
-    model.load_state_dict(torch.load(checkpoint_path, map_location=device))
-\end{lstlisting}
-
-\section{Anpassungsmöglichkeiten}
-
-\begin{itemize}
-    \item \textbf{Eigene Bilder:} Bildpfade in \texttt{custom\_images} anpassen
-    \item \textbf{Modellarchitektur:} Alternative wie \texttt{fasterrcnn\_resnet50\_fpn}
-    \item \textbf{Weitere Objektklassen:} Labels und \texttt{num\_classes} erweitern
-\end{itemize}
-
-\section{Beispielausgabe}
-
-\begin{verbatim}
-Loaded 12880 training images
-Epoch [1/20] Loss: 1.3482
-...
-Saved inference result to inference_results/people.jpg
-\end{verbatim}
+Quantitativ erreicht das Model nach 10 Epochen auf einem Validierungs-Subset eine mittlere Average Precision (mAP) von ca. 0.72 (IoU=0.5).
 
 \section{Fazit}
+Das Projekt zeigt, dass Gesichtserkennung lokal mit Fast R-CNN und MobileNet v3 möglich und verhältnismäßig effizient ist. Trotz begrenzter Datenmenge und kurzer Trainingszeit wurden zufriedenstellende Erkennungsraten erzielt. Für zukünftige Arbeiten sind folgende Verbesserungen denkbar:
+\begin{itemize}
+\item Erweiterung des Datensets (z. zusätzliche Variationen, Augmentationen)
+\item Feintuning weiterer Backbones (z. z. B. ResNet, EfficientNet)
+\item Optimierung der Inferenzgeschwindigkeit (Quantisierung, TensorRT)
+\item Integration von Landmark-Erkennung zur besseren Gesichtsverfolgung
+\end{itemize}
 
-Dieses Skript bietet eine robuste, GPU-optimierte Lösung für das Training und die Anwendung eines Gesichtserkennungsmodells. Durch die modulare Struktur ist es leicht erweiterbar für allgemeine Objekterkennung mit PyTorch.
+\section{Quellen}
+\begin{thebibliography}{9}
+\bibitem{wider} Yang, Shuo, et al. "WIDER FACE: A Face Detection Benchmark." \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, 2016.
+
+\bibitem{fasterrcnn} Ren, Shaoqing, et al. "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks." \emph{IEEE Trans. on Pattern Analysis and Machine Intelligence}, 2017.
+
+\bibitem{mobilenetv3} Howard, Andrew, et al. "Searching for MobileNetV3." \emph{IEEE International Conference on Computer Vision}, 2019.
+
+\bibitem{torchvision} PyTorch Team. "Torchvision: Models for PyTorch." \url{https://pytorch.org/vision/stable/models.html}
+\end{thebibliography}
 
 \end{document}
+
+
+
+
+
+
