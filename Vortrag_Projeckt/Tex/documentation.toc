@@ -1,17 +1,15 @@
 \contentsline {section}{\numberline {1}Motivation}{2}{section.1}%
 \contentsline {section}{\numberline {2}Dataset}{2}{section.2}%
-\contentsline {section}{\numberline {3}Motivation}{2}{section.3}%
-\contentsline {section}{\numberline {4}Dataset}{2}{section.4}%
-\contentsline {subsection}{\numberline {4.1}WIDER Face}{2}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Annotations}{2}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Modell und Aufbau}{3}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Faster R-CNN}{3}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}MobileNet v3 large FPN}{3}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Pipeline}{3}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Daten laden}{3}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Training}{3}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Gewichte speichern}{4}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Inference}{4}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Ergebnisse}{4}{section.7}%
-\contentsline {section}{\numberline {8}Fazit}{4}{section.8}%
-\contentsline {section}{\numberline {9}Quellen}{4}{section.9}%
+\contentsline {subsection}{\numberline {2.1}WIDER Face}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Annotations}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Modell und Aufbau}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Faster R-CNN}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}MobileNet v3 large FPN}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Pipeline}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Daten laden}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Training}{3}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Gewichte speichern}{3}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Inference}{3}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Ergebnisse}{5}{section.5}%
+\contentsline {section}{\numberline {6}Fazit}{6}{section.6}%
+\contentsline {section}{\numberline {7}Quellen}{6}{section.7}%

@@ -3,76 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vortrag Project Gallery</title>
+  <title>Vortrag Project: ONNX Inference</title>
   <style>
     body { font-family: sans-serif; padding: 1rem; }
-    h2 { margin-top: 2rem; color: #444; }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-      gap: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-    .caption {
+    #drop-zone {
+      border: 2px dashed #888;
+      border-radius: 8px;
+      padding: 2rem;
       text-align: center;
-      font-size: 0.9rem;
-      margin-top: 0.25rem;
       color: #666;
+      margin-bottom: 1rem;
+      cursor: pointer;
     }
+    #drop-zone.dragover {
+      border-color: #333;
+      background: #f9f9f9;
+    }
+    #file-input { display: none; }
+    #preview { max-width: 100%; margin: 1rem 0; }
+    #results canvas { max-width: 100%; display: block; margin: 1rem auto; }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
 </head>
 <body>
-  <h1>Vortrag Projeckt: Image Galleries</h1>
+  <h1>Vortrag Project: ONNX Inference</h1>
 
-  <h2>Own Images</h2>
-  <div class="gallery" id="own-gallery">
-    <!-- own_images will be injected here -->
-  </div>
+    <input type="file" id="file-input" accept="image/*" />
+  <div id="drop-zone">Drag & drop an image here<br>or click to select</div>
 
-  <h2>Inference Results</h2>
-  <div class="gallery" id="infer-gallery">
-    <!-- inference_results will be injected here -->
-  </div>
+    <img id="preview" alt="Preview" />
+  <div id="results"></div>
 
   <script>
-    // List out your image filenames here—or generate this list in CI.
-    const ownImgs = [
-      'Vortrag_Projeckt/own_images/common-emotions.jpg',
-      'Vortrag_Projeckt/own_images/ocluded.png',
-      'Vortrag_Projeckt/own_images/istockphoto.jpg',
-      // …add as many as you have
-    ];
+    const THRESHOLD = 0.8;
+    console.log('Threshold gesetzt auf', THRESHOLD);
 
-    const inferImgs = [
-      'Vortrag_Projeckt/inference_results/common-emotions.jpg',
-      'Vortrag_Projeckt/inference_results/ocluded.png',
-      'Vortrag_Projeckt/inference_results/istockphoto.jpg',
-      // …etc
-    ];
+    // ONNX Modell laden
+    console.log('Lade ONNX Modell...');
+    const sessionPromise = ort.InferenceSession.create('model.onnx')
+      .then(s => { console.log('Modell geladen'); return s; })
+      .catch(e => { console.error('Fehler beim Laden des Modells', e); });
 
-    function renderGallery(imgArray, containerId) {
-      const container = document.getElementById(containerId);
-      imgArray.forEach(path => {
-        const wrapper = document.createElement('figure');
-        const img = document.createElement('img');
-        img.src = path;
-        img.alt = path.split('/').pop();
-        const cap = document.createElement('figcaption');
-        cap.className = 'caption';
-        cap.textContent = img.alt;
-        wrapper.appendChild(img);
-        wrapper.appendChild(cap);
-        container.appendChild(wrapper);
-      });
+    const dropZone = document.getElementById('drop-zone');
+    const fileInput = document.getElementById('file-input');
+    const preview = document.getElementById('preview');
+    const resultsDiv = document.getElementById('results');
+
+    dropZone.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', e => handleFile(e.target.files[0]));
+
+    ['dragenter','dragover'].forEach(evt => dropZone.addEventListener(evt, e => { e.preventDefault(); dropZone.classList.add('dragover'); }));
+    ['dragleave','drop'].forEach(evt => dropZone.addEventListener(evt, e => { e.preventDefault(); dropZone.classList.remove('dragover'); }));
+    dropZone.addEventListener('drop', e => handleFile(e.dataTransfer.files[0]));
+
+    function handleFile(file) {
+      if (!file) return;
+      const img = new Image();
+      img.onload = () => runInference(img);
+      img.src = URL.createObjectURL(file);
+      preview.src = img.src;
     }
 
-    renderGallery(ownImgs, 'own-gallery');
-    renderGallery(inferImgs, 'infer-gallery');
+    async function runInference(img) {
+      const session = await sessionPromise;
+      if (!session) return;
+      const size = 224;
+      // Eingabe-Tensor vorbereiten
+      const canvas = document.createElement('canvas'); canvas.width = size; canvas.height = size;
+      const ctx = canvas.getContext('2d'); ctx.drawImage(img, 0, 0, size, size);
+      const imgData = ctx.getImageData(0, 0, size, size).data;
+      const [H,W] = [size,size];
+      const data = new Float32Array(3*H*W);
+      for (let i=0; i<H*W; i++) {
+        data[i] = imgData[4*i]/255;
+        data[H*W + i] = imgData[4*i+1]/255;
+        data[2*H*W + i] = imgData[4*i+2]/255;
+      }
+      const input = new ort.Tensor('float32', data, [1,3,H,W]);
+
+      console.log('Führe Inferenz aus...');
+      let output;
+      try { output = await session.run({ input }); }
+      catch(e) { console.error('Inferenzfehler', e); return; }
+
+      console.log('Vollständiger ONNX Output:', output); // Zur erneuten Überprüfung, falls nötig
+
+      // NEU: Korrekte Zuweisung basierend auf der Analyse des ONNX Outputs
+      // Die Bounding Box Koordinaten
+      const boxes_data = output.boxes.data;
+      // Die Klassen-IDs (im Modell "scores" genannt)
+      const labels_data = output.scores.data;
+      // Die Konfidenz-Scores (im Modell "labels" genannt)
+      const scores_data = output.labels.data;
+
+      console.log('Rohe Scores (jetzt richtig interpretiert):', scores_data);
+
+      // Filter Indizes nach Schwellenwert
+      const validIndices = [];
+      for (let i=0; i<scores_data.length; i++) {
+        if (typeof scores_data[i] === 'number' && scores_data[i] >= THRESHOLD) {
+          validIndices.push(i);
+        }
+      }
+      console.log('Gültige Erkennungsindizes:', validIndices);
+      drawBoxes(boxes_data, scores_data, labels_data, img, validIndices);
+    }
+
+    function drawBoxes(boxes, scores, labels, img, indices) {
+      resultsDiv.innerHTML = '';
+      const c = document.createElement('canvas');
+      c.width = img.width; c.height = img.height;
+      const ctx = c.getContext('2d'); ctx.drawImage(img,0,0);
+
+      ctx.strokeStyle='red'; ctx.lineWidth=2;
+      ctx.fillStyle='red'; ctx.font='16px sans-serif';
+
+      const sx = img.width/224;
+      const sy = img.height/224;
+
+      indices.forEach(i => {
+        const start = i*4;
+        const [x1,y1,x2,y2] = boxes.slice(start, start+4);
+        ctx.strokeRect(x1*sx, y1*sy, (x2-x1)*sx, (y2-y1)*sy);
+
+        // Darstellung des Labels und des Scores
+        const labelText = labels[i] !== undefined ? (typeof labels[i] === 'bigint' ? labels[i].toString() : labels[i].toFixed(0)) : 'N/A';
+        const scoreText = scores[i] !== undefined ? scores[i].toFixed(2) : 'N/A';
+        ctx.fillText(`Label: ${labelText}, Score: ${scoreText}`, x1*sx, y1*sy - 5);
+      });
+
+      console.log('Anzahl der gezeichneten Boxen:', indices.length);
+      resultsDiv.appendChild(c);
+    }
   </script>
 </body>
 </html>

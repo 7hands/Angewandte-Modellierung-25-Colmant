@@ -37,12 +37,6 @@ Vision AI interessiert mich schon sieht ein paar Jahren angefangen synthetischen
 \section{Dataset}
 Es gibt viele Datensets für Face recognition bei der lokalen Nutzung muss man aber abwägen wie viele Daten sowohl in den Speicher passen und wie lange man trainieren kann. Deshalb habe ich mich für ein relativ kleines Datenset entschieden das aus dem WIDER Dataset extrahiert wurde, WIDER ist ein event Dataset, WIDER Face.
 
-\section{Motivation}
-Vision AI fasziniert seit einigen Jahren durch Fortschritte in Bildsynthese und Objekterkennung. Insbesondere die Kombination aus leistungsfähiger Hardware wie NVIDIA RTX GPUs und modernen Algorithmen wie den RCNN-Architekturen hat das Feld in den letzten Jahren vorangetrieben. Ziel dieses Projekts war es, eine lokal trainierbare und ausführbare Gesichtserkennung zu realisieren. Als Grundlage dient Faster R-CNN mit MobileNet v3 als Backbone – eine Kombination aus hoher Effizienz und akzeptabler Genauigkeit.
-
-\section{Dataset}
-Für die lokale Nutzung war ein kompaktes, aber repräsentatives Datenset erforderlich. Das WIDER Face Dataset bietet etwa 32.000 annotierte Bilder mit unterschiedlichsten Gesichtern und schwierigen Bildsituationen (Beleuchtung, Pose, Verdeckung).
-
 \subsection{WIDER Face}
 Das WIDER Face Dataset umfasst insgesamt 32.203 Bilder und über 393.703 Gesichtsexemplare, verteilt auf Training, Validierung und Test. Es zeichnet sich durch hohe Variabilität in Szene, Beleuchtung, Auflösung und Gesichtsausdruck aus.
 
@@ -74,30 +68,45 @@ Der Klassifikator-Head wurde angepasst: statt der Standard-Labels (z. B. COCO-Kl
 \section{Pipeline}
 \subsection{Daten laden}
 \begin{lstlisting}
-train_records = load_widerface_annotation(wider_txt, images_root)
+train_records = load_widerface_annotation(train_txt, train_images)
+val_records   = load_widerface_annotation(val_txt, val_images)
+
 train_ds = ObjectDetectionDataset(train_records, transforms=get_transforms(train=True))
-train_loader = DataLoader(train_ds, batch_size=4, shuffle=True, num_workers=4, pin_memory=True, collate_fn=collate_fn)
+val_ds   = ObjectDetectionDataset(val_records, transforms=get_transforms(train=False))
 \end{lstlisting}
 
 \subsection{Training}
 \begin{itemize}
-\item Optimizer: SGD mit , Momentum , Weight Decay 
-\item Scheduler: StepLR (Step , )
 \item Epochen: 10
+\item durch alle Trainings Bilder iterieren und die Loss Funktion berechnen
+\item dann noch einen Validierungsdurchlauf und auch auf den Validierungsdaten die Loss Funktion berechnen
 \end{itemize}
 Trainingsschleife:
+(\href{https://github.com/7hands/Angewandte-Modellierung-25-Colmant/blob/main/Vortrag_Projeckt/image_detect.py}{Trainings Code (200-216)})
 \begin{lstlisting}
 for epoch in range(num_epochs):
-model.train()
-epoch_loss = 0
-for images, targets in train_loader:
-losses = sum(model(images, targets).values())
-optimizer.zero_grad()
-losses.backward()
-optimizer.step()
-epoch_loss += losses.item()
-lr_scheduler.step()
-print(f"Epoch {epoch+1}: Loss {epoch_loss/len(train_loader):.4f}")
+    # Training
+    model.train()
+    train_loss = 0.0
+    for imgs, targets in train_loader:
+        imgs = [img.to(device) for img in imgs]
+        targs = [{k: v.to(device) for k, v in t.items()} for t in targets]
+        loss_dict = model(imgs, targs)
+        losses = sum(loss for loss in loss_dict.values())
+        optimizer.zero_grad(); losses.backward(); optimizer.step()
+        train_loss += losses.item()
+    lr_scheduler.step()
+    avg_train = train_loss / len(train_loader)
+
+    # Validation
+    val_loss = 0.0
+    with torch.no_grad():
+        for imgs, targets in val_loader:
+            imgs = [img.to(device) for img in imgs]
+            targs = [{k: v.to(device) for k, v in t.items()} for t in targets]
+            loss_dict = model(imgs, targs)
+            val_loss += sum(loss for loss in loss_dict.values()).item()
+    avg_val = val_loss / len(val_loader)
 \end{lstlisting}
 
 \subsection{Gewichte speichern}
@@ -106,21 +115,70 @@ Nach dem Training werden die Gewichte mit torch.save(model.state\_dict(), ...) i
 \subsection{Inference}
 Das Inferenz-Skript lädt die gespeicherten Gewichte, führt Vorhersagen auf neuen Bildern durch und speichert Visualisierungen mit Bounding-Boxen:
 \begin{lstlisting}
+def run_inference(model, image_paths, output_dir: Path, device, threshold: float = DEFAULT_THRESHOLD):
+    output_dir = output_dir.resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
+    print(f"Saving results to: {output_dir}")
+    to_tensor = ToTensor()
+
+    for img_path in image_paths:
+        img_path = Path(img_path).resolve()
+        if not img_path.is_file():
+            print(f"[WARN] Datei nicht gefunden: {img_path}")
+            continue
+        img = Image.open(img_path).convert("RGB")
+        img_tensor = to_tensor(img).to(device)
+        with torch.no_grad():
+            outputs = model([img_tensor])[0]
+
+        boxes = outputs['boxes']
+        scores = outputs['scores']
+        labels = outputs['labels']
+        keep = scores >= threshold
+
+        img_boxes = draw_bounding_boxes(
+            (img_tensor * 255).to(torch.uint8),
+            boxes[keep],
+            labels=[str(int(l.item())) for l in labels[keep]],
+            width=2
+        )
+
+        save_path = output_dir / img_path.name
+        from torchvision.transforms import ToPILImage
+        ToPILImage()(img_boxes).save(save_path)
+        if save_path.is_file():
+            print(f"Saved inference result to {save_path}")
+        else:
+            print(f"[ERROR] Konnte Datei nicht speichern: {save_path}")
 model = load_model(checkpoint_path, device)
 run_inference(model, image_paths, output_dir, device, threshold=0.5)
 \end{lstlisting}
 Dabei werden nur Vorhersagen mit Score $\geq$ Threshold gezeichnet.
-
+\newpage
 \section{Ergebnisse}
+Positiv Beispiele:
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.45\textwidth]{../inference_results/people.jpg}
 \includegraphics[width=0.45\textwidth]{../inference_results/common-emotions.jpg}
 \caption{Beispielhafte Inferenz-Ergebnisse auf eigenen Bildern.}
 \end{figure}
-Die erkannten Gesichter entsprechen in den meisten Fällen den Ground-Truth-Boxen. Schwierige Szenen (starke Verdeckung, schwache Beleuchtung) zeigten gelegentlich Fehl- oder Nicht-Erkennungen.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.45\textwidth]{../inference_results/ocluded.png}
+\caption{Besonders beindruckend auch Bilder auf dem die Gesichter nicht richtig erkennbar sind können in vielen Fällen erkannt werden.}
+\end{figure}\\
+Negativ Beispiel:
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.25\textwidth]{../inference_results/foggy-painting.jpg}
+\caption{in dem impressionistischen Portrait wurde kein Gesicht erkannt.}
+\end{figure}
 
-Quantitativ erreicht das Model nach 10 Epochen auf einem Validierungs-Subset eine mittlere Average Precision (mAP) von ca. 0.72 (IoU=0.5).
+Schwierige Szenen (starke Verdeckung, schwache Beleuchtung, keine Fotos) zeigten gelegentlich Fehl- oder Nicht-Erkennungen.
+
+
+Quantitativ erreicht das Model nach 10 Epochen auf einem Validierungs-Subset einen Loss über alle Validierungsbilder von 0.33.
 
 \section{Fazit}
 Das Projekt zeigt, dass Gesichtserkennung lokal mit Fast R-CNN und MobileNet v3 möglich und verhältnismäßig effizient ist. Trotz begrenzter Datenmenge und kurzer Trainingszeit wurden zufriedenstellende Erkennungsraten erzielt. Für zukünftige Arbeiten sind folgende Verbesserungen denkbar:
@@ -128,10 +186,11 @@ Das Projekt zeigt, dass Gesichtserkennung lokal mit Fast R-CNN und MobileNet v3 
 \item Erweiterung des Datensets (z. zusätzliche Variationen, Augmentationen)
 \item Feintuning weiterer Backbones (z. z. B. ResNet, EfficientNet)
 \item Optimierung der Inferenzgeschwindigkeit (Quantisierung, TensorRT)
-\item Integration von Landmark-Erkennung zur besseren Gesichtsverfolgung
 \end{itemize}
 
 \section{Quellen}
+Data Set auf Kaggle: \url{https://www.kaggle.com/datasets/mksaad/wider-face-a-face-detection-benchmark/data}
+
 \begin{thebibliography}{9}
 \bibitem{wider} Yang, Shuo, et al. "WIDER FACE: A Face Detection Benchmark." \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, 2016.
 
