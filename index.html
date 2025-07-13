@@ -1,140 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vortrag Project: ONNX Inference</title>
-  <style>
-    body { font-family: sans-serif; padding: 1rem; }
-    #drop-zone {
-      border: 2px dashed #888;
-      border-radius: 8px;
-      padding: 2rem;
-      text-align: center;
-      color: #666;
-      margin-bottom: 1rem;
-      cursor: pointer;
-    }
-    #drop-zone.dragover {
-      border-color: #333;
-      background: #f9f9f9;
-    }
-    #file-input { display: none; }
-    #preview { max-width: 100%; margin: 1rem 0; }
-    #results canvas { max-width: 100%; display: block; margin: 1rem auto; }
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vortrag Project: ONNX Inference - Korrigiert</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 1rem;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .controls {
+            display: flex;
+            gap: 1.5rem; /* Etwas mehr Abstand */
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="range"] {
+            width: 200px;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #drop-zone {
+            border: 2px dashed #888;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #drop-zone:hover {
+            border-color: #555;
+            background: #fafafa;
+        }
+        #drop-zone.dragover {
+            border-color: #333;
+            background: #f9f9f9;
+        }
+        #file-input { display: none; }
+        #preview {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        #results {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        #results canvas {
+            max-width: 100%;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .status {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+            font-weight: bold;
+            display: none; /* Standardmäßig ausgeblendet */
+        }
+        .status.loading { background: #e3f2fd; color: #1976d2; }
+        .status.error { background: #ffebee; color: #c62828; }
+        .status.success { background: #e8f5e8; color: #2e7d32; }
+        .detection-info {
+            margin-top: 1rem;
+            text-align: left;
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
 </head>
 <body>
-  <h1>Vortrag Project: ONNX Inference</h1>
+    <div class="container">
+        <h1>Vortrag Project: ONNX Inference - Korrigiert</h1>
 
-    <input type="file" id="file-input" accept="image/*" />
-  <div id="drop-zone">Drag & drop an image here<br>or click to select</div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="threshold">Confidence Threshold:</label>
+                <input type="range" id="threshold" min="0.1" max="1.0" step="0.05" value="0.5">
+                <span id="threshold-value">0.5</span>
+            </div>
+            <div class="control-group">
+                <label for="nms-threshold">NMS Threshold:</label>
+                <input type="range" id="nms-threshold" min="0.1" max="1.0" step="0.05" value="0.4">
+                <span id="nms-threshold-value">0.4</span>
+            </div>
+            <div class="control-group">
+                <label for="input-size">Input Size:</label>
+                <input type="number" id="input-size" value="640" min="224" max="1024" step="32">
+                <small style="color: #666;">Größe anpassbar</small>
+            </div>
+        </div>
 
-    <img id="preview" alt="Preview" />
-  <div id="results"></div>
+        <input type="file" id="file-input" accept="image/*" />
+        <div id="drop-zone">Drag & drop an image here<br>or click to select</div>
+        <div id="status"></div>
+        <img id="preview" alt="Preview" style="display: none;" />
+        <div id="results"></div>
+        <div id="detection-info"></div>
+    </div>
 
-  <script>
-    const THRESHOLD = 0.8;
-    console.log('Threshold gesetzt auf', THRESHOLD);
+    <script>
+        let currentThreshold = 0.5;
+        let currentNMSThreshold = 0.4;
+        let modelInputSize = 640; // Fester, aber anpassbarer Standardwert
+        let session = null;
+        let lastInferenceData = null;
+        let modelInputName = null;
 
-    // ONNX Modell laden
-    console.log('Lade ONNX Modell...');
-    const sessionPromise = ort.InferenceSession.create('model.onnx')
-      .then(s => { console.log('Modell geladen'); return s; })
-      .catch(e => { console.error('Fehler beim Laden des Modells', e); });
+        const COCO_CLASSES = [
+            'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat',
+            'traffic light', 'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog',
+            'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella',
+            'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite',
+            'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle',
+            'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich',
+            'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+            'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote',
+            'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book',
+            'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush'
+        ];
 
-    const dropZone = document.getElementById('drop-zone');
-    const fileInput = document.getElementById('file-input');
-    const preview = document.getElementById('preview');
-    const resultsDiv = document.getElementById('results');
-
-    dropZone.addEventListener('click', () => fileInput.click());
-    fileInput.addEventListener('change', e => handleFile(e.target.files[0]));
-
-    ['dragenter','dragover'].forEach(evt => dropZone.addEventListener(evt, e => { e.preventDefault(); dropZone.classList.add('dragover'); }));
-    ['dragleave','drop'].forEach(evt => dropZone.addEventListener(evt, e => { e.preventDefault(); dropZone.classList.remove('dragover'); }));
-    dropZone.addEventListener('drop', e => handleFile(e.dataTransfer.files[0]));
-
-    function handleFile(file) {
-      if (!file) return;
-      const img = new Image();
-      img.onload = () => runInference(img);
-      img.src = URL.createObjectURL(file);
-      preview.src = img.src;
-    }
-
-    async function runInference(img) {
-      const session = await sessionPromise;
-      if (!session) return;
-      const size = 224;
-      // Eingabe-Tensor vorbereiten
-      const canvas = document.createElement('canvas'); canvas.width = size; canvas.height = size;
-      const ctx = canvas.getContext('2d'); ctx.drawImage(img, 0, 0, size, size);
-      const imgData = ctx.getImageData(0, 0, size, size).data;
-      const [H,W] = [size,size];
-      const data = new Float32Array(3*H*W);
-      for (let i=0; i<H*W; i++) {
-        data[i] = imgData[4*i]/255;
-        data[H*W + i] = imgData[4*i+1]/255;
-        data[2*H*W + i] = imgData[4*i+2]/255;
-      }
-      const input = new ort.Tensor('float32', data, [1,3,H,W]);
-
-      console.log('Führe Inferenz aus...');
-      let output;
-      try { output = await session.run({ input }); }
-      catch(e) { console.error('Inferenzfehler', e); return; }
-
-      console.log('Vollständiger ONNX Output:', output); // Zur erneuten Überprüfung, falls nötig
-
-      // NEU: Korrekte Zuweisung basierend auf der Analyse des ONNX Outputs
-      // Die Bounding Box Koordinaten
-      const boxes_data = output.boxes.data;
-      // Die Klassen-IDs (im Modell "scores" genannt)
-      const labels_data = output.scores.data;
-      // Die Konfidenz-Scores (im Modell "labels" genannt)
-      const scores_data = output.labels.data;
-
-      console.log('Rohe Scores (jetzt richtig interpretiert):', scores_data);
-
-      // Filter Indizes nach Schwellenwert
-      const validIndices = [];
-      for (let i=0; i<scores_data.length; i++) {
-        if (typeof scores_data[i] === 'number' && scores_data[i] >= THRESHOLD) {
-          validIndices.push(i);
+        function showStatus(message, type = 'loading') {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+            statusDiv.style.display = 'block';
         }
-      }
-      console.log('Gültige Erkennungsindizes:', validIndices);
-      drawBoxes(boxes_data, scores_data, labels_data, img, validIndices);
-    }
 
-    function drawBoxes(boxes, scores, labels, img, indices) {
-      resultsDiv.innerHTML = '';
-      const c = document.createElement('canvas');
-      c.width = img.width; c.height = img.height;
-      const ctx = c.getContext('2d'); ctx.drawImage(img,0,0);
+        function hideStatus() {
+            document.getElementById('status').style.display = 'none';
+        }
 
-      ctx.strokeStyle='red'; ctx.lineWidth=2;
-      ctx.fillStyle='red'; ctx.font='16px sans-serif';
+        async function loadModel() {
+            showStatus('Lade ONNX Modell...');
+            try {
+                const sessionOptions = { executionProviders: ['webgl', 'cpu'] };
+                session = await ort.InferenceSession.create('model.onnx', sessionOptions);
+                
+                modelInputName = session.inputNames[0];
+                console.log('Modell erfolgreich geladen. Input:', modelInputName);
+                
+                showStatus(`Modell geladen! Standard-Eingabegröße: ${modelInputSize}x${modelInputSize}`, 'success');
+                setTimeout(hideStatus, 3000);
 
-      const sx = img.width/224;
-      const sy = img.height/224;
+            } catch (error) {
+                console.error('Fehler beim Laden des Modells:', error);
+                let errorMessage = 'Fehler beim Laden des Modells: ' + error.message;
+                if (error.message.includes('model.onnx')) {
+                    errorMessage = 'Modell-Datei "model.onnx" nicht gefunden. Sie muss im selben Verzeichnis wie die HTML-Datei liegen.';
+                }
+                showStatus(errorMessage, 'error');
+            }
+        }
 
-      indices.forEach(i => {
-        const start = i*4;
-        const [x1,y1,x2,y2] = boxes.slice(start, start+4);
-        ctx.strokeRect(x1*sx, y1*sy, (x2-x1)*sx, (y2-y1)*sy);
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
+        const preview = document.getElementById('preview');
+        const resultsDiv = document.getElementById('results');
+        const thresholdSlider = document.getElementById('threshold');
+        const thresholdValue = document.getElementById('threshold-value');
+        const nmsThresholdSlider = document.getElementById('nms-threshold');
+        const nmsThresholdValue = document.getElementById('nms-threshold-value');
+        const inputSizeInput = document.getElementById('input-size');
 
-        // Darstellung des Labels und des Scores
-        const labelText = labels[i] !== undefined ? (typeof labels[i] === 'bigint' ? labels[i].toString() : labels[i].toFixed(0)) : 'N/A';
-        const scoreText = scores[i] !== undefined ? scores[i].toFixed(2) : 'N/A';
-        ctx.fillText(`Label: ${labelText}, Score: ${scoreText}`, x1*sx, y1*sy - 5);
-      });
+        dropZone.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', e => handleFile(e.target.files[0]));
 
-      console.log('Anzahl der gezeichneten Boxen:', indices.length);
-      resultsDiv.appendChild(c);
-    }
-  </script>
+        thresholdSlider.addEventListener('input', e => {
+            currentThreshold = parseFloat(e.target.value);
+            thresholdValue.textContent = currentThreshold.toFixed(2);
+            if (lastInferenceData) processDetections(lastInferenceData);
+        });
+
+        nmsThresholdSlider.addEventListener('input', e => {
+            currentNMSThreshold = parseFloat(e.target.value);
+            nmsThresholdValue.textContent = currentNMSThreshold.toFixed(2);
+            if (lastInferenceData) processDetections(lastInferenceData);
+        });
+
+        inputSizeInput.addEventListener('change', e => {
+            const size = parseInt(e.target.value);
+            // Sicherstellen, dass die Größe ein Vielfaches von 32 ist (oft eine Anforderung)
+            modelInputSize = Math.round(size / 32) * 32;
+            e.target.value = modelInputSize;
+        });
+
+        ['dragenter', 'dragover'].forEach(evt => dropZone.addEventListener(evt, e => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        }));
+        ['dragleave', 'drop'].forEach(evt => dropZone.addEventListener(evt, e => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+        }));
+        dropZone.addEventListener('drop', e => handleFile(e.dataTransfer.files[0]));
+
+        function handleFile(file) {
+            if (!file) return;
+            const img = new Image();
+            img.onload = () => {
+                preview.src = img.src;
+                preview.style.display = 'block';
+                resultsDiv.innerHTML = '';
+                document.getElementById('detection-info').innerHTML = '';
+                runInference(img);
+            };
+            img.src = URL.createObjectURL(file);
+        }
+
+        // KORRIGIERTE UND VEREINFACHTE BILD-VORVERARBEITUNG
+        function preprocessImage(img) {
+            const size = modelInputSize;
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+
+            // Seitenverhältnis beibehalten (Letterboxing)
+            const scale = Math.min(size / img.width, size / img.height);
+            const scaledWidth = img.width * scale;
+            const scaledHeight = img.height * scale;
+            const offsetX = (size - scaledWidth) / 2;
+            const offsetY = (size - scaledHeight) / 2;
+
+            ctx.fillStyle = '#000000'; // Schwarzer Hintergrund
+            ctx.fillRect(0, 0, size, size);
+            ctx.drawImage(img, offsetX, offsetY, scaledWidth, scaledHeight);
+
+            const imageData = ctx.getImageData(0, 0, size, size);
+            const data = imageData.data;
+            const tensor = new Float32Array(3 * size * size);
+
+            // EINFACHE [0,1] NORMALISIERUNG - die korrekte Methode für dieses Modell
+            for (let i = 0; i < size * size; i++) {
+                tensor[i] = data[i * 4] / 255.0; // R
+                tensor[size * size + i] = data[i * 4 + 1] / 255.0; // G
+                tensor[2 * size * size + i] = data[i * 4 + 2] / 255.0; // B
+            }
+
+            return {
+                tensor: new ort.Tensor('float32', tensor, [1, 3, size, size]),
+                scale,
+                offsetX,
+                offsetY,
+                originalWidth: img.width,
+                originalHeight: img.height,
+                processedSize: size
+            };
+        }
+        
+        // Non-Maximum Suppression (unverändert)
+        function nms(boxes, scores, threshold) {
+            const indices = Array.from({ length: scores.length }, (_, i) => i);
+            indices.sort((a, b) => scores[b] - scores[a]);
+            
+            const keep = [];
+            const areas = boxes.map(box => (box[2] - box[0]) * (box[3] - box[1]));
+
+            while (indices.length > 0) {
+                const i = indices.shift();
+                keep.push(i);
+                
+                const filteredIndices = [];
+                for (const j of indices) {
+                    const xx1 = Math.max(boxes[i][0], boxes[j][0]);
+                    const yy1 = Math.max(boxes[i][1], boxes[j][1]);
+                    const xx2 = Math.min(boxes[i][2], boxes[j][2]);
+                    const yy2 = Math.min(boxes[i][3], boxes[j][3]);
+                    const w = Math.max(0, xx2 - xx1);
+                    const h = Math.max(0, yy2 - yy1);
+                    const intersection = w * h;
+                    const union = areas[i] + areas[j] - intersection;
+                    const iou = intersection / union;
+                    
+                    if (iou <= threshold) {
+                        filteredIndices.push(j);
+                    }
+                }
+                indices.length = 0;
+                indices.push(...filteredIndices);
+            }
+            return keep;
+        }
+
+        async function runInference(img) {
+            if (!session) {
+                showStatus('Modell noch nicht geladen!', 'error');
+                return;
+            }
+            showStatus(`Verarbeite Bild (${img.width}x${img.height})...`);
+            
+            // KORRIGIERTE FEHLERBEHANDLUNG (keine Endlosschleife)
+            try {
+                const preprocessed = preprocessImage(img);
+                const inputObject = { [modelInputName]: preprocessed.tensor };
+                
+                const startTime = performance.now();
+                const output = await session.run(inputObject);
+                const inferenceTime = performance.now() - startTime;
+                
+                lastInferenceData = { output, img, preprocessed, inferenceTime };
+                processDetections(lastInferenceData);
+
+            } catch (error) {
+                console.error('Fehler bei der Inferenz:', error);
+                showStatus('Fehler bei der Inferenz: ' + error.message, 'error');
+            }
+        }
+        
+        // Flexible Output-Verarbeitung (unverändert)
+        function processDetections(data) {
+            const { output, img, preprocessed, inferenceTime } = data;
+            try {
+                let boxes, scores, labels;
+                const outputKeys = Object.keys(output);
+                
+                // Annahme: YOLO-ähnliches oder torchvision-ähnliches Output-Format
+                const boxTensor = output[outputKeys.find(k => k.includes('box'))];
+                const scoreTensor = output[outputKeys.find(k => k.includes('score'))];
+                const labelTensor = output[outputKeys.find(k => k.includes('label') || k.includes('class'))];
+
+                if (!boxTensor || !scoreTensor || !labelTensor) {
+                    throw new Error('Konnte Boxen, Scores oder Labels im Output nicht finden. Keys: ' + outputKeys.join(', '));
+                }
+
+                boxes = boxTensor.data;
+                scores = scoreTensor.data;
+                labels = labelTensor.data;
+                
+                const validDetections = [];
+                for (let i = 0; i < scores.length; i++) {
+                    if (scores[i] >= currentThreshold) {
+                        const boxStart = i * 4;
+                        validDetections.push({
+                            box: [boxes[boxStart], boxes[boxStart + 1], boxes[boxStart + 2], boxes[boxStart + 3]],
+                            score: scores[i],
+                            label: Math.floor(labels[i])
+                        });
+                    }
+                }
+
+                if (validDetections.length > 0) {
+                    const nmsBoxes = validDetections.map(d => d.box);
+                    const nmsScores = validDetections.map(d => d.score);
+                    const keepIndices = nms(nmsBoxes, nmsScores, currentNMSThreshold);
+                    const finalDetections = keepIndices.map(i => validDetections[i]);
+                    
+                    drawDetections(finalDetections, img, preprocessed, inferenceTime);
+                } else {
+                    showStatus('Keine Objekte über dem Threshold erkannt.', 'success');
+                    resultsDiv.innerHTML = '<p>Keine Objekte erkannt. Versuchen Sie einen niedrigeren Threshold.</p>';
+                    document.getElementById('detection-info').innerHTML = '';
+                }
+
+            } catch (error) {
+                console.error('Fehler bei der Verarbeitung der Detektionen:', error);
+                showStatus('Fehler bei der Verarbeitung: ' + error.message, 'error');
+            }
+        }
+        
+        // Bounding-Box-Zeichnen (unverändert)
+        function drawDetections(detections, img, preprocessed, inferenceTime) {
+            resultsDiv.innerHTML = '';
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+
+            const colors = ['#FF3838', '#FF9D97', '#FF701F', '#FFB21D', '#CFD231', '#48F90A', '#92CC17', '#3DDB86', '#1A9334', '#00D4BB', '#2C99A8', '#00C2FF', '#344593', '#6473FF', '#0018EC', '#8438FF', '#520085', '#CB38FF', '#FF95C8', '#FF37C7'];
+
+            detections.forEach(detection => {
+                const [x1, y1, x2, y2] = detection.box;
+                const { scale, offsetX, offsetY } = preprocessed;
+                
+                const realX1 = (x1 - offsetX) / scale;
+                const realY1 = (y1 - offsetY) / scale;
+                const realX2 = (x2 - offsetX) / scale;
+                const realY2 = (y2 - offsetY) / scale;
+                
+                const labelIndex = detection.label;
+                const color = colors[labelIndex % colors.length];
+                ctx.strokeStyle = color;
+                ctx.lineWidth = Math.max(2, img.width / 300);
+                ctx.strokeRect(realX1, realY1, realX2 - realX1, realY2 - realY1);
+                
+                const className = COCO_CLASSES[labelIndex] || `Class ${labelIndex}`;
+                const text = `${className}: ${detection.score.toFixed(2)}`;
+                ctx.fillStyle = color;
+                const fontSize = Math.max(12, img.width / 60);
+                ctx.font = `bold ${fontSize}px Arial`;
+                const textWidth = ctx.measureText(text).width;
+                const textHeight = fontSize + 4;
+                
+                ctx.fillRect(realX1, realY1 - textHeight, textWidth + 10, textHeight);
+                ctx.fillStyle = 'white';
+                ctx.fillText(text, realX1 + 5, realY1 - 4);
+            });
+
+            resultsDiv.appendChild(canvas);
+
+            const infoDiv = document.getElementById('detection-info');
+            infoDiv.innerHTML = `
+                <h3>Detektions-Ergebnisse</h3>
+                <p><strong>Originalbild:</strong> ${img.width}x${img.height} px | <strong>Verarbeitet:</strong> ${preprocessed.processedSize}x${preprocessed.processedSize} px</p>
+                <p><strong>Inferenz-Zeit:</strong> ${inferenceTime.toFixed(2)} ms | <strong>Erkannte Objekte:</strong> ${detections.length}</p>
+            `;
+            
+            showStatus(`${detections.length} Objekte erkannt!`, 'success');
+            setTimeout(hideStatus, 3000);
+        }
+
+        loadModel();
+    </script>
 </body>
 </html>
