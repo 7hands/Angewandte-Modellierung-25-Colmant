@@ -4,64 +4,67 @@ title: "Dokumentation: Gesichtserkennung mit Faster R-CNN und MobileNet v3"
 ---
 
 <style>
-  body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  h1, h2, h3 {
-    color: #333;
-    margin-top: 2rem;
-  }
-  pre code {
-    background: #f5f5f5;
-    display: block;
-    padding: 1rem;
-    overflow-x: auto;
-    border-radius: 4px;
-  }
-  .image-pair {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    align-items: center;
-  }
-  .image-pair img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  .image-pair .inference {
-    flex: 1 1 45%;
-  }
-  .image-pair .original {
-    flex: 1 1 45%;
-  }
-  .caption {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  a {
-    color: #0366d6;
-  }
-  nav#toc {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-bottom: 2rem;
-  }
-  nav#toc ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  nav#toc li {
-    margin: 0.5rem 0;
-  }
+    body {
+        font-family: sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    h1, h2, h3 {
+        color: #333;
+        margin-top: 2rem;
+    }
+    pre code {
+        background: #f5f5f5;
+        display: block;
+        padding: 1rem;
+        overflow-x: auto;
+        border-radius: 4px;
+    }
+    .image-pair {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .image-pair img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .image-pair .inference {
+        flex: 1 1 45%;
+    }
+    .image-pair .original {
+        flex: 1 1 45%;
+    }
+    .caption {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+    }
+    a {
+        color: #0366d6;
+    }
+    nav#toc {
+        background: #f9f9f9;
+        padding: 1rem;
+        border-radius: 4px;
+        margin-bottom: 2rem;
+    }
+    nav#toc ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    nav#toc li {
+        margin: 0.5rem 0;
+    }
+    .slider { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 1rem; margin-bottom: 2rem; }
+    .slide { flex: 0 0 100%; scroll-snap-align: start; position: relative; }
+    .slide img { width: 100%; height: auto; object-fit: contain; border-radius: 4px; border: 1px solid #ddd; }
 </style>
 
 <h1>Dokumentation: Gesichtserkennung mit Faster R-CNN und MobileNet v3</h1>
@@ -162,13 +165,13 @@ def run_inference(model, image_paths, output_dir, device, threshold=0.5):
 <section id="results">
   <h2>5. Ergebnisse</h2>
   <div class="slider">
-  {% raw %}{% for file in site.static_files %}{% endraw %}
-    {% raw %}{% if file.path contains 'Vortrag_Project/inference_results/' %}{% endraw %}
-      <div class="slide">
-        <img src="{{ site.baseurl }}{{ '/' | append: file.path }}" alt="{{ file.name }}">
-      </div>
-    {% raw %}{% endif %}{% endraw %}
-  {% raw %}{% endfor %}{% endraw %}
+    {% for file in site.static_files %}
+      {% if file.path contains '/Vortrag_Projeckt/inference_results' %}
+        <div class="slide">
+          <img src="{{ site.baseurl }}{{ file.path }}" alt="{{ file.name }}">
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
 
