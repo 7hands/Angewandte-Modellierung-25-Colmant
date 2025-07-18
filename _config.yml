@@ -1,0 +1,9 @@
+author: "Dein Name"
+baseurl: ""           # falls Unterpfad, sonst leer lassen
+title: "Gesichtserkennung"
+markdown: kramdown
+theme: minima           # oder ein anderes Jekyll-Theme
+
+exclude:
+  - ".gitignore"
+  - "node_modules/"
