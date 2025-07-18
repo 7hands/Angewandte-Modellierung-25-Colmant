@@ -69,13 +69,20 @@ title: "Dokumentation: Gesichtserkennung mit Faster R-CNN und MobileNet v3"
         -webkit-overflow-scrolling: touch;
         gap: 1rem;
         margin-bottom: 2rem;
+        /* Sicherstellen, dass die Slider-Höhe nicht 0 ist */
+        min-height: 200px;
+        align-items: center;
     }
     .slide {
         flex: 0 0 100%;
         scroll-snap-align: start;
         position: relative;
+        /* Karten-ähnliche Optik */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 0.5rem;
     }
     .slide img {
+        display: block;
         width: 100%;
         height: auto;
         object-fit: contain;
@@ -183,7 +190,7 @@ def run_inference(model, image_paths, output_dir, device, threshold=0.5):
   <h2>5. Ergebnisse</h2>
   <div class="slider">
     {% for file in site.static_files %}
-      {% if file.path contains '/Vortrag_Projeckt/inference_results' %}
+      {% if file.path contains './Vortrag_Projeckt/inference_results' %}
         <div class="slide">
           <img src="{{ site.baseurl }}{{ file.path }}" alt="{{ file.name }}">
         </div>
