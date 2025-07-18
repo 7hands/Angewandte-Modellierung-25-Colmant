@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {4.1}Daten laden}{3}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Training}{3}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Gewichte speichern}{3}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Inference}{3}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Inference}{4}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Ergebnisse}{5}{section.5}%
 \contentsline {section}{\numberline {6}Fazit}{6}{section.6}%
 \contentsline {section}{\numberline {7}Quellen}{6}{section.7}%

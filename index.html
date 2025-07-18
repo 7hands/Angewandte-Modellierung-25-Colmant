@@ -63,31 +63,30 @@ title: "Dokumentation: Gesichtserkennung mit Faster R-CNN und MobileNet v3"
         margin: 0.5rem 0;
     }
     .slider {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        gap: 1rem;
-        margin-bottom: 2rem;
-        /* Sicherstellen, dass die Slider-Höhe nicht 0 ist */
-        min-height: 200px;
-        align-items: center;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
     }
     .slide {
-        flex: 0 0 100%;
-        scroll-snap-align: start;
-        position: relative;
-        /* Karten-ähnliche Optik */
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        padding: 0.5rem;
+      flex: 0 0 100%;
+      scroll-snap-align: start;
     }
     .slide img {
-        display: block;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 4px;
-        border: 1px solid #ddd;
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    .caption {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #666;
     }
 </style>
 
@@ -187,16 +186,39 @@ def run_inference(model, image_paths, output_dir, device, threshold=0.5):
 </section>
 
 <section id="results">
-  <h2>5. Ergebnisse</h2>
-  <div class="slider">
-    {% for file in site.static_files %}
-      {% if file.path contains './Vortrag_Projeckt/inference_results' %}
-        <div class="slide">
-          <img src="{{ site.baseurl }}{{ file.path }}" alt="{{ file.name }}">
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
+  <h2>5. Ergebnisse – Slideshow</h2>
+  <div class="slider" id="slider"></div>
+
+  <script>
+    // Manuell gepflegte Liste der Bilddateien im Ordner
+    const imageFilenames = [
+      "common-emotions.jpg",
+      "istockphoto.jpg",
+      "people.jpg",
+      "ocluded.png",
+      "foggy-painting.jpg"
+      // weitere Bilder hier ergänzen
+    ];
+
+    const slider = document.getElementById("slider");
+
+    imageFilenames.forEach(filename => {
+      const slide = document.createElement("div");
+      slide.className = "slide";
+
+      const img = document.createElement("img");
+      img.src = "Vortrag_Projeckt/inference_results/" + filename;
+      img.alt = filename;
+
+      const caption = document.createElement("div");
+      caption.className = "caption";
+      caption.textContent = filename;
+
+      slide.appendChild(img);
+      slide.appendChild(caption);
+      slider.appendChild(slide);
+    });
+  </script>
 </section>
 
 <section id="conclusion">
